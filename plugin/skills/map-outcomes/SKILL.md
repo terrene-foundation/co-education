@@ -4,7 +4,7 @@ description: Map learning outcomes across a course or program, identifying gaps 
 argument-hint: "[course or program name]"
 ---
 
-# /map-outcomes $ARGUMENTS
+# /co-education:map-outcomes $ARGUMENTS
 
 Map learning outcomes for **$ARGUMENTS**.
 
@@ -16,39 +16,3 @@ Map learning outcomes for **$ARGUMENTS**.
 4. **Identify redundancies** where outcomes are assessed multiple times without progression
 5. **Check progression** (Introduce, Develop, Master) across the program
 6. **Save the map** to `03-work/`
-
-## Output
-
-Save to `03-work/outcome-map-[name].md`:
-
-```markdown
-# Learning Outcome Map: $ARGUMENTS
-Date: [today]
-
-## Program-Level Outcomes
-1. [PLO1]
-2. [PLO2]
-...
-
-## Coverage Matrix
-
-| Program Outcome | Course 1 | Course 2 | Course 3 | ... |
-|---|---|---|---|---|
-| PLO1 | I | D | M | |
-| PLO2 | | I | D | M |
-
-Legend: I = Introduce, D = Develop, M = Master, blank = not addressed
-
-## Gap Analysis
-[Outcomes with no M-level coverage]
-
-## Redundancy Analysis
-[Outcomes assessed at the same level in multiple courses]
-
-## Recommendations
-[Specific suggestions for addressing gaps and redundancies]
-```
-
-## Next Step
-
-After mapping outcomes, recommend `/design-assessment` to design assessments for any gaps, or `/design-course` to restructure the course architecture.

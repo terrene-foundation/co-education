@@ -3,7 +3,7 @@ name: finalize
 description: Polish, validate, and prepare the final output. Last quality gate before delivery.
 ---
 
-# /finalize
+# /co-education:finalize
 
 Prepare the final output for delivery.
 

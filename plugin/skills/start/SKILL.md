@@ -20,17 +20,17 @@ Welcome the user to this CO for Education workspace. This is a structured method
 
 This COE workspace has five phases:
 
-| Phase | What happens | Skill |
-|-------|-------------|-------|
+| Phase | What happens | Command |
+|-------|-------------|---------|
 | **01 Research** | Understand the pedagogical context, student population, institutional requirements | `/co-education:analyze` |
 | **02 Plan** | Create assessment or course design plan; stops for your approval | `/co-education:plan` |
 | **03 Execute** | Build assessments, rubrics, materials one task at a time | `/co-education:execute` |
 | **04 Review** | Alignment audit, AI-resilience review, fairness check | `/co-education:review` |
 | **05 Finalize** | Polish, validate against learning outcomes, prepare for deployment | `/co-education:finalize` |
 
-Domain-specific skills: `/co-education:design-assessment`, `/co-education:build-rubric`, `/co-education:map-outcomes`, `/co-education:audit-ai-resilience`, `/co-education:design-course`.
+Domain-specific commands: `/co-education:design-assessment`, `/co-education:build-rubric`, `/co-education:map-outcomes`, `/co-education:audit-ai-resilience`, `/co-education:design-course`.
 
-Utility skills: `/co-education:ws` (status), `/co-education:wrapup` (save progress), `/co-education:checkpoint` (review learning).
+Utility commands: `/co-education:ws` (status), `/co-education:wrapup` (save progress), `/co-education:checkpoint` (review learning).
 
 ## Then ask
 
@@ -39,7 +39,7 @@ Utility skills: `/co-education:ws` (status), `/co-education:wrapup` (save progre
 3. What is your institution and student context (cohort size, level, delivery mode)?
 4. What are you most concerned about (AI integrity, alignment, workload, accreditation)?
 
-Based on answers, recommend the next skill to run.
+Based on answers, recommend the next command to run.
 
 ## If continuing existing work
 
