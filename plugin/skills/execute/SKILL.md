@@ -3,9 +3,15 @@ name: execute
 description: Work through the plan one task at a time. Each task requires completion before moving to the next.
 ---
 
-# /co-education:execute
+# /execute
 
 Work through the approved plan from `02-planning/plan.md`, one task at a time.
+
+## Workspace Resolution
+
+1. If `$ARGUMENTS` specifies a project name, use `workspaces/$ARGUMENTS/`
+2. Otherwise, use the most recently modified directory under `workspaces/` (excluding `_template/`)
+3. If no workspace exists, ask the user to create one first
 
 ## Protocol
 
@@ -25,4 +31,4 @@ Work through the approved plan from `02-planning/plan.md`, one task at a time.
 
 ## Next Step
 
-When all tasks are complete, recommend `/co-education:review` for quality checking.
+When all tasks are complete, recommend `/review` for quality checking.

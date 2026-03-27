@@ -3,9 +3,15 @@ name: plan
 description: Create a structured plan based on analysis. Stops for human approval before execution begins.
 ---
 
-# /co-education:plan
+# /plan
 
 Create a structured plan for the active project. This plan requires human approval before any execution begins.
+
+## Workspace Resolution
+
+1. If `$ARGUMENTS` specifies a project name, use `workspaces/$ARGUMENTS/`
+2. Otherwise, use the most recently modified directory under `workspaces/` (excluding `_template/`)
+3. If no workspace exists, ask the user to create one first
 
 ## Protocol
 
@@ -48,4 +54,4 @@ Present the plan and ask:
 3. Is the order correct?
 4. Should any task be removed or added?
 
-Do NOT proceed to `/co-education:execute` until the human approves.
+Do NOT proceed to `/execute` until the human approves.

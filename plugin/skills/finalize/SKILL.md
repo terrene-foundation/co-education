@@ -3,9 +3,15 @@ name: finalize
 description: Polish, validate, and prepare the final output. Last quality gate before delivery.
 ---
 
-# /co-education:finalize
+# /finalize
 
 Prepare the final output for delivery.
+
+## Workspace Resolution
+
+1. If `$ARGUMENTS` specifies a project name, use `workspaces/$ARGUMENTS/`
+2. Otherwise, use the most recently modified directory under `workspaces/` (excluding `_template/`)
+3. If no workspace exists, ask the user to create one first
 
 ## Protocol
 
