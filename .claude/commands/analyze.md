@@ -15,6 +15,7 @@ Research and analyze **$ARGUMENTS** thoroughly.
 3. **Research the topic**: gather relevant information, identify key sources, map competing approaches
 4. **Identify constraints**: what limits apply? What standards must be met?
 5. **Document findings** in `01-research/`
+6. **Create `specs/`** (MUST — before vet) — see `rules/specs-authority.md`. Create `specs/_index.md` plus one spec file per major educational domain area (e.g., `learning-outcomes.md`, `assessment-architecture.md`, `student-population.md`, `institutional-context.md`). Each spec file MUST be detailed enough to be the authority on its topic. For each requirement in the brief, confirm a corresponding spec section exists — missing mappings are BLOCKING.
 
 ## Output
 

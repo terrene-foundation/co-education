@@ -17,10 +17,12 @@ Work through the approved plan from `02-planning/plan.md`, one task at a time.
 
 1. **Read the plan** from `02-planning/plan.md`
 2. **Find the next incomplete task**
-3. **Execute it**, producing the specified deliverable
-4. **Save output** to `03-work/`
-5. **Mark the task complete** in the plan
-6. **Report what was done** and what the next task is
+3. **Context anchor**: read `specs/_index.md`, identify which spec files cover this task's domain (learning outcomes, assessment criteria, rubric specifications), read them. The spec is the authority on what to build. Per `rules/specs-authority.md` MUST §4.
+4. **Execute it**, producing the specified deliverable
+5. **Save output** to `03-work/`
+6. **Check spec currency**: if this task changed domain truth (e.g., revised rubric criteria, updated learning outcome mapping), update the relevant spec file immediately per `rules/specs-authority.md` MUST §5. If execution deviates from spec, STOP: update spec with deviation and rationale, flag user-visible changes for instructor approval.
+7. **Mark the task complete** in the plan
+8. **Report what was done** and what the next task is
 
 ## Rules
 
