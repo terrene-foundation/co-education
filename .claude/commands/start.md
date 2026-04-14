@@ -19,15 +19,18 @@ Welcome the user to this CO for Education workspace. This is a structured method
 
 ## Then explain the workflow
 
-This COE workspace has five phases:
+This COE workspace has six phases:
 
-| Phase | What happens | Command |
-|-------|-------------|---------|
-| **01 Research** | Understand the pedagogical context, student population, institutional requirements | `/analyze` |
-| **02 Plan** | Create assessment or course design plan; stops for your approval | `/plan` |
-| **03 Execute** | Build assessments, rubrics, materials one task at a time | `/execute` |
-| **04 Review** | Alignment audit, AI-resilience review, fairness check | `/review` |
-| **05 Finalize** | Polish, validate against learning outcomes, prepare for deployment | `/finalize` |
+| Phase          | What happens                                                                       | Command    |
+| -------------- | ---------------------------------------------------------------------------------- | ---------- |
+| **01 Analyze** | Understand the pedagogical context, student population, institutional requirements | `/analyze` |
+| **02 Plan**    | Create assessment or course design plan; stops for your approval                   | `/plan`    |
+| **03 Execute** | Build assessments, rubrics, materials one task at a time                           | `/execute` |
+| **04 Review**  | Alignment audit, AI-resilience review, fairness check; produces finalized output   | `/review`  |
+| **05 Learn**   | Extract pedagogical insights; upgrade CO artifacts (.claude/)                      | `/learn`   |
+| **06 Deliver** | Package and deploy to LMS/students                                                 | `/deliver` |
+
+Phase 05 is special — its output goes into the CO system itself (.claude/), not the workspace. Every run makes the system stronger.
 
 Domain-specific commands: `/design-assessment`, `/build-rubric`, `/map-outcomes`, `/audit-ai-resilience`, `/design-course`.
 

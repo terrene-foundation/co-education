@@ -19,15 +19,16 @@ Welcome the user to this CO for Education workspace. This is a structured method
 
 ## Then explain the workflow
 
-This COE workspace has five phases:
+This COE workspace has six phases:
 
-| Phase | What happens | Skill |
-|-------|-------------|-------|
-| **01 Research** | Understand the pedagogical context, student population, institutional requirements | `/co-education:analyze` |
-| **02 Plan** | Create assessment or course design plan; stops for your approval | `/co-education:plan` |
-| **03 Execute** | Build assessments, rubrics, materials one task at a time | `/co-education:execute` |
-| **04 Review** | Alignment audit, AI-resilience review, fairness check | `/co-education:review` |
-| **05 Finalize** | Polish, validate against learning outcomes, prepare for deployment | `/co-education:finalize` |
+| Phase           | What happens                                                                        | Skill                   |
+| --------------- | ----------------------------------------------------------------------------------- | ----------------------- |
+| **01 Research** | Understand the pedagogical context, student population, institutional requirements  | `/co-education:analyze` |
+| **02 Plan**     | Create assessment or course design plan; stops for your approval                    | `/co-education:plan`    |
+| **03 Execute**  | Build assessments, rubrics, materials one task at a time                            | `/co-education:execute` |
+| **04 Review**   | Alignment audit, AI-resilience review, fairness check; produce finalized output     | `/co-education:review`  |
+| **05 Learn**    | Extract pedagogical insights into .claude/ artifacts (instructor approval required) | `/co-education:learn`   |
+| **06 Deliver**  | Package and deploy to LMS/students                                                  | `/co-education:deliver` |
 
 Domain-specific skills: `/co-education:design-assessment`, `/co-education:build-rubric`, `/co-education:map-outcomes`, `/co-education:audit-ai-resilience`, `/co-education:design-course`.
 

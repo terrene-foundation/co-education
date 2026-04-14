@@ -1,3 +1,8 @@
+---
+paths:
+  - "workspaces/**"
+---
+
 # Assessment Integrity Rules
 
 ## Scope

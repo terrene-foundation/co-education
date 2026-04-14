@@ -38,7 +38,7 @@ When the instructor needs to make a choice, present:
 
 ### 5. Structured Approval Gates
 
-At approval gates (end of `/plan`, before `/finalize`), provide specific questions the instructor can answer from their domain knowledge:
+At approval gates (end of `/plan`, before `/deliver`), provide specific questions the instructor can answer from their domain knowledge:
 
 - "Does this cover everything you described?"
 - "Is anything here that you didn't ask for or don't want?"
