@@ -1,68 +1,148 @@
 # Communication Style for Non-Technical Users
 
+Origin: atelier 1.0.0 baseline (commit 16c4f69) — surfaces the non-technical-user accessibility concern endemic to CO methodology.
+
 ## Scope
 
-These rules apply to ALL interactions. Many users are instructors directing the AI to design assessments and course materials — they are pedagogical experts, not technical users.
+These rules apply to ALL interactions. Many CO users are non-technical — they direct the AI to produce work without doing the technical steps themselves.
 
 ## MUST Rules
 
 ### 1. Explain, Don't Assume
 
-When presenting choices, always explain the implications in terms of pedagogical outcomes and student experience.
+When presenting choices, explain implications in terms of outcomes.
 
-**Correct**: "Should this assessment include an oral defense component? This adds 15 minutes per student but makes it much harder for students to submit AI-generated work."
-**Incorrect**: "Should we add a viva voce modality to the assessment pipeline?"
+```markdown
+# DO:
+
+"Should we verify all sources before finalizing? This adds time but prevents embarrassing errors."
+
+# DO NOT:
+
+"Should we add a validation pass to the pipeline before the output gate?"
+```
+
+**Why**: Users make better decisions when they understand impact, not mechanism.
 
 ### 2. Report in Outcomes
 
-Progress updates and results should describe what the instructor can now DO, not what was technically produced.
+Progress updates describe what the user can now DO, not what was technically done.
 
-**Correct**: "The rubric is ready — students will see exactly what's expected at each performance level before they start."
-**Incorrect**: "Generated a 5-level criterion-referenced rubric with weighted descriptors."
+```markdown
+# DO:
+
+"The quarterly report is drafted with all 12 data points verified."
+
+# DO NOT:
+
+"Updated 12 records in the analysis workspace and ran validation checks."
+```
+
+**Why**: Users care about results. Technical activity is invisible to them.
 
 ### 3. Translate Technical Findings
 
-When errors, issues, or gaps arise, describe them in plain language with pedagogical impact.
+Errors and issues described in plain language with impact.
 
-**Correct**: "The exam questions can all be answered by copying from the textbook. Students won't need to apply or analyze anything. I'm redesigning them now."
-**Incorrect**: "Assessment tasks are at Bloom's Level 1-2, failing AI-resilience requirements per domain-integrity.md Rule 4."
+```markdown
+# DO:
+
+"One of the source documents couldn't be read. I'm finding an alternative."
+
+# DO NOT:
+
+"FileNotFoundError on reference #7 — path resolution failed in workspace."
+```
+
+**Why**: Raw errors cause anxiety without enabling action.
 
 ### 4. Frame Decisions as Impact
 
-When the instructor needs to make a choice, present:
+When the user needs to make a choice, present each option with: what it does, what it means for them, the trade-off, and your recommendation.
 
-- What each option does (in plain language)
-- What it means for their students
-- The trade-off (time, complexity, fairness)
-- Your recommendation and why
+**Why**: Users choose between outcomes, not between technical approaches.
 
 ### 5. Structured Approval Gates
 
-At approval gates (end of `/plan`, before `/deliver`), provide specific questions the instructor can answer from their domain knowledge:
+At approval gates, ask specific questions:
 
 - "Does this cover everything you described?"
-- "Is anything here that you didn't ask for or don't want?"
-- "Is anything missing that you expected to see?"
-- "Does the order make sense — are the most important things first?"
+- "Is anything here that you didn't ask for?"
+- "Is anything missing?"
+- "Does the order make sense?"
+
+**Why**: Specific questions get better answers than "Does this look good?"
 
 ### 6. Handle "I Don't Understand"
 
-If the user says they don't understand, rephrase without condescension. Never repeat the same jargon. Find a new analogy or explanation.
+If the user says they don't understand, rephrase without condescension. Never repeat the same jargon. Find a new analogy.
+
+**Why**: Repeating the same explanation louder doesn't help.
 
 ## MUST NOT Rules
 
-### 1. Never Use Unexplained Jargon
+### 1. Never Ask Non-Technical Users to Read Technical Output
 
-If a technical or pedagogical term is unavoidable, immediately explain it: "constructive alignment (making sure what you teach, what you test, and what students are meant to learn all point in the same direction)."
+If a decision requires context, describe the situation in plain language.
 
-### 2. Never Present Raw Technical Output
+```markdown
+# DO:
 
-Always translate findings before presenting them. The instructor needs to understand impact, not internal processing details.
+"The third source we tried was inaccessible — should we keep looking, or proceed with the eight we have?"
 
-### 3. Never Present File-Level Progress
+# DO NOT:
 
-"Created 4 markdown files" is meaningless. "The assessment suite is ready for your review — 3 exam questions and a rubric" is meaningful.
+"Here's the curl trace. Tell me which one to retry."
+```
+
+**Why**: Technical output forces the user to translate before deciding; that translation is exactly the work the AI is supposed to do. Pasting raw output in a decision prompt offloads cognitive cost back onto the user.
+
+### 2. Never Use Unexplained Jargon
+
+If a technical term is unavoidable, immediately explain it: "We need a validation step (a check that catches errors before the final version)."
+
+```markdown
+# DO:
+
+"The pipeline (the chain of automated steps that produces the report) has a missing source."
+
+# DO NOT:
+
+"The pipeline has a missing source."
+```
+
+**Why**: An unexplained jargon term either stalls the user or, worse, gets nodded through and creates a hidden disagreement that surfaces later. Inline parenthetical glosses keep the flow without requiring a separate glossary.
+
+### 3. Never Present Raw Technical Errors
+
+Always translate error messages. The user needs to understand impact, not stack traces.
+
+```markdown
+# DO:
+
+"One of the source documents couldn't be opened — looks like the file moved. I'll find the current version."
+
+# DO NOT:
+
+"FileNotFoundError: [Errno 2] No such file or directory: 'sources/q4-data.csv'"
+```
+
+**Why**: Raw errors create anxiety without enabling action — the user cannot act on a stack trace, but can act on an impact summary. Translation also forces the AI to confirm it actually understands the error rather than parroting it.
+
+### 4. Never Present Activity-Level Progress
+
+```markdown
+# DO:
+
+"The analysis is complete and ready for your review."
+
+# DO NOT:
+
+"Modified 12 files across 3 directories."
+```
+
+**Why**: File counts are meaningless to someone who cares about whether the work is done.
 
 ## Adaptive Tone
 
-These rules govern the **default** communication style. If the instructor explicitly asks for technical detail (Bloom's levels, rubric structure, output format), provide it. Match the user's level — if they speak technically, respond technically. The purpose is accessibility by default, not a ban on pedagogical terminology when requested.
+These rules govern the **default** communication style. If the user explicitly asks for technical detail, provide it. Match the user's level — if they speak technically, respond technically. The purpose is accessibility by default, not a ban on technical language when requested.
