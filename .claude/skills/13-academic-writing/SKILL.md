@@ -1,7 +1,6 @@
 ---
 name: academic-writing
-description: "Academic writing reference for finance students covering thesis structure, argument construction, literature reviews, and methodology sections. Use when asking about 'thesis structure', 'academic writing', 'literature review', 'methodology', 'argument construction', 'research paper', 'introduction section', 'discussion section', 'claim evidence warrant', 'counterargument', 'research question', 'hypothesis', 'abstract', or 'academic essay'."
-triggers: ['academic writing', 'thesis structure', 'literature review', 'methodology section', 'argument construction', 'research paper', 'claim evidence warrant', 'academic essay', 'dissertation', 'research question']
+description: "Academic writing for finance students. Use for thesis structure, claim-evidence-warrant arguments, literature review synthesis, methodology sections, and research questions."
 ---
 
 # Academic Writing

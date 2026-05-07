@@ -1,7 +1,6 @@
 ---
 name: exam-preparation
-description: "Exam preparation reference for finance students covering study strategies, problem types, and formula sheet creation. Use when asking about 'exam preparation', 'study strategies', 'active recall', 'spaced repetition', 'Feynman technique', 'practice testing', 'formula sheet', 'calculation problems', 'conceptual questions', 'case analysis exam', 'essay questions', 'exam tips', or 'study plan'."
-triggers: ['exam preparation', 'study strategies', 'active recall', 'spaced repetition', 'Feynman technique', 'formula sheet', 'exam tips', 'study plan', 'practice problems', 'calculation problems', 'essay questions', 'exam revision']
+description: "Exam preparation for finance students. Use for study strategies (active recall, spaced repetition, Feynman), exam question types (calculation, conceptual, case, essay), and formula sheets."
 ---
 
 # Exam Preparation

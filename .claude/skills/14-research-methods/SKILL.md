@@ -1,7 +1,6 @@
 ---
 name: research-methods
-description: "Research methods reference for finance students covering source evaluation, data collection, econometrics basics, and synthesis techniques. Use when asking about 'research methods', 'source evaluation', 'CRAAP test', 'peer review', 'data collection', 'FRED', 'World Bank', 'Bloomberg', 'WRDS', 'Compustat', 'CRSP', 'OLS regression', 'hypothesis testing', 'R-squared', 'event study', 'thematic analysis', 'meta-analysis', 'systematic review', 'econometrics', or 'multicollinearity'."
-triggers: ['research methods', 'source evaluation', 'CRAAP test', 'data collection', 'FRED', 'World Bank', 'Bloomberg', 'WRDS', 'Compustat', 'CRSP', 'econometrics', 'OLS regression', 'hypothesis testing', 'event study', 'thematic analysis', 'meta-analysis', 'systematic review']
+description: "Finance research methods. Use for source evaluation (CRAAP), data collection (FRED, WRDS, Compustat, CRSP), basic econometrics (OLS, event studies), and meta-analysis or systematic review."
 ---
 
 # Research Methods

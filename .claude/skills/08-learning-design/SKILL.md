@@ -1,6 +1,6 @@
 ---
 name: learning-design
-description: "Instructional design patterns for financial education — Bloom's taxonomy for finance, curriculum sequencing, assessment design, and gamification. Use when asking about 'Bloom taxonomy', 'curriculum design', 'learning objectives', 'assessment design', 'gamification', 'paper trading', 'portfolio simulator', 'mastery learning', 'spiral curriculum', 'rubric', 'learning progression', 'financial education', 'course design', 'quiz design', 'achievement badges', or 'educational scaffolding'."
+description: "Instructional design for financial education. Use for Bloom's taxonomy applied to finance, curriculum sequencing, assessment design, rubrics, and gamification (paper trading, simulations)."
 ---
 
 # Learning Design for Financial Education
