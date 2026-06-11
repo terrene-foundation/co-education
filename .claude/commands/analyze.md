@@ -17,6 +17,10 @@ Research and analyze **$ARGUMENTS** thoroughly.
 5. **Document findings** in `01-research/`
 6. **Create `specs/`** (MUST — before vet) — see `rules/specs-authority.md`. Create `specs/_index.md` plus one spec file per major educational domain area (e.g., `learning-outcomes.md`, `assessment-architecture.md`, `student-population.md`, `institutional-context.md`). Each spec file MUST be detailed enough to be the authority on its topic. For each requirement in the brief, confirm a corresponding spec section exists — missing mappings are BLOCKING.
 
+## Brief-Claim Verification (when the brief carries ≥3 discrete claims)
+
+`/analyze` is where parallel brief-claim verification runs. When the brief or its source material carries **≥3 discrete claims** (counts, paths, named artifacts, root-cause or "X currently does Y" assertions), apply `rules/delegation-orchestration.md` §2 ("Parallel Brief-Claim Verification") — the canonical requirement and BLOCKED list. Launch parallel verification agents — one per claim cluster, each delegated in plain language to a verification-capable agent from this repo's roster (e.g. `deep-analyst` or `research-assistant`): "Independently re-read every source this claim cluster cites; report each claim TRUE / FALSE / UNCLEAR with citations." Record each verdict in `01-research/`, then reconcile corrections into the analysis output BEFORE `/plan`, so `/plan` sizes against verified reality. Single-agent analysis on a ≥3-claim brief is BLOCKED.
+
 ## Output
 
 Save a structured analysis to `01-research/analysis-[topic-slug].md`:
