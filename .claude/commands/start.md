@@ -26,8 +26,8 @@ This COE workspace has six phases:
 | **01 Analyze** | Understand the pedagogical context, student population, institutional requirements | `/analyze` |
 | **02 Plan**    | Create assessment or course design plan; stops for your approval                   | `/plan`    |
 | **03 Execute** | Build assessments, rubrics, materials one task at a time                           | `/execute` |
-| **04 Review**  | Alignment audit, AI-resilience review, fairness check; produces finalized output   | `/review`  |
-| **05 Learn**   | Extract pedagogical insights; upgrade CO artifacts (.claude/)                      | `/learn`   |
+| **04 Review**  | Alignment audit, AI-resilience review, fairness check; produces finalized output   | `/vet`     |
+| **05 Codify**  | Extract pedagogical insights; upgrade CO artifacts (.claude/)                      | `/codify`  |
 | **06 Deliver** | Package and deploy to LMS/students                                                 | `/deliver` |
 
 Phase 05 is special — its output goes into the CO system itself (.claude/), not the workspace. Every run makes the system stronger.

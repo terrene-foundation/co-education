@@ -5,7 +5,7 @@ description: Package and deploy assessments, rubrics, and course materials to LM
 
 # /co-education:deliver
 
-Package the finalized educational materials from `05-output/` and prepare them for deployment to the LMS or distribution to students.
+Package the finalized educational materials from `06-deliver/` and prepare them for deployment to the LMS or distribution to students.
 
 ## Workspace Resolution
 
@@ -15,7 +15,7 @@ Package the finalized educational materials from `05-output/` and prepare them f
 
 ## Protocol
 
-1. **Verify finalized output exists** in `05-output/`
+1. **Verify finalized output exists** in `06-deliver/`
 2. **Confirm the deployment target** -- which LMS, which course section, which student cohort?
 3. **Package the deliverables** -- format conversion for LMS upload, student-facing instructions, marking guides for tutors
 4. **Pre-deployment checklist**:

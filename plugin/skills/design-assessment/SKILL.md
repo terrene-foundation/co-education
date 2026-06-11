@@ -15,7 +15,7 @@ Design an assessment task for **$ARGUMENTS**.
 3. **Design the task** with clear instructions, conditions, and AI use policy
 4. **Analyze AI-resilience**: can a language model produce a passing answer without the underlying knowledge?
 5. **Draft the companion rubric** (defer to rubric-builder for complex rubrics)
-6. **Save the assessment** to `03-work/`
+6. **Save the assessment** to `03-execute/`
 
 ## Next Step
 

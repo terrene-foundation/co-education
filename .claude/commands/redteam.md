@@ -1,12 +1,12 @@
 ---
 name: redteam
-description: Adversarial stress-test. Harder than /review — find every weakness.
+description: Adversarial stress-test. Harder than /vet — find every weakness.
 argument-hint: "[assignment or topic]"
 ---
 
 # /redteam $ARGUMENTS
 
-Attack the work from every angle. This is harder than /review.
+Attack the work from every angle. This is harder than /vet.
 
 ## Workspace Resolution
 
@@ -24,7 +24,7 @@ Attack the work from every angle. This is harder than /review.
 
 ## Output
 
-Save to `04-review/redteam-[topic-slug].md` with issues ranked by severity.
+Save to `04-vet/redteam-[topic-slug].md` with issues ranked by severity.
 
 ## Journal Entry
 

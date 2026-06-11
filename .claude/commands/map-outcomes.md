@@ -15,4 +15,4 @@ Map learning outcomes for **$ARGUMENTS**.
 3. **Identify gaps** where outcomes are not assessed
 4. **Identify redundancies** where outcomes are assessed multiple times without progression
 5. **Check progression** (Introduce, Develop, Master) across the program
-6. **Save the map** to `03-work/`
+6. **Save the map** to `03-execute/`

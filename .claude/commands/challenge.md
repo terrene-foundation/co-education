@@ -22,11 +22,11 @@ Adversarial review of your work. The goal is to find problems, not confirm quali
 5. **Grade against the rubric** if one exists in `briefs/`
 6. **Never say "this is fine"** — always find at least one improvement
 7. **Iterate** — after the student addresses findings, review again
-8. **Finalize** — once quality passes, save the finalized work to `05-output/`
+8. **Finalize** — once quality passes, save the finalized work to `06-deliver/`
 
 ## Output
 
-Save review findings to `04-review/challenge-[topic-slug].md`:
+Save review findings to `04-vet/challenge-[topic-slug].md`:
 
 ```markdown
 # Challenge Review: [Topic]
@@ -48,7 +48,7 @@ Save review findings to `04-review/challenge-[topic-slug].md`:
 [What works well — be specific]
 ```
 
-Once critical and major issues are resolved, save finalized work to `05-output/`.
+Once critical and major issues are resolved, save finalized work to `06-deliver/`.
 
 ## Journal Entry
 
@@ -58,5 +58,5 @@ Record risks, gaps, or discoveries found during review in `journal/`.
 
 After review produces finalized output, recommend:
 
-- `/learn` — reflect on what you learned
+- `/codify` — reflect on what you learned
 - `/submit` — format and package for submission

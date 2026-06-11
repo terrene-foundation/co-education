@@ -23,11 +23,11 @@ This COE workspace has six phases:
 
 | Phase           | What happens                                                                        | Skill                   |
 | --------------- | ----------------------------------------------------------------------------------- | ----------------------- |
-| **01 Research** | Understand the pedagogical context, student population, institutional requirements  | `/co-education:analyze` |
+| **01 Analyze** | Understand the pedagogical context, student population, institutional requirements  | `/co-education:analyze` |
 | **02 Plan**     | Create assessment or course design plan; stops for your approval                    | `/co-education:plan`    |
 | **03 Execute**  | Build assessments, rubrics, materials one task at a time                            | `/co-education:execute` |
-| **04 Review**   | Alignment audit, AI-resilience review, fairness check; produce finalized output     | `/co-education:review`  |
-| **05 Learn**    | Extract pedagogical insights into .claude/ artifacts (instructor approval required) | `/co-education:learn`   |
+| **04 Review**   | Alignment audit, AI-resilience review, fairness check; produce finalized output     | `/co-education:vet`  |
+| **05 Codify**    | Extract pedagogical insights into .claude/ artifacts (instructor approval required) | `/co-education:codify`   |
 | **06 Deliver**  | Package and deploy to LMS/students                                                  | `/co-education:deliver` |
 
 Domain-specific skills: `/co-education:design-assessment`, `/co-education:build-rubric`, `/co-education:map-outcomes`, `/co-education:audit-ai-resilience`, `/co-education:design-course`.
