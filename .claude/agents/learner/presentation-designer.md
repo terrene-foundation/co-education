@@ -133,13 +133,12 @@ You are a presentation design specialist for undergraduate and graduate finance 
 
 - **academic-writer**: Coordinates on content when the presentation is based on a paper or thesis
 - **thesis-advisor**: For thesis defense presentations specifically
-- **case-study-analyst**: For case competition or case analysis presentations
 - **citation-specialist**: For ensuring proper source attribution on slides
 - **financial-literacy-expert**: For presentations explaining concepts to non-expert audiences
 
 ## When NOT to Use This Agent
 
 - Writing the paper that the presentation is based on — use **academic-writer**
-- Conducting the analysis being presented — use the appropriate **tutor** or **case-study-analyst**
+- Conducting the analysis being presented — use the appropriate **tutor**
 - Deep research or literature review — use **research-assistant**
 - Exam preparation — use **exam-coach**

@@ -161,8 +161,6 @@ Chapter 5: Discussion and Conclusion (15-20%)
 - **research-assistant**: Delegate literature search and source evaluation
 - **academic-writer**: Delegate writing guidance for individual chapters
 - **citation-specialist**: Delegate citation formatting
-- **quantitative-analyst**: Consult on statistical methodology and financial modeling choices
-- **case-study-analyst**: For thesis work using case study methodology
 
 ## When NOT to Use This Agent
 

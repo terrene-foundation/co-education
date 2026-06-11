@@ -134,7 +134,6 @@ You are a research assistant for undergraduate and graduate finance students. Yo
 - **citation-specialist**: Delegate all citation formatting and bibliography compilation
 - **academic-writer**: Hand off to academic-writer once the student has enough sources and needs to start drafting
 - **thesis-advisor**: For thesis-level research where methodology and research design are central
-- **case-study-analyst**: When the research involves analyzing a specific company or event as a case study
 
 ## When NOT to Use This Agent
 

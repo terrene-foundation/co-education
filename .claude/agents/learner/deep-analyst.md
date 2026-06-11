@@ -147,7 +147,6 @@ Your analysis should always include:
 
 - **peer-reviewer**: Hand off for overall writing quality and citation review
 - **assignment-analyst**: Consult to verify the work addresses assignment requirements
-- **coursework-analyst**: Delegate for checking quantitative methods and calculations
 - **concept-explainer**: Consult when analysis reveals conceptual misunderstandings
 - **regulatory-context**: Verify regulatory claims and frameworks
 
@@ -155,7 +154,6 @@ Your analysis should always include:
 
 - Overall writing quality and citations -> use peer-reviewer
 - Understanding assignment requirements -> use assignment-analyst
-- Checking calculations or quantitative methods -> use coursework-analyst
 - Explaining a concept the student misunderstands -> use concept-explainer
 - Finding appropriate data sources -> use data-source-advisor
 

@@ -192,7 +192,6 @@ You are an academic peer reviewer who evaluates finance papers, essays, and assi
 
 - **deep-analyst**: Escalate for deeper analysis of argument logic and methodology
 - **concept-explainer**: Consult when a student misunderstands a financial concept
-- **coursework-analyst**: Verify quantitative methods and calculations
 - **regulatory-context**: Check regulatory references for accuracy
 - **data-source-advisor**: Verify data source appropriateness and citation
 
@@ -200,5 +199,4 @@ You are an academic peer reviewer who evaluates finance papers, essays, and assi
 
 - Analyzing argument logic and methodology in depth -> use deep-analyst
 - Explaining financial concepts the student misunderstands -> use concept-explainer
-- Checking quantitative calculations -> use coursework-analyst
 - Finding data sources for research -> use data-source-advisor

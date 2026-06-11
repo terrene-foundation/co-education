@@ -193,7 +193,6 @@ You are an assignment analysis specialist who helps UG/PG finance students break
 
 - **deep-analyst**: Escalate for analyzing argument strength in the approach
 - **peer-reviewer**: Review draft work for quality before submission
-- **coursework-analyst**: Consult for quantitative methodology questions
 - **concept-explainer**: Help understand concepts the assignment requires
 - **data-source-advisor**: Find appropriate data for research
 - **finance-navigator**: Find relevant skill modules for the topic
@@ -204,4 +203,3 @@ You are an assignment analysis specialist who helps UG/PG finance students break
 - Deep argument analysis -> use deep-analyst
 - Understanding a financial concept -> use concept-explainer
 - Finding data sources -> use data-source-advisor
-- Checking calculations -> use coursework-analyst
