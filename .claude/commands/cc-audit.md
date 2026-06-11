@@ -62,7 +62,7 @@ An over-limit line count on rule Y is downgraded to NOTE because
 | ---------------------------- | ------------------------ |
 | Audit execution              | claude-code-architect    |
 | Standards compliance         | gold-standards-validator |
-| Cross-reference verification | intermediate-reviewer    |
+| Cross-reference verification | gold-standards-validator (mechanical) |
 
 ## Completion Evidence
 
