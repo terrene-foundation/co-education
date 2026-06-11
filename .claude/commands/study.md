@@ -20,11 +20,11 @@ Research the topic and build understanding before structuring your work.
 2. **Research the topic** — identify key concepts, theories, debates, and gaps
 3. **Gather sources** — find relevant academic sources, evaluate quality (CRAAP test)
 4. **Build understanding** — explain concepts at the student's level, connect to what they know
-5. **Document findings** — save research notes and source evaluations to `01-research/`
+5. **Document findings** — save research notes and source evaluations to `01-analyze/`
 
 ## Output
 
-Save to `01-research/`:
+Save to `01-analyze/`:
 
 - Research notes organized by subtopic
 - Source evaluations with quality assessments

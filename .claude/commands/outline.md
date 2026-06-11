@@ -15,7 +15,7 @@ Create a structured plan for the assignment based on your research.
 
 ## Protocol
 
-1. **Read research** from `01-research/`
+1. **Read research** from `01-analyze/`
 2. **Read assignment brief** from `briefs/` if available
 3. **Create outline** with sections, key arguments per section, and sources to use
 4. **Present for approval** — show the student the full outline
