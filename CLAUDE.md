@@ -107,12 +107,14 @@ When you discover a missing rubric, learning outcome mapping, assessment specifi
 
 ### Utility Commands
 
-| Command    | Purpose                          |
-| ---------- | -------------------------------- |
-| `/ws`      | Workspace status dashboard       |
-| `/wrapup`  | Save session notes for continuity |
-| `/journal` | View, create, or search journal  |
-| `/cc-audit`| Audit CC artifacts               |
+| Command       | Purpose                                                  |
+| ------------- | -------------------------------------------------------- |
+| `/ws`         | Workspace status dashboard                               |
+| `/wrapup`     | Save session notes for continuity                        |
+| `/journal`    | View, create, or search journal                          |
+| `/cc-audit`   | Audit CC artifacts                                       |
+| `/autonomize` | Adopt autonomous execution posture for the session       |
+| `/sweep`      | Repo-wide outstanding-work audit before `/wrapup`        |
 
 ## Agents
 

@@ -15,7 +15,7 @@ Create a structured plan for the active project. This plan requires human approv
 
 ## Protocol
 
-1. **Read analysis outputs** from `01-research/`
+1. **Read analysis outputs** from `01-analyze/`
 2. **Break the work into phases and tasks** with clear deliverables
 3. **Present the plan for approval** - do NOT proceed without explicit approval
 

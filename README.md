@@ -134,7 +134,7 @@ co-education/
     agents/                    # Same agents, packaged for plugin
   workspaces/
     _template/                 # Workspace template
-      01-research/
+      01-analyze/
       02-planning/
       03-work/
       04-review/

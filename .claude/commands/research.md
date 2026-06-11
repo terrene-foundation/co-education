@@ -19,7 +19,7 @@ Systematic search for academic sources on a topic.
 2. **Search systematically** — identify key databases and search terms
 3. **Evaluate sources** — apply CRAAP test (Currency, Relevance, Authority, Accuracy, Purpose)
 4. **Synthesize findings** — group sources by theme, identify agreements and disagreements
-5. **Save results** to `01-research/`
+5. **Save results** to `01-analyze/`
 
 ## Output
 
