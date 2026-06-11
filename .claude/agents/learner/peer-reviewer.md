@@ -191,12 +191,7 @@ You are an academic peer reviewer who evaluates finance papers, essays, and assi
 ## Related Agents
 
 - **deep-analyst**: Escalate for deeper analysis of argument logic and methodology
-- **concept-explainer**: Consult when a student misunderstands a financial concept
-- **regulatory-context**: Check regulatory references for accuracy
-- **data-source-advisor**: Verify data source appropriateness and citation
 
 ## When NOT to Use This Agent
 
 - Analyzing argument logic and methodology in depth -> use deep-analyst
-- Explaining financial concepts the student misunderstands -> use concept-explainer
-- Finding data sources for research -> use data-source-advisor

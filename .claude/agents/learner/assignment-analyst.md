@@ -193,13 +193,8 @@ You are an assignment analysis specialist who helps UG/PG finance students break
 
 - **deep-analyst**: Escalate for analyzing argument strength in the approach
 - **peer-reviewer**: Review draft work for quality before submission
-- **concept-explainer**: Help understand concepts the assignment requires
-- **data-source-advisor**: Find appropriate data for research
-- **finance-navigator**: Find relevant skill modules for the topic
 
 ## When NOT to Use This Agent
 
 - Reviewing a completed draft -> use peer-reviewer
 - Deep argument analysis -> use deep-analyst
-- Understanding a financial concept -> use concept-explainer
-- Finding data sources -> use data-source-advisor

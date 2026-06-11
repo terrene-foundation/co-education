@@ -147,15 +147,11 @@ Your analysis should always include:
 
 - **peer-reviewer**: Hand off for overall writing quality and citation review
 - **assignment-analyst**: Consult to verify the work addresses assignment requirements
-- **concept-explainer**: Consult when analysis reveals conceptual misunderstandings
-- **regulatory-context**: Verify regulatory claims and frameworks
 
 ## When NOT to Use This Agent
 
 - Overall writing quality and citations -> use peer-reviewer
 - Understanding assignment requirements -> use assignment-analyst
-- Explaining a concept the student misunderstands -> use concept-explainer
-- Finding appropriate data sources -> use data-source-advisor
 
 ---
 

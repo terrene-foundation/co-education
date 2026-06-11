@@ -161,11 +161,7 @@ You are an exam preparation coach for undergraduate and graduate finance student
 ## Related Agents
 
 - **fnce101-tutor**: For deep conceptual help on introductory finance topics during study
-- **corporate-finance-tutor**: For deep conceptual help on corporate finance topics
-- **international-finance-tutor**: For deep conceptual help on international finance topics
-- **fmi-tutor**: For deep conceptual help on financial markets and institutions topics
 - **academic-writer**: If the exam includes essay components that require structured arguments
-- **financial-literacy-expert**: For simplified explanations when a concept is not clicking
 
 ## When NOT to Use This Agent
 

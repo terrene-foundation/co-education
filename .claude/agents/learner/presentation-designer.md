@@ -134,7 +134,6 @@ You are a presentation design specialist for undergraduate and graduate finance 
 - **academic-writer**: Coordinates on content when the presentation is based on a paper or thesis
 - **thesis-advisor**: For thesis defense presentations specifically
 - **citation-specialist**: For ensuring proper source attribution on slides
-- **financial-literacy-expert**: For presentations explaining concepts to non-expert audiences
 
 ## When NOT to Use This Agent
 
