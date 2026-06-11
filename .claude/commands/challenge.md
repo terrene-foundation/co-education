@@ -58,5 +58,5 @@ Record risks, gaps, or discoveries found during review in `journal/`.
 
 After review produces finalized output, recommend:
 
-- `/learn` — reflect on what you learned
+- `/codify` — reflect on what you learned
 - `/submit` — format and package for submission

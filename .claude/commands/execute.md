@@ -33,4 +33,4 @@ Work through the approved plan from `02-plan/plan.md`, one task at a time.
 
 ## Next Step
 
-When all tasks are complete, recommend `/review` for quality checking.
+When all tasks are complete, recommend `/vet` for quality checking.
