@@ -123,10 +123,8 @@ For the full set of 12 hard limits and 12 anti-patterns to check, load `skills/c
 
 ## Related Agents
 
-- **co-expert** — CO methodology questions (8 principles, 5 layers, 6 phases)
 - **gold-standards-validator** — Terrene naming, licensing, terminology compliance
-- **intermediate-reviewer** — General quality review (non-CC-specific)
-- **analyst** — Deep research and decomposition
+- **pedagogical-reviewer** (`agents/instructor/pedagogical-reviewer.md`) — General quality review: alignment, fairness, accessibility, pedagogical soundness
 
 ## Skill References
 

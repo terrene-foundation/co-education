@@ -63,13 +63,13 @@ Write the deliverable and call it done without checking that references, depende
 
 Reviews MUST run at specific phase boundaries, not per-edit. Phase boundary reviews use background agents for near-zero parent context cost.
 
-| Gate               | After Phase | Enforcement                                                 | Reviewers (atelier roster — downstream repos substitute their own equivalents)                 |
-| ------------------ | ----------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Execution done     | `/execute`  | **MUST**                                                    | claude-code-architect + intermediate-reviewer (background)                                     |
-| Before delivery    | `/deliver`  | **MUST**                                                    | claude-code-architect + gold-standards-validator (blocking)                                    |
-| Analysis complete  | `/analyze`  | RECOMMENDED                                                 | intermediate-reviewer                                                                          |
-| Review passed      | `/vet`      | RECOMMENDED                                                 | claude-code-architect (primary) + co-expert + gold-standards-validator + intermediate-reviewer |
-| Knowledge captured | `/codify`   | **MUST** (`claude-code-architect` per cc-enforcement.md §1) | claude-code-architect + gold-standards-validator + co-expert + intermediate-reviewer           |
+| Gate               | After Phase | Enforcement                                                 | Reviewers (co-education roster — atelier uses intermediate-reviewer + co-expert; downstream repos substitute their own equivalents)  |
+| ------------------ | ----------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Execution done     | `/execute`  | **MUST**                                                    | claude-code-architect + pedagogical-reviewer (background)                                                                            |
+| Before delivery    | `/deliver`  | **MUST**                                                    | claude-code-architect + gold-standards-validator (blocking)                                                                          |
+| Analysis complete  | `/analyze`  | RECOMMENDED                                                 | pedagogical-reviewer                                                                                                                 |
+| Review passed      | `/vet`      | RECOMMENDED                                                 | claude-code-architect (primary) + pedagogical-reviewer + gold-standards-validator                                                    |
+| Knowledge captured | `/codify`   | **MUST** (`claude-code-architect` per cc-enforcement.md §1) | claude-code-architect + gold-standards-validator + pedagogical-reviewer                                                              |
 
 The Reviewers column names atelier's concrete agent roster; a downstream repo that loads this synced rule maps each to its own equivalent (some co-\* repos ship a reduced roster). The `/codify` gate is **MUST**, not recommended: `rules/cc-enforcement.md` MUST §1 makes `claude-code-architect` mandatory at every `/codify`.
 
@@ -78,7 +78,7 @@ The Reviewers column names atelier's concrete agent roster; a downstream repo th
 
 At end of /execute, spawn reviews as background agents:
 Agent({subagent_type: "claude-code-architect", run_in_background: true, prompt: "Review all changes..."})
-Agent({subagent_type: "intermediate-reviewer", run_in_background: true, prompt: "Quality audit..."})
+Agent({subagent_type: "pedagogical-reviewer", run_in_background: true, prompt: "Quality audit..."})
 
 # Parent continues; reviews arrive as notifications.
 
