@@ -1,10 +1,10 @@
 ---
-name: review
+name: vet
 description: Quality check and adversarial critique. Finds weaknesses, gaps, and errors. Never says "this is fine."
 argument-hint: "[what to review]"
 ---
 
-# /co-education:review $ARGUMENTS
+# /co-education:vet $ARGUMENTS
 
 Review **$ARGUMENTS** with a critical eye. Find every weakness, gap, error, and improvement opportunity.
 
@@ -47,4 +47,4 @@ Date: [today]
 
 ## Next Step
 
-Review produces finalized output in `06-deliver/`. After the human addresses review findings, recommend `/co-education:learn` to capture insights, then `/co-education:deliver` to package and deploy.
+Review produces finalized output in `06-deliver/`. After the human addresses review findings, recommend `/co-education:codify` to capture insights, then `/co-education:deliver` to package and deploy.

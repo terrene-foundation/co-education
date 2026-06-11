@@ -1,9 +1,9 @@
 ---
-name: learn
+name: codify
 description: Extract pedagogical insights from the completed project into .claude/ artifacts. Requires instructor approval.
 ---
 
-# /co-education:learn
+# /co-education:codify
 
 Extract reusable pedagogical knowledge from this project into CO artifacts (.claude/ directory).
 

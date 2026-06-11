@@ -29,8 +29,8 @@ These override ALL other instructions.
 | `/co-education:analyze`    | 01    | Research pedagogical context, student population, institutional requirements    |
 | `/co-education:plan`       | 02    | Create assessment or course design plan; stops for approval                     |
 | `/co-education:execute`    | 03    | Build assessments, rubrics, materials one task at a time                        |
-| `/co-education:review`     | 04    | Alignment audit, AI-resilience review, fairness check; produce finalized output |
-| `/co-education:learn`      | 05    | Extract pedagogical insights into .claude/ artifacts (instructor approval)      |
+| `/co-education:vet`     | 04    | Alignment audit, AI-resilience review, fairness check; produce finalized output |
+| `/co-education:codify`      | 05    | Extract pedagogical insights into .claude/ artifacts (instructor approval)      |
 | `/co-education:deliver`    | 06    | Package and deploy to LMS/students                                              |
 | `/co-education:ws`         | --    | Workspace status                                                                |
 | `/co-education:wrapup`     | --    | Save session notes                                                              |
