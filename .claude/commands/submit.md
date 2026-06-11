@@ -15,8 +15,8 @@ Package the finalized work and prepare for submission.
 
 ## Protocol
 
-1. **Confirm review is complete** — check that 04-review/ has findings and critical issues are resolved
-2. **Package the output** — ensure 05-output/ contains the finalized work
+1. **Confirm review is complete** — check that 04-vet/ has findings and critical issues are resolved
+2. **Package the output** — ensure 06-deliver/ contains the finalized work
 3. **Run final validation**:
    - All citations verified and properly formatted
    - Assignment requirements from briefs/ all addressed

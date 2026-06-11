@@ -5,7 +5,7 @@ description: Work through the plan one task at a time. Each task requires comple
 
 # /execute
 
-Work through the approved plan from `02-planning/plan.md`, one task at a time.
+Work through the approved plan from `02-plan/plan.md`, one task at a time.
 
 ## Workspace Resolution
 
@@ -15,10 +15,10 @@ Work through the approved plan from `02-planning/plan.md`, one task at a time.
 
 ## Protocol
 
-1. **Read the plan** from `02-planning/plan.md`
+1. **Read the plan** from `02-plan/plan.md`
 2. **Find the next incomplete task**
 3. **Execute it**, producing the specified deliverable
-4. **Save output** to `03-work/`
+4. **Save output** to `03-execute/`
 5. **Mark the task complete** in the plan
 6. **Report what was done** and what the next task is
 

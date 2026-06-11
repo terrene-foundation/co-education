@@ -24,7 +24,7 @@ Attack the work from every angle. This is harder than /review.
 
 ## Output
 
-Save to `04-review/redteam-[topic-slug].md` with issues ranked by severity.
+Save to `04-vet/redteam-[topic-slug].md` with issues ranked by severity.
 
 ## Journal Entry
 

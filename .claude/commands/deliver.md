@@ -16,8 +16,8 @@ Package the finalized output and deploy to the learning management system or stu
 
 ## Protocol
 
-1. **Confirm review is complete** — check that 04-review/ has review findings and critical issues are resolved
-2. **Package the output** — ensure 05-output/ contains finalized assessments, rubrics, and course materials
+1. **Confirm review is complete** — check that 04-vet/ has review findings and critical issues are resolved
+2. **Package the output** — ensure 06-deliver/ contains finalized assessments, rubrics, and course materials
 3. **Run final validation** against assessment integrity rules
 4. **Pre-delivery checklist**:
    - [ ] All critical review issues resolved

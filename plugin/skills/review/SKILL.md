@@ -10,14 +10,14 @@ Review **$ARGUMENTS** with a critical eye. Find every weakness, gap, error, and 
 
 ## Protocol
 
-1. **Read the work product** from `03-work/`
+1. **Read the work product** from `03-execute/`
 2. **Apply domain quality standards** from the rules
 3. **Find issues** at three severity levels
 4. **Never say "this is fine"** - always find at least one improvement
 
 ## Output
 
-Save to `04-review/review-[topic-slug].md`:
+Save to `04-vet/review-[topic-slug].md`:
 
 ```markdown
 # Review: $ARGUMENTS
@@ -47,4 +47,4 @@ Date: [today]
 
 ## Next Step
 
-Review produces finalized output in `05-output/`. After the human addresses review findings, recommend `/co-education:learn` to capture insights, then `/co-education:deliver` to package and deploy.
+Review produces finalized output in `06-deliver/`. After the human addresses review findings, recommend `/co-education:learn` to capture insights, then `/co-education:deliver` to package and deploy.

@@ -16,4 +16,4 @@ Design the assessment architecture for **$ARGUMENTS**.
 4. **Balance assessment types**: mix formative and summative, individual and group, written and oral
 5. **Check total workload**: the combined assessment load must be proportionate to credit points
 6. **Apply AI-resilience principles** to each assessment in the portfolio
-7. **Save the course design** to `03-work/`
+7. **Save the course design** to `03-execute/`

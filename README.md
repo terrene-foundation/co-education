@@ -22,7 +22,7 @@ COE is the instructor-side tool. It does not help students use AI (that is [COL-
 | ----------- | --------------------- | ------------------------------------------------------------------------------------ |
 | COC         | Software development  | [kailash-coc-claude-py](https://github.com/terrene-foundation/kailash-coc-claude-py) |
 | COR         | Academic research     | [co-research](https://github.com/terrene-foundation/co-research)                     |
-| COL-F       | Finance education    | [co-finance](https://github.com/terrene-foundation/co-finance)   |
+| COL-F       | Finance education     | [co-finance](https://github.com/terrene-foundation/co-finance)                       |
 | COG         | Foundation governance | [co-governance](https://github.com/terrene-foundation/co-governance)                 |
 | COComp      | Regulatory compliance | [co-compliance](https://github.com/terrene-foundation/co-compliance)                 |
 
@@ -135,10 +135,11 @@ co-education/
   workspaces/
     _template/                 # Workspace template
       01-analyze/
-      02-planning/
-      03-work/
-      04-review/
-      05-output/
+      02-plan/
+      03-execute/
+      04-vet/
+      05-codify/
+      06-deliver/
       journal/
       todos/
 ```

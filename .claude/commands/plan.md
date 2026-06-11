@@ -21,7 +21,7 @@ Create a structured plan for the active project. This plan requires human approv
 
 ## Output
 
-Save the plan to `02-planning/plan.md`:
+Save the plan to `02-plan/plan.md`:
 
 ```markdown
 # Project Plan

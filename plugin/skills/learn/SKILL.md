@@ -15,7 +15,7 @@ Extract reusable pedagogical knowledge from this project into CO artifacts (.cla
 
 ## Protocol
 
-1. **Review the completed work** in `05-output/` and `journal/`
+1. **Review the completed work** in `06-deliver/` and `journal/`
 2. **Identify reusable patterns** -- assessment designs that worked, rubric structures that proved effective, AI-resilience strategies that held up
 3. **Propose artifact updates** -- suggest specific changes to rules, agents, or skills in `.claude/`
 4. **Get instructor approval** for each proposed artifact change before making it
