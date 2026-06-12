@@ -32,7 +32,7 @@ Module: Portfolio Risk
   - Lesson 2: What is standard deviation?        # Basics after advanced — disorienting
 ```
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 2. Include Worked Examples Before Exercises
@@ -75,7 +75,7 @@ Calculate the return for a stock purchased at $45 that is now worth $51.30.
 
 (No worked example — learner must figure out the formula application alone.)
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 3. Explain "Why" Not Just "How"
@@ -107,7 +107,7 @@ where n is the number of trading days.
 
 (Tells the learner what to do, but not why they would want to.)
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 4. Connect New Concepts to Prerequisites
@@ -132,7 +132,7 @@ it tells you how much return you earned _per unit of risk taken_. Think of it as
 "efficiency" of your investment — more return per unit of risk is better.
 ```
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 5. Use Real-World Analogies
@@ -157,7 +157,7 @@ investment, but it's not very liquid — selling it takes months. A share of App
 very liquid — you can sell it in seconds during market hours.
 ```
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 6. Use Bloom's Taxonomy for Learning Objectives
@@ -206,7 +206,7 @@ By the end of this module, you will be able to:
 
 (Vague, unmeasurable, does not progress through cognitive levels.)
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ## MUST NOT Rules
@@ -304,4 +304,4 @@ Pedagogy exceptions require:
 
 1. Documentation of the target audience's assumed knowledge level
 2. Justification for deviating from progressive structure (e.g., reference material intended for lookup, not sequential learning)
-3. Approval from intermediate-reviewer
+3. Approval from pedagogical-reviewer
