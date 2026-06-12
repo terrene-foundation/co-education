@@ -1,6 +1,6 @@
 # Thesis Structure
 
-A well-structured thesis or research paper in finance follows a standard format that guides the reader from the research question to the conclusion. Each section has a specific purpose, and knowing what belongs where is half the battle of writing well.
+A well-structured thesis or research paper follows a standard format that guides the reader from the research question to the conclusion. Each section has a specific purpose, and knowing what belongs where is half the battle of writing well.
 
 ## Why Structure Matters
 
@@ -14,9 +14,9 @@ Think of structure as the skeleton of your paper: it holds everything together a
 
 The title should convey the research question and key finding in as few words as possible.
 
-**Good title**: "Does Dividend Policy Affect Firm Value? Evidence from S&P 500 Firms, 2010-2023"
+**Good title**: "Does Peer Feedback Improve Revision Quality? Evidence from Undergraduate Writing Courses, 2018-2023"
 
-**Weak title**: "A Study of Dividends"
+**Weak title**: "A Study of Peer Feedback"
 
 **Formula for a strong title**: [Key variable/relationship] + [Context/sample] + [Optional: time period or method]
 
@@ -28,7 +28,7 @@ A self-contained summary of the entire paper in 150-300 words.
 
 **Worked Example**:
 
-> "This paper examines whether corporate dividend policy affects firm value among S&P 500 firms from 2010 to 2023. Using panel regression with firm and year fixed effects, we test the signaling hypothesis against the irrelevance proposition of Miller and Modigliani (1961). We find that dividend increases are associated with a statistically significant 2.3% abnormal return in the three-day window around the announcement, controlling for firm size, leverage, and profitability. These results support the signaling hypothesis and suggest that dividends convey information about managerial confidence in future earnings. The findings have implications for corporate payout policy and investor interpretation of dividend announcements."
+> "This paper examines whether structured peer feedback improves revision quality among undergraduate writers in a first-year composition course. Using a pre-post design with a matched comparison group, we test whether students who receive trained peer feedback revise more substantively than those who receive only instructor feedback. We find that structured peer feedback is associated with a statistically significant 18% increase in substantive revision across drafts, controlling for prior writing ability, assignment type, and class size. These results support the value of trained peer review as a pedagogical tool and suggest that feedback structure matters more than feedback source. The findings have implications for writing course design and the role of peer interaction in developing revision habits."
 
 ### 3. Introduction
 
@@ -43,7 +43,7 @@ The introduction sets up the entire paper. It should accomplish four things:
 
 **Common mistake**: Writing the introduction as a literature review. The introduction should mention only the most essential prior studies -- save the detailed review for the next section.
 
-**Finance-specific tip**: Open with a real-world hook. For example: "In 2023, Apple returned over $90 billion to shareholders through dividends and buybacks -- more than the GDP of most countries. This raises a fundamental question: does the form of payout matter for firm value?"
+**Tip**: Open with a concrete real-world hook that makes the stakes of your question visible. For example: "In 2022, an estimated 40% of first-generation university students reported leaving their degree without completing a required writing course -- yet almost no research has tracked what distinguishes those who persist from those who withdraw. This raises a fundamental question: does early feedback quality affect long-term engagement?"
 
 ### 4. Literature Review
 
@@ -66,33 +66,37 @@ See the separate [methodology-section.md](methodology-section.md) file for detai
 Present your findings without interpretation (interpretation belongs in the Discussion).
 
 **Structure**:
+
 1. Descriptive statistics (summary table of key variables)
 2. Main results (regression tables, test statistics)
 3. Robustness checks (alternative specifications that confirm or challenge your main finding)
 
-**Finance-specific conventions**:
-- Report coefficients with standard errors or t-statistics
-- Use asterisks for significance levels: * p < 0.10, ** p < 0.05, *** p < 0.01
-- Always report R-squared and number of observations
-- Include economic magnitude, not just statistical significance ("a one-standard-deviation increase in leverage is associated with a 1.2 percentage point decrease in ROA")
+**Reporting conventions**:
 
-**Common mistake**: Interpreting results in this section. "The coefficient is 0.023" belongs here. "This suggests that dividends signal managerial confidence" belongs in the Discussion.
+- Report coefficients with standard errors or t-statistics
+- Use asterisks for significance levels: \* p < 0.10, ** p < 0.05, \*** p < 0.01
+- Always report R-squared and number of observations
+- Include practical magnitude, not just statistical significance ("a one-standard-deviation increase in feedback rounds is associated with a 1.4 percentage point improvement in revision score")
+
+**Common mistake**: Interpreting results in this section. "The coefficient is 0.023" belongs here. "This suggests that feedback timing matters more than frequency" belongs in the Discussion.
 
 ### 7. Discussion
 
 Interpret your results and connect them to the broader literature.
 
 **Structure**:
+
 1. What do your results mean? Connect findings to your hypotheses
 2. How do they compare to prior studies? Consistent or contradictory?
 3. What are the limitations? (Every study has them -- acknowledge them honestly)
 4. What are the implications? For theory, for practice, for policy?
 
-**Finance-specific tip**: Discuss economic significance, not just statistical significance. A coefficient that is statistically significant at p < 0.01 but represents a $0.02 effect on stock price is not economically meaningful.
+**Tip**: Discuss practical significance, not just statistical significance. A coefficient that is statistically significant at p < 0.01 but represents a negligible real-world effect is not meaningful for practitioners. Always translate statistical results into terms a reader in your field can act on.
 
 ### 8. Conclusion
 
 Summarize the paper in one page. State:
+
 1. What you did
 2. What you found
 3. Why it matters
@@ -108,33 +112,37 @@ See [../15-citation-guide/](../15-citation-guide/SKILL.md) for formatting detail
 
 Place supplementary material here: additional tables, derivations, variable definitions, robustness checks that did not fit in the main text.
 
-## Finance-Specific Structural Considerations
+## Structural Considerations Across Disciplines
 
 ### Hypothesis Development
 
-In empirical finance, hypotheses should be:
+In empirical research, hypotheses should be:
+
 - **Testable**: Can be confirmed or rejected with data
-- **Grounded in theory**: Derived from an economic model or prior literature
-- **Directional**: State the expected sign of the relationship
+- **Grounded in theory**: Derived from an established model or prior literature
+- **Directional**: State the expected sign or direction of the relationship
 
 **Example**:
-> "H1: Firms that increase dividends experience positive abnormal returns in the announcement window."
-> "H2: The magnitude of the abnormal return is positively related to the size of the dividend increase."
+
+> "H1: Students who receive structured peer feedback produce drafts with more substantive revisions than students who receive unstructured feedback."
+> "H2: The magnitude of the revision improvement is positively related to the number of trained feedback rounds completed."
 
 ### Data and Sample Description
 
 Always include:
-- Source of data (Bloomberg, CRSP, Compustat, hand-collected)
+
+- Source of data (survey, experiment, archive, observation, or secondary dataset)
 - Sample period and frequency
 - Sample selection criteria and any exclusions
-- Number of observations and firms
-- Survivorship bias considerations
+- Number of observations and participants or units
+- Potential sampling bias considerations
 
-### Endogeneity Discussion
+### Endogeneity and Confounding
 
-In finance research, almost every relationship could be endogenous (causation could run both ways, or a third variable could drive both). Your paper should:
-- Acknowledge the endogeneity concern
-- Discuss what approach you use to address it (instrumental variables, natural experiments, fixed effects, difference-in-differences)
+In empirical research, almost every relationship could be confounded -- causation could run both ways, or a third variable could drive both outcomes. Your paper should:
+
+- Acknowledge the confounding or endogeneity concern
+- Discuss what approach you use to address it (randomized assignment, instrumental variables, natural experiments, fixed effects, difference-in-differences, or matched comparison groups)
 - Be honest about limitations that remain
 
 ## Common Mistakes
@@ -145,7 +153,7 @@ In finance research, almost every relationship could be endogenous (causation co
 
 3. **Literature review as annotated bibliography**: A literature review organizes themes and identifies gaps -- it does not summarize papers one by one.
 
-4. **Results without economic interpretation**: "Beta = 0.023 (p < 0.01)" means nothing without context. Always translate statistical results into economic magnitude.
+4. **Results without practical interpretation**: "Beta = 0.18 (p < 0.01)" means nothing without context. Always translate statistical results into practical magnitude in terms meaningful to your field.
 
 5. **Ignoring limitations**: Every study has limitations. Acknowledging them demonstrates maturity and strengthens (not weakens) your paper.
 
@@ -154,6 +162,5 @@ In finance research, almost every relationship could be endogenous (causation co
 ## Key References
 
 - Cochrane, J.H. (2005). "Writing Tips for PhD Students." Manuscript, University of Chicago.
-- Nikolov, A.N. (2012). *How to Write Academic Papers in Finance*. Working paper series.
-- Swales, J.M. & Feak, C.B. (2012). *Academic Writing for Graduate Students*, 3rd ed., University of Michigan Press.
-- Creswell, J.W. & Creswell, J.D. (2018). *Research Design: Qualitative, Quantitative, and Mixed Methods Approaches*, 5th ed., SAGE.
+- Swales, J.M. & Feak, C.B. (2012). _Academic Writing for Graduate Students_, 3rd ed., University of Michigan Press.
+- Creswell, J.W. & Creswell, J.D. (2018). _Research Design: Qualitative, Quantitative, and Mixed Methods Approaches_, 5th ed., SAGE.

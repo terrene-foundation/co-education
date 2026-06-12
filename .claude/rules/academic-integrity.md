@@ -7,21 +7,21 @@ paths:
 
 ## Scope
 
-These rules apply to all academic work produced with AI assistance, including essays, research papers, thesis chapters, case study analyses, presentations, discussion posts, problem sets, and any other assignment submitted for academic credit or professional evaluation. They apply regardless of course level (undergraduate or postgraduate) and regardless of the finance subdomain.
+These rules apply to all academic work produced with AI assistance, including essays, research papers, thesis chapters, case study analyses, presentations, discussion posts, problem sets, and any other assignment submitted for academic credit or professional evaluation. They apply regardless of course level (undergraduate or postgraduate) and regardless of subject area or discipline.
 
 ## MUST Rules
 
 ### 1. Cite All Claims with Proper Sources
 
-Every factual claim, statistic, data point, or theoretical assertion MUST be supported by a cited source. The only exceptions are statements of common knowledge within the field (e.g., "stocks are traded on exchanges").
+Every factual claim, statistic, data point, or theoretical assertion MUST be supported by a cited source. The only exceptions are statements of common knowledge within the field (e.g., "the Earth orbits the Sun").
 
 **Correct**:
 
 ```
-The efficient market hypothesis posits that asset prices fully reflect all available
-information (Fama, 1970). Empirical challenges to the strong form of EMH have been
-documented extensively, including evidence of insider trading profitability
-(Jaffe, 1974; Seyhun, 1986).
+The spacing effect holds that information reviewed at increasing intervals is
+retained longer than information reviewed in a single session (Ebbinghaus, 1885).
+This finding has been replicated extensively across subjects and age groups
+(Cepeda et al., 2006; Roediger & Karpicke, 2006).
 ```
 
 **Incorrect**:
@@ -72,23 +72,24 @@ All cited sources MUST be real, accurately represented, and verifiable. This is 
 **Fabrication** — inventing a source that does not exist:
 
 ```
-Incorrect: "According to Chen and Roberts (2023) in the Journal of Financial Economics..."
+Incorrect: "According to Chen and Roberts (2023) in the Journal of Educational Research..."
 (No such paper exists by these authors in this journal in this year.)
 ```
 
 **Falsification** — misrepresenting what a source actually says:
 
 ```
-Incorrect: "Fama and French (1993) argued that the CAPM is sufficient for explaining
-stock returns." (They argued the opposite — that additional factors are needed.)
+Incorrect: "Smith and Jones (1993) argued that the single-factor model is sufficient for
+explaining the observed variance." (They argued the opposite — that additional factors
+are needed.)
 ```
 
 **Misattribution** — assigning an idea to the wrong source:
 
 ```
-Incorrect: "The Black-Scholes model was developed by Markowitz (1952)."
-(Markowitz developed Modern Portfolio Theory. Black-Scholes was published by
-Black and Scholes in 1973, with contributions from Merton.)
+Incorrect: "The theory of cognitive load was developed by Piaget (1952)."
+(Piaget developed constructivist developmental theory. Cognitive load theory was
+developed by Sweller in the 1980s.)
 ```
 
 **Required Practice**: Before submitting, verify every citation by confirming:
@@ -105,19 +106,19 @@ Black and Scholes in 1973, with contributions from Merton.)
 
 Paraphrasing MUST involve genuine restatement of ideas in your own words and sentence structure. Changing a few words or rearranging a sentence while preserving the original structure is not paraphrasing — it is too-close paraphrasing, which most institutions treat as a form of plagiarism.
 
-**Original Source** (Mishkin, 2019):
+**Original Source** (Sweller, 1988):
 
 ```
-"Central banks use open market operations as their primary tool for controlling
-the money supply and influencing short-term interest rates."
+"Working memory has a limited capacity, and instructional designs that
+ignore this limitation will impede learning."
 ```
 
 **Correct Paraphrase**:
 
 ```
-The primary mechanism through which central banks manage liquidity and steer
-short-term borrowing costs is the buying and selling of government securities
-in the open market (Mishkin, 2019).
+Because the brain's short-term processing capacity is finite, instruction
+that overloads it with too much information at once will obstruct rather
+than support learning (Sweller, 1988).
 ```
 
 (Restated in the author's own words, with different sentence structure, while preserving the meaning and citing the source.)
@@ -125,11 +126,11 @@ in the open market (Mishkin, 2019).
 **Incorrect Paraphrase**:
 
 ```
-Central banks utilize open market operations as their main instrument for
-managing the money supply and affecting short-term interest rates (Mishkin, 2019).
+Working memory has a limited capacity, and instructional designs that
+overlook this limitation will hinder learning (Sweller, 1988).
 ```
 
-(Only substituted synonyms — "use" to "utilize," "primary" to "main," "controlling" to "managing," "influencing" to "affecting." The sentence structure is identical.)
+(Only substituted synonyms — "ignore" to "overlook," "impede" to "hinder." The sentence structure is identical.)
 
 **When in Doubt, Quote Directly**: If the original language is precise and important, use a direct quote with quotation marks and a page number rather than a weak paraphrase.
 
@@ -162,19 +163,19 @@ Citation is required not only for direct quotes but also for ideas, frameworks, 
 **Correct**:
 
 ```
-The trade-off theory of capital structure suggests that firms balance the tax
-advantages of debt against the costs of financial distress when choosing their
-leverage ratio (Kraus & Litzenberger, 1973).
+The constructive alignment framework suggests that instructors should design
+assessments, teaching activities, and learning outcomes as an integrated system
+rather than in isolation (Biggs, 1996).
 ```
 
 **Incorrect**:
 
 ```
-Firms balance the tax benefits of borrowing against the risk of going bankrupt
-when they decide how much debt to take on.
+Instructors should design assessments that connect directly to what they teach
+and what students are expected to learn.
 ```
 
-(This is the trade-off theory — an attributable idea with known originators — presented without citation.)
+(This is constructive alignment — an attributable idea with a known originator — presented without citation.)
 
 **Enforced by**: peer-reviewer agent
 **Violation**: HIGH priority fix — add attribution
@@ -219,7 +220,7 @@ MUST NOT list authors who did not contribute to the work, and MUST NOT omit auth
 
 ## AI Assistance Disclosure (CO Principle 8)
 
-Students MUST disclose AI assistance according to their institution's academic integrity policy. COL for Finance is designed for responsible human-AI collaboration where:
+Students MUST disclose AI assistance according to their institution's academic integrity policy. COE is designed for responsible human-AI collaboration where:
 
 - The student makes all analytical decisions (thesis positions, evidence evaluation, conclusions)
 - The AI assists with research, structure, and explanation
@@ -234,5 +235,5 @@ Academic integrity exceptions are narrow:
 
 1. **Collaborative assignments**: When an instructor explicitly authorizes group work, shared text among group members is permitted within the scope of the assignment. Document the collaboration agreement.
 2. **Building on prior work**: When an instructor grants written permission to extend a previous submission, the prior work must be clearly identified and the new contributions must be distinct.
-3. **Standardized language**: Certain methodological descriptions (e.g., "We use OLS regression with heteroskedasticity-robust standard errors") are sufficiently standard that they do not require unique paraphrasing each time. However, extended methodological passages still require citation of the originating technique.
+3. **Standardized language**: Certain methodological descriptions (e.g., "We use ordinary least squares regression with heteroskedasticity-robust standard errors") are sufficiently standard that they do not require unique paraphrasing each time. However, extended methodological passages still require citation of the originating technique.
 4. **AI use in permitted contexts**: When an instructor explicitly permits AI assistance for specific tasks, follow the instructor's guidelines exactly and still disclose the assistance as described in Rule 2 above.

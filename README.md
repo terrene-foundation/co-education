@@ -14,7 +14,7 @@ A CO domain application for instructors designing courses and assessments in the
 - Audit assessments for AI-reproducibility vulnerabilities
 - Structure course assessment portfolios for alignment and progression
 
-COE is the instructor-side tool. It does not help students use AI (that is [COL-F](https://github.com/terrene-foundation/co-finance)). It helps instructors design teaching that remains valid when students have access to AI.
+COE is the instructor-side tool. It does not help students use AI (that is [COL](https://github.com/terrene-foundation/co-learners)). It helps instructors design teaching that remains valid when students have access to AI.
 
 **Other CO applications:**
 
@@ -22,7 +22,7 @@ COE is the instructor-side tool. It does not help students use AI (that is [COL-
 | ----------- | --------------------- | ------------------------------------------------------------------------------------ |
 | COC         | Software development  | [kailash-coc-claude-py](https://github.com/terrene-foundation/kailash-coc-claude-py) |
 | COR         | Academic research     | [co-research](https://github.com/terrene-foundation/co-research)                     |
-| COL-F       | Finance education     | [co-finance](https://github.com/terrene-foundation/co-finance)                       |
+| COL         | Learner education     | [co-learners](https://github.com/terrene-foundation/co-learners)                     |
 | COG         | Foundation governance | [co-governance](https://github.com/terrene-foundation/co-governance)                 |
 | COComp      | Regulatory compliance | [co-compliance](https://github.com/terrene-foundation/co-compliance)                 |
 
@@ -76,8 +76,8 @@ The AI will introduce itself, explain the six-phase workflow (Analyze, Plan, Exe
 | `/co-education:analyze`    | 01    | Research pedagogical context, student population, institutional requirements    |
 | `/co-education:plan`       | 02    | Create assessment or course design plan; stops for approval                     |
 | `/co-education:execute`    | 03    | Build assessments, rubrics, materials one task at a time                        |
-| `/co-education:vet`     | 04    | Alignment audit, AI-resilience review, fairness check; produce finalized output |
-| `/co-education:codify`      | 05    | Extract pedagogical insights into .claude/ artifacts (instructor approval)      |
+| `/co-education:vet`        | 04    | Alignment audit, AI-resilience review, fairness check; produce finalized output |
+| `/co-education:codify`     | 05    | Extract pedagogical insights into .claude/ artifacts (instructor approval)      |
 | `/co-education:deliver`    | 06    | Package and deploy to LMS/students                                              |
 | `/co-education:ws`         | --    | Workspace status                                                                |
 | `/co-education:wrapup`     | --    | Save session notes                                                              |

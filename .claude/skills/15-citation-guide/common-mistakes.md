@@ -1,6 +1,6 @@
 # Common Citation Mistakes
 
-Citation errors are among the most frequent deductions in academic work. Most are easy to avoid once you know what to look for. This guide covers the mistakes finance students make most often, with corrections.
+Citation errors are among the most frequent deductions in academic work. Most are easy to avoid once you know what to look for. This guide covers the most common citation mistakes students and researchers make, with corrections.
 
 ## Why Citation Accuracy Matters
 
@@ -11,10 +11,12 @@ Incorrect citations make it harder for readers to find your sources, undermine y
 **The problem**: The DOI (Digital Object Identifier) is a permanent link to an article. Omitting it when one exists makes the source harder to find. Using a URL that may change is inferior to a DOI that never changes.
 
 **Wrong**:
-> Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. *The Journal of Finance*, *25*(2), 383-417.
+
+> Hattie, J., & Timperley, H. (2007). The power of feedback. _Review of Educational Research_, _77_(1), 81-112.
 
 **Right**:
-> Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. *The Journal of Finance*, *25*(2), 383-417. https://doi.org/10.2307/2325486
+
+> Hattie, J., & Timperley, H. (2007). The power of feedback. _Review of Educational Research_, _77_(1), 81-112. https://doi.org/10.3102/003465430298487
 
 **How to find a DOI**: Search the article title at https://search.crossref.org or https://doi.org.
 
@@ -25,9 +27,10 @@ Incorrect citations make it harder for readers to find your sources, undermine y
 **The problem**: Mixing APA, Chicago, and Harvard conventions within the same paper.
 
 **Wrong** (mixed styles in one reference list):
-> Fama, E. F., & French, K. R. (1993). Common risk factors... [APA]
-> Bodie, Zvi, Alex Kane, and Alan J. Marcus. 2021. *Investments*. 12th ed. New York: McGraw-Hill. [Chicago]
-> Sharpe, W.F. (1964) 'Capital asset prices...' *Journal of Finance*, 19(3), pp. 425-442. [Harvard]
+
+> Brown, T. R., & Nguyen, S. L. (2019). Long-term effects of structured feedback... [APA]
+> Biggs, John, and Catherine Tang. 2011. _Teaching for Quality Learning at University_. 4th ed. Maidenhead: Open University Press. [Chicago]
+> Hattie, J. and Timperley, H. (2007) 'The power of feedback', _Review of Educational Research_, 77(1), pp. 81-112. [Harvard]
 
 **Right**: Choose one style and apply it to every entry.
 
@@ -37,11 +40,11 @@ Incorrect citations make it harder for readers to find your sources, undermine y
 
 **The problem**: Using the wrong publication year, confusing online publication with print publication, or omitting the date.
 
-**Common error**: Citing a classic paper with its reprint date instead of the original publication date.
+**Common error**: Citing a classic work with its reprint date instead of the original publication date.
 
-**Wrong**: Modigliani, F. & Miller, M. H. (2001) -- this may be a reprint; the original was 1958.
+**Wrong**: Vygotsky, L. S. (1986) -- this may be a later translation; the original Russian text was 1934.
 
-**Right**: Modigliani, F., & Miller, M. H. (1958). The cost of capital, corporation finance and the theory of investment. *The American Economic Review*, *48*(3), 261-297.
+**Right**: Vygotsky, L. S. (1978). _Mind in society: The development of higher psychological processes_. Harvard University Press.
 
 **For online sources**: Use the date the content was published or last updated, not the date you accessed it (except in Harvard style, which requires both).
 
@@ -50,10 +53,12 @@ Incorrect citations make it harder for readers to find your sources, undermine y
 **The problem**: Omitting authors, using et al. in the reference list (it belongs only in in-text citations), or misspelling author names.
 
 **Wrong** (in reference list):
-> Fama et al. (1993). Common risk factors...
+
+> Brown et al. (2021). Effects of retrieval practice on long-term retention...
 
 **Right** (in reference list -- list all authors up to 20 in APA 7th):
-> Fama, E. F., & French, K. R. (1993). Common risk factors in the returns on stocks and bonds. *Journal of Financial Economics*, *33*(1), 3-56.
+
+> Brown, T. R., Nguyen, S. L., & Patel, A. K. (2021). Effects of retrieval practice on long-term retention. _Journal of Educational Psychology_, _113_(4), 712-728.
 
 **Note**: "et al." is used in-text for 3+ authors (APA 7th) but NEVER in the reference list (unless there are 21+ authors).
 
@@ -62,10 +67,12 @@ Incorrect citations make it harder for readers to find your sources, undermine y
 **The problem**: Omitting page numbers when directly quoting or paraphrasing a specific passage.
 
 **Wrong**:
-> Fama (1970) defined an efficient market as "a market in which prices always fully reflect available information."
+
+> Hattie (2009) argued that "the greatest effects on student learning occur when teachers become learners of their own teaching."
 
 **Right**:
-> Fama (1970, p. 383) defined an efficient market as "a market in which prices always fully reflect available information."
+
+> Hattie (2009, p. 22) argued that "the greatest effects on student learning occur when teachers become learners of their own teaching."
 
 **Rule**: Every direct quote requires a page number. Paraphrases of specific ideas (not general findings) should also include page numbers.
 
@@ -73,14 +80,15 @@ Incorrect citations make it harder for readers to find your sources, undermine y
 
 **The problem**: Citing a source based on someone else's summary without having read the original.
 
-**Wrong approach**: You read Smith (2020), who cites Fama (1970). You cite Fama (1970) in your paper without having read it.
+**Wrong approach**: You read Jones (2020), who cites Vygotsky (1978). You cite Vygotsky (1978) in your paper without having read it.
 
-**Risks**: Smith may have mischaracterized Fama's argument. You propagate the error.
+**Risks**: Jones may have mischaracterized Vygotsky's argument. You propagate the error.
 
 **If you cannot access the original**: Use a secondary citation:
-> Fama (1970, as cited in Smith, 2020) argued that...
 
-Only Fama appears in the reference list if using APA; both appear if your institution requires it.
+> Vygotsky (1978, as cited in Jones, 2020) argued that...
+
+Only Vygotsky appears in the reference list if using APA; both appear if your institution requires it.
 
 **Best practice**: Always read the original source.
 
@@ -88,30 +96,31 @@ Only Fama appears in the reference list if using APA; both appear if your instit
 
 **The problem**: Different styles have different capitalization rules. Applying the wrong rules signals unfamiliarity with the style.
 
-| Element | APA 7th | Chicago AD | Harvard |
-|---------|---------|------------|---------|
-| Article title | Sentence case | Headline case (in quotes) | Varies by institution |
-| Book title | Sentence case, *italicized* | Headline case, *italicized* | Headline or sentence case, *italicized* |
-| Journal name | Title Case, *Italicized* | Title Case, *Italicized* | Title Case, *Italicized* |
+| Element       | APA 7th                     | Chicago AD                  | Harvard                                 |
+| ------------- | --------------------------- | --------------------------- | --------------------------------------- |
+| Article title | Sentence case               | Headline case (in quotes)   | Varies by institution                   |
+| Book title    | Sentence case, _italicized_ | Headline case, _italicized_ | Headline or sentence case, _italicized_ |
+| Journal name  | Title Case, _Italicized_    | Title Case, _Italicized_    | Title Case, _Italicized_                |
 
 **APA sentence case**: Capitalize only the first word, first word after a colon, and proper nouns.
 
-**Wrong (APA)**: *Common Risk Factors in the Returns on Stocks and Bonds*
+**Wrong (APA)**: _The Power of Feedback in Learning Environments_
 
-**Right (APA)**: Common risk factors in the returns on stocks and bonds
+**Right (APA)**: The power of feedback in learning environments
 
 **Note**: When in doubt, check the style manual.
 
 ## Mistake 8: Not Citing Data Sources
 
-**The problem**: Using data from Bloomberg, CRSP, FRED, or other databases without proper citation.
+**The problem**: Using data from surveys, institutional databases, or public repositories without proper citation.
 
-**Wrong**: "We obtained historical stock returns from CRSP."
+**Wrong**: "We obtained student performance data from the national assessment database."
 
-**Right**: "Stock return data are from the Center for Research in Security Prices (CRSP) Monthly Stock File, accessed via Wharton Research Data Services (WRDS) on March 1, 2026."
+**Right**: "Student performance data are from the OECD Programme for International Student Assessment (PISA) 2022 dataset, accessed via OECD iLibrary on March 1, 2026."
 
 **In the reference list**:
-> Center for Research in Security Prices. (2026). *CRSP monthly stock file* [Data set]. Wharton Research Data Services. https://wrds-www.wharton.upenn.edu
+
+> OECD. (2024). _Programme for international student assessment (PISA) 2022 results_ [Data set]. OECD iLibrary. https://doi.org/10.1787/example
 
 ## Mistake 9: Self-Plagiarism and Recycling
 
@@ -124,6 +133,7 @@ Only Fama appears in the reference list if using APA; both appear if your instit
 **The problem**: Online citation generators (Google Scholar "Cite," Zotero auto-import, etc.) frequently produce errors -- wrong dates, missing DOIs, incorrect formatting, truncated titles.
 
 **Common generator errors**:
+
 - Missing volume/issue numbers
 - Incorrect author name formatting
 - Missing DOIs
@@ -149,7 +159,7 @@ Before submitting any paper, verify:
 
 ## Key References
 
-- American Psychological Association. (2020). *Publication manual of the American Psychological Association* (7th ed.). https://doi.org/10.1037/0000165-000
-- University of Chicago Press. (2017). *The Chicago Manual of Style* (17th ed.). University of Chicago Press.
-- Pears, R., & Shields, G. (2022). *Cite them right: The essential referencing guide* (12th ed.). Bloomsbury Academic.
-- Neville, C. (2010). *The complete guide to referencing and avoiding plagiarism* (2nd ed.). Open University Press.
+- American Psychological Association. (2020). _Publication manual of the American Psychological Association_ (7th ed.). https://doi.org/10.1037/0000165-000
+- University of Chicago Press. (2017). _The Chicago Manual of Style_ (17th ed.). University of Chicago Press.
+- Pears, R., & Shields, G. (2022). _Cite them right: The essential referencing guide_ (12th ed.). Bloomsbury Academic.
+- Neville, C. (2010). _The complete guide to referencing and avoiding plagiarism_ (2nd ed.). Open University Press.

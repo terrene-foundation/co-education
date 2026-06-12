@@ -7,7 +7,7 @@ paths:
 
 ## Scope
 
-These rules apply to all educational content, curriculum files, lesson plans, exercises, tutorials, and instructional materials (`**/curriculum/**`, `**/lessons/**`, `**/tutorials/**`, `**/exercises/**`, `**/*lesson*`, `**/*tutorial*`, `**/*curriculum*`, `**/*exercise*`).
+These rules apply to all educational content, curriculum files, lesson plans, exercises, tutorials, and instructional materials (`**/curriculum/**`, `**/lessons/**`, `**/tutorials/**`, `**/exercises/**`, `**/*lesson*`, `**/*tutorial*`, `**/*curriculum*`, `**/*exercise*`). They apply regardless of subject domain — science, history, mathematics, language, or any other field.
 
 ## MUST Rules
 
@@ -18,18 +18,18 @@ All educational content MUST follow a progressive difficulty structure: beginner
 **Correct Structure**:
 
 ```
-Module: Portfolio Risk
-  - Beginner: What is risk? (Volatility as standard deviation of returns)
-  - Intermediate: Measuring risk (Sharpe ratio, Sortino ratio, max drawdown)
-  - Advanced: Risk modeling (Value at Risk, Monte Carlo simulation, copulas)
+Module: Cell Biology
+  - Beginner: What is a cell? (Basic structure — membrane, nucleus, cytoplasm)
+  - Intermediate: How cells work (Respiration, protein synthesis, cell division)
+  - Advanced: Cell regulation (Gene expression, signaling pathways, apoptosis)
 ```
 
 **Incorrect Structure**:
 
 ```
-Module: Portfolio Risk
-  - Lesson 1: Copula-based dependency modeling  # Jumps to advanced immediately
-  - Lesson 2: What is standard deviation?        # Basics after advanced — disorienting
+Module: Cell Biology
+  - Lesson 1: Apoptosis signaling cascades    # Jumps to advanced immediately
+  - Lesson 2: What is a cell membrane?        # Basics after advanced — disorienting
 ```
 
 **Enforced by**: pedagogical-reviewer
@@ -42,35 +42,35 @@ Every new concept MUST include at least one fully worked example before presenti
 **Correct Pattern**:
 
 ```markdown
-## Calculating Simple Returns
+## Calculating Average Speed
 
-A simple return measures the percentage change in price over a period.
+Average speed measures how much distance is covered per unit of time.
 
-**Formula**: R = (P_end - P_start) / P_start
+**Formula**: speed = distance ÷ time
 
 ### Worked Example
 
-You bought a stock at $100 and it is now worth $112.
+A cyclist travels 45 km in 3 hours.
 
-R = ($112 - $100) / $100 = 0.12 = 12%
+speed = 45 km ÷ 3 h = 15 km/h
 
-The stock returned 12% over the period.
+The cyclist's average speed is 15 km/h.
 
 ### Exercise
 
-Calculate the simple return for a stock purchased at $45 that is now worth $51.30.
+Calculate the average speed of a runner who covers 10 km in 50 minutes.
 ```
 
 **Incorrect Pattern**:
 
 ```markdown
-## Calculating Simple Returns
+## Calculating Average Speed
 
-Formula: R = (P_end - P_start) / P_start
+Formula: speed = distance ÷ time
 
 ### Exercise
 
-Calculate the return for a stock purchased at $45 that is now worth $51.30.
+Calculate the average speed of a runner who covers 10 km in 50 minutes.
 ```
 
 (No worked example — learner must figure out the formula application alone.)
@@ -85,24 +85,23 @@ All instructional content MUST explain the motivation and reasoning behind a con
 **Correct**:
 
 ```markdown
-## Why We Annualize Returns
+## Why We Use Scientific Notation
 
-Investments are held for different periods — one might last 3 months, another 2 years.
-Comparing a 5% return over 3 months to a 15% return over 2 years is misleading without
-a common time frame. Annualization converts all returns to a "per year" basis so they
-can be compared fairly, much like converting different currencies to a single one for
-comparison.
+Very large and very small numbers appear across science — the mass of a proton
+(0.0000000000000000000000000016726 kg) and the distance to a nearby star
+(40,000,000,000,000 km) are both unwieldy to write and compare. Scientific notation
+converts any number to a compact form (a × 10^n) so it can be read, compared, and
+used in calculations without transcription errors.
 ```
 
 **Incorrect**:
 
 ```markdown
-## Annualizing Returns
+## Scientific Notation
 
-To annualize a return, use the formula:
-Annualized Return = (1 + R)^(252/n) - 1
-
-where n is the number of trading days.
+To convert a number to scientific notation, move the decimal point until one
+non-zero digit remains to its left, then multiply by 10 raised to the number
+of places you moved.
 ```
 
 (Tells the learner what to do, but not why they would want to.)
@@ -117,19 +116,19 @@ Every lesson MUST explicitly state its prerequisites and reference how new mater
 **Correct**:
 
 ```markdown
-## Lesson: The Sharpe Ratio
+## Lesson: Reading a Primary Source
 
 ### Prerequisites
 
-- [Lesson 3: Calculating Returns](/lessons/03-returns) — you should be comfortable computing simple and log returns
-- [Lesson 5: Standard Deviation as Risk](/lessons/05-standard-deviation) — understanding volatility as a risk measure
+- [Lesson 2: What Is a Primary Source?](/lessons/02-primary-sources) — you should be comfortable distinguishing primary from secondary sources
+- [Lesson 4: Historical Context](/lessons/04-context) — understanding how to situate a document in its time and place
 
 ### Connection to Prior Learning
 
-In Lesson 3, you learned to compute the return of an investment. In Lesson 5, you
-learned to measure risk using standard deviation. The Sharpe ratio combines both ideas:
-it tells you how much return you earned _per unit of risk taken_. Think of it as the
-"efficiency" of your investment — more return per unit of risk is better.
+In Lesson 2, you learned what makes a source "primary" — created at the time of the
+events it records. In Lesson 4, you learned to ask: what was happening when this
+was written? Reading a primary source combines both skills: you evaluate what the
+author recorded AND why the context shapes what they noticed, emphasized, or omitted.
 ```
 
 **Enforced by**: pedagogical-reviewer
@@ -137,24 +136,25 @@ it tells you how much return you earned _per unit of risk taken_. Think of it as
 
 ### 5. Use Real-World Analogies
 
-Complex financial concepts MUST include at least one real-world analogy to anchor abstract ideas in familiar experience.
+Complex abstract concepts MUST include at least one real-world analogy to anchor unfamiliar ideas in familiar experience.
 
 **Examples of Good Analogies**:
 
 ```markdown
-**Diversification** is like not putting all your eggs in one basket. If you carry ten eggs
-in one basket and drop it, you lose everything. If you carry them in five baskets, dropping
-one costs you only two eggs.
+**Natural selection** is like a filter that keeps letting certain coins through while
+blocking others. Traits that help an organism survive and reproduce pass to the
+next generation; traits that hinder survival are filtered out over time.
 
-**Compound interest** works like a snowball rolling downhill — it starts small, but as it
-rolls, it picks up more snow, and the bigger it gets, the faster it grows.
+**Exponential growth** works like a snowball rolling downhill — it starts small, but as
+it rolls it picks up more snow, and the bigger it gets, the faster it grows.
 
-**A bond's coupon** is like rent paid to you by the borrower for using your money — you get
-regular payments for letting someone else use what's yours.
+**Osmosis** is like a crowd where only small people can squeeze through a turnstile.
+Water molecules (small) pass through the cell membrane freely; larger dissolved
+particles cannot, so water flows toward where the crowd is most concentrated.
 
-**Liquidity** is how quickly you can sell something at a fair price. Your house is an
-investment, but it's not very liquid — selling it takes months. A share of Apple stock is
-very liquid — you can sell it in seconds during market hours.
+**Opportunity cost** is like choosing between two events on the same evening. Whatever
+you pick, what you give up — the enjoyment of the other event — is the real cost of
+your choice, even though no money changes hands.
 ```
 
 **Enforced by**: pedagogical-reviewer
@@ -166,42 +166,42 @@ All lessons and modules MUST define learning objectives using Bloom's Taxonomy v
 
 **Bloom's Taxonomy Reference** (lowest to highest cognitive level):
 
-| Level             | Description                       | Verbs to Use                              | Financial Example                                                     |
-| ----------------- | --------------------------------- | ----------------------------------------- | --------------------------------------------------------------------- |
-| **1. Remember**   | Recall facts and basic concepts   | Define, list, identify, name, state       | "Define what a stock dividend is"                                     |
-| **2. Understand** | Explain ideas or concepts         | Explain, describe, summarize, interpret   | "Explain why diversification reduces portfolio risk"                  |
-| **3. Apply**      | Use information in new situations | Calculate, compute, implement, solve      | "Calculate the Sharpe ratio for a given portfolio"                    |
-| **4. Analyze**    | Draw connections among ideas      | Compare, contrast, differentiate, examine | "Compare the risk-return profiles of two portfolios"                  |
-| **5. Evaluate**   | Justify a decision or position    | Assess, critique, judge, recommend        | "Evaluate whether a 60/40 portfolio is appropriate for a retiree"     |
-| **6. Create**     | Produce new or original work      | Design, construct, develop, formulate     | "Design a portfolio optimization strategy for a given risk tolerance" |
+| Level             | Description                       | Verbs to Use                              | Example                                                                   |
+| ----------------- | --------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------- |
+| **1. Remember**   | Recall facts and basic concepts   | Define, list, identify, name, state       | "Define what a cell membrane is"                                          |
+| **2. Understand** | Explain ideas or concepts         | Explain, describe, summarize, interpret   | "Explain why natural selection favors heritable variation"                |
+| **3. Apply**      | Use information in new situations | Calculate, compute, implement, solve      | "Calculate the mean and standard deviation for a data set"                |
+| **4. Analyze**    | Draw connections among ideas      | Compare, contrast, differentiate, examine | "Compare the arguments made by two primary sources on the same event"     |
+| **5. Evaluate**   | Justify a decision or position    | Assess, critique, judge, recommend        | "Evaluate whether a proposed research design controls for confounding"    |
+| **6. Create**     | Produce new or original work      | Design, construct, develop, formulate     | "Design an experiment to test a hypothesis about plant growth conditions" |
 
 **Correct**:
 
 ```markdown
-## Module 4: Portfolio Construction
+## Module 4: Evolution by Natural Selection
 
 ### Learning Objectives
 
 By the end of this module, you will be able to:
 
-- **Define** the efficient frontier and its components (Remember)
-- **Explain** why mean-variance optimization matters for investors (Understand)
-- **Calculate** optimal portfolio weights using the Markowitz model (Apply)
-- **Compare** equal-weight vs. optimized portfolios on risk-adjusted returns (Analyze)
-- **Evaluate** the limitations of mean-variance optimization in practice (Evaluate)
-- **Design** a portfolio construction workflow for a specific investor profile (Create)
+- **Define** natural selection and the four conditions required for it to occur (Remember)
+- **Explain** why heritable variation is essential for evolutionary change (Understand)
+- **Calculate** allele frequencies across generations using the Hardy-Weinberg equation (Apply)
+- **Compare** natural selection, genetic drift, and gene flow as mechanisms of evolution (Analyze)
+- **Evaluate** the evidence for natural selection in a given population study (Evaluate)
+- **Design** an observational study to detect natural selection in a wild population (Create)
 ```
 
 **Incorrect**:
 
 ```markdown
-## Module 4: Portfolio Construction
+## Module 4: Evolution by Natural Selection
 
 ### Learning Objectives
 
-- Learn about the efficient frontier
-- Understand portfolio optimization
-- Do portfolio calculations
+- Learn about natural selection
+- Understand evolution
+- Do evolution problems
 ```
 
 (Vague, unmeasurable, does not progress through cognitive levels.)
@@ -213,21 +213,20 @@ By the end of this module, you will be able to:
 
 ### 1. No Jargon Without Definition
 
-MUST NOT use financial or technical jargon without immediately defining it on first use.
+MUST NOT use domain-specific or technical jargon without immediately defining it on first use.
 
 **Detection Patterns**:
 
 ```
-"Calculate the portfolio's beta relative to the benchmark."
-# What is beta? What is a benchmark? First-time learners won't know.
+"Identify the phenotype and genotype of each offspring in the cross."
+# What is a phenotype? What is a genotype? First-time learners won't know.
 ```
 
 **Correct Alternative**:
 
 ```
-"Calculate the portfolio's beta (a measure of how much the portfolio moves relative to the
-overall market — a beta of 1.5 means the portfolio tends to move 1.5x as much as the market)
-relative to the benchmark (the market index you're comparing against, such as the S&P 500)."
+"Identify the phenotype (the observable trait, such as flower color) and genotype
+(the underlying combination of alleles, such as Tt or tt) of each offspring in the cross."
 ```
 
 On subsequent uses within the same lesson, the short term alone is acceptable after the first definition.
@@ -256,31 +255,30 @@ MUST NOT introduce advanced material without clearly noting what the learner mus
 **Detection Patterns**:
 
 ```markdown
-## Black-Scholes Option Pricing
+## Bayesian Inference
 
-The Black-Scholes formula is: C = S*N(d1) - K*e^(-rT)\*N(d2)
+We update our prior beliefs using Bayes' theorem: P(H|E) = P(E|H) × P(H) / P(E)
 
-Let's implement it:
+Let's apply it to a medical testing scenario:
 ```
 
-(Assumes knowledge of options, continuous compounding, normal distributions, and calculus — none referenced.)
+(Assumes knowledge of conditional probability, prior/posterior distributions, and likelihood — none referenced.)
 
 **Correct Alternative**:
 
 ```markdown
-## Black-Scholes Option Pricing
+## Bayesian Inference
 
 ### Prerequisites
 
-- Module 8: What Are Options? (calls, puts, strike price, expiration)
-- Module 9: Continuous Compounding (e^rt notation)
-- Module 10: Normal Distribution and Cumulative Distribution Function
-- Comfortable with Python functions and NumPy
+- Module 6: Probability Basics (events, sample spaces, probability rules)
+- Module 7: Conditional Probability (P(A|B) notation and its meaning)
+- Module 8: Probability Distributions (discrete and continuous distributions)
 
 ### What You'll Learn
 
-This lesson brings together everything from Modules 8-10 to build the most famous
-formula in finance...
+This lesson brings together the probability tools from Modules 6-8 to build a
+principled method for updating beliefs when new evidence arrives...
 ```
 
 **Consequence**: HIGH priority fix

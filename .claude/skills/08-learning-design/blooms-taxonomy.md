@@ -1,6 +1,6 @@
-# Bloom's Taxonomy for Financial Education
+# Bloom's Taxonomy for Education
 
-Bloom's taxonomy provides a hierarchy of cognitive skills that learners develop as they progress from novice to expert. Applying this framework to financial education ensures that curricula build systematically from basic recall to sophisticated analysis and portfolio construction.
+Bloom's taxonomy provides a hierarchy of cognitive skills that learners develop as they progress from novice to expert. Applying this framework ensures that curricula build systematically from basic recall to sophisticated analysis and original creation.
 
 ## The Six Levels
 
@@ -8,240 +8,232 @@ Bloom's taxonomy provides a hierarchy of cognitive skills that learners develop 
 
 **Cognitive goal**: Recall facts, terms, and definitions from memory.
 
-**Financial education examples**:
+**Examples**:
 
-- Define "stock," "bond," "ETF," "mutual fund"
-- List the components of the income statement (revenue, expenses, net income)
-- Name the five major asset classes
-- Recall the formula for compound interest: A = P(1 + r/n)^(nt)
-- State the difference between a market order and a limit order
+- Define key terms and core concepts in a subject area
+- List the components of a foundational model or framework
+- Name the main categories within a discipline
+- Recall a central formula or principle
+- State the difference between two related concepts
 
 **Assessment types**: Multiple choice, matching, fill-in-the-blank, flashcards.
 
-**Example question**: "Which of the following best defines a bond? (a) Ownership in a company (b) A loan to a company or government (c) A basket of stocks (d) A type of insurance policy"
+**Example question**: "Which of the following best defines [concept X]? (a) ... (b) ... (c) ... (d) ..."
 
-**Common pitfall**: Spending too much time at this level. Many financial education platforms never get past definitions. Learners need to move beyond memorization quickly.
+**Common pitfall**: Spending too much time at this level. Many courses never get past definitions. Learners need to move beyond memorization quickly.
 
 ### Level 2: Understand
 
 **Cognitive goal**: Explain ideas, summarize concepts, translate between representations.
 
-**Financial education examples**:
+**Examples**:
 
-- Explain why diversification reduces portfolio risk
-- Describe how inflation erodes purchasing power over time
-- Summarize the relationship between bond prices and interest rates
-- Interpret a candlestick chart
-- Paraphrase the concept of compound interest in your own words
+- Explain why a key principle produces a particular outcome
+- Describe how one variable relates to another within a system
+- Summarize the relationship between two core concepts
+- Interpret a data visualization or diagram
+- Paraphrase a central concept in your own words
 
 **Assessment types**: Short answer, explain-in-your-own-words, concept mapping, true/false with justification.
 
-**Example question**: "In your own words, explain why a bond's price falls when interest rates rise. Use an analogy if helpful."
+**Example question**: "In your own words, explain why [phenomenon X] occurs when [condition Y] changes. Use an analogy if helpful."
 
-**Common pitfall**: Confusing "understand" with "remember." If a learner can recite the definition of diversification but cannot explain _why_ it works, they are still at Level 1.
+**Common pitfall**: Confusing "understand" with "remember." If a learner can recite a definition but cannot explain _why_ it holds, they are still at Level 1.
 
 ### Level 3: Apply
 
 **Cognitive goal**: Use knowledge to solve problems, perform calculations, execute procedures.
 
-**Financial education examples**:
+**Examples**:
 
-- Calculate simple and compound returns on an investment
-- Compute a stock's P/E ratio from financial statement data
-- Build a basic portfolio allocation for a given risk profile
-- Use the 50/30/20 budgeting rule to create a budget
-- Calculate monthly mortgage payments
+- Apply a framework or method to a new case or scenario
+- Compute a quantity from given data using a learned procedure
+- Build a basic model or plan for a specified situation
+- Use a rule or heuristic to make a decision in context
+- Work through a structured problem step by step
 
 ```python
-# Apply: Calculate compound annual growth rate (CAGR)
-def calculate_cagr(beginning_value, ending_value, years):
+# Apply: Use a learned formula to solve a specific problem
+def apply_formula(input_value, parameter):
     """
-    Apply the CAGR formula to calculate annualized return.
+    Apply the relevant formula to calculate an output.
 
-    Learning objective: Students can use the CAGR formula
-    to determine the annualized return of an investment.
+    Learning objective: Students can use the formula
+    to determine the result for a given set of inputs.
     """
-    if beginning_value <= 0 or years <= 0:
-        raise ValueError("Beginning value and years must be positive")
-    return (ending_value / beginning_value) ** (1 / years) - 1
+    if input_value <= 0 or parameter <= 0:
+        raise ValueError("Inputs must be positive")
+    return (input_value / parameter) ** (1 / parameter) - 1
 
-# Exercise: An investment grew from $10,000 to $18,500 over 7 years.
-# What was the CAGR?
-cagr = calculate_cagr(10_000, 18_500, 7)
-print(f"CAGR: {cagr:.2%}")  # ~9.23%
+# Exercise: Given the following data, calculate the result
+# using the formula. What does the output tell you?
+result = apply_formula(18_500, 7)
+print(f"Result: {result:.2%}")
 ```
 
-**Assessment types**: Calculation exercises, worked problems, fill-in-the-spreadsheet, code-along exercises.
+**Assessment types**: Calculation exercises, worked problems, structured case exercises, code-along exercises.
 
-**Example exercise**: "Given the following quarterly revenue data for Company X, calculate the year-over-year revenue growth rate for each quarter."
+**Example exercise**: "Given the following data for [subject area], apply the method you learned to compute [measure] for each case."
 
 ### Level 4: Analyze
 
 **Cognitive goal**: Break down complex situations, compare alternatives, identify patterns, distinguish components.
 
-**Financial education examples**:
+**Examples**:
 
-- Compare two investment strategies using risk-adjusted metrics
-- Analyze a company's financial health using ratio analysis
-- Decompose portfolio returns into asset allocation vs security selection
-- Identify the assumptions behind a Monte Carlo simulation and evaluate their validity
-- Distinguish between correlation and causation in market data
+- Compare two approaches or strategies using relevant criteria
+- Analyze a complex situation by decomposing it into contributing factors
+- Distinguish between correlation and causation in data
+- Identify the assumptions behind a model and evaluate their validity
+- Evaluate competing explanations for an observed pattern
 
 ```python
 import numpy as np
 
-# Analyze: Compare two portfolios on risk-adjusted basis
-def analyze_portfolios(returns_a, returns_b, risk_free_rate=0.04):
+# Analyze: Compare two approaches on multiple dimensions
+def analyze_approaches(results_a, results_b):
     """
-    Analyze two portfolios across multiple dimensions.
+    Analyze two approaches across multiple dimensions.
 
-    Learning objective: Students can compare investments using
-    multiple metrics rather than just raw returns.
+    Learning objective: Students can compare options using
+    multiple criteria rather than a single metric.
     """
-    results = {}
+    comparison = {}
 
-    for name, returns in [("Portfolio A", returns_a), ("Portfolio B", returns_b)]:
-        annual_return = np.mean(returns) * 252
-        annual_vol = np.std(returns) * np.sqrt(252)
-        sharpe = (annual_return - risk_free_rate) / annual_vol
+    for name, results in [("Approach A", results_a), ("Approach B", results_b)]:
+        mean_result = np.mean(results)
+        variability = np.std(results)
+        trend = np.mean(np.diff(results))
 
-        cumulative = np.cumprod(1 + returns)
-        running_max = np.maximum.accumulate(cumulative)
-        drawdowns = (cumulative - running_max) / running_max
-        max_drawdown = drawdowns.min()
-
-        results[name] = {
-            "Annual Return": f"{annual_return:.2%}",
-            "Annual Volatility": f"{annual_vol:.2%}",
-            "Sharpe Ratio": f"{sharpe:.2f}",
-            "Max Drawdown": f"{max_drawdown:.2%}",
+        comparison[name] = {
+            "Mean": f"{mean_result:.2f}",
+            "Variability": f"{variability:.2f}",
+            "Trend": f"{trend:.2f}",
         }
 
-    return results
+    return comparison
 
-# Exercise: Which portfolio is "better"? The answer depends on
-# what the investor values — higher return, lower risk, or better
-# risk-adjusted return. This is the analytical skill.
+# Exercise: Which approach is "better"? The answer depends on
+# what the analyst values — higher average, lower variability,
+# or a positive trend. This is the analytical skill.
 ```
 
 **Assessment types**: Case studies, comparative analysis, data interpretation exercises, written analysis with evidence.
 
-**Example exercise**: "You are given the 5-year track records of two mutual funds. Fund A returned 12% annually with 18% volatility. Fund B returned 10% annually with 10% volatility. Analyze which fund performed better on a risk-adjusted basis, and explain under what circumstances an investor might prefer each one."
+**Example exercise**: "You are given two approaches to [problem]. Approach A achieves outcome X with characteristic Y. Approach B achieves outcome P with characteristic Q. Analyze which approach performs better on a given criterion, and explain under what circumstances a practitioner might prefer each one."
 
 ### Level 5: Evaluate
 
 **Cognitive goal**: Make judgments, critique arguments, assess validity, justify decisions.
 
-**Financial education examples**:
+**Examples**:
 
-- Evaluate whether a specific investment thesis is well-supported
-- Critique a backtested strategy for potential biases
-- Assess whether a financial advisor's recommendation is appropriate for a specific client scenario
-- Judge the credibility of a financial news article's claims
-- Evaluate the trade-offs of different retirement withdrawal strategies
+- Evaluate whether a specific argument or claim is well-supported by evidence
+- Critique a study or analysis for potential biases or limitations
+- Assess whether a recommendation is appropriate for a specific context
+- Judge the credibility of a source's claims
+- Evaluate the trade-offs of competing approaches to a problem
 
 **Assessment types**: Critique assignments, peer review, debate exercises, decision justification essays.
 
-**Example exercise**: "A financial blog claims that their momentum strategy 'consistently beats the market by 5% per year.' The post shows a 3-year backtest with no transaction costs. Write a 300-word critique evaluating this claim. Consider: (1) Is the backtest period sufficient? (2) What biases might be present? (3) What information is missing? (4) What additional evidence would you need?"
+**Example exercise**: "An article claims that [method X] 'consistently outperforms alternatives by a large margin.' The evidence shown covers a short period with favorable conditions. Write a 300-word critique evaluating this claim. Consider: (1) Is the evidence period sufficient? (2) What biases might be present? (3) What information is missing? (4) What additional evidence would you need?"
 
-**Common pitfall**: Skipping to evaluation without building the analytical foundation. Learners cannot evaluate investment strategies if they cannot first analyze performance data.
+**Common pitfall**: Skipping to evaluation without building the analytical foundation. Learners cannot evaluate competing approaches if they cannot first analyze the evidence.
 
 ### Level 6: Create
 
 **Cognitive goal**: Design, construct, produce original work by combining elements in new ways.
 
-**Financial education examples**:
+**Examples**:
 
-- Design a portfolio for a specific investor profile
-- Create an investment policy statement
-- Build a financial model for a startup valuation
-- Develop a personal financial plan
-- Construct a backtesting framework for a strategy idea
+- Design a plan or solution for a specific goal and context
+- Create an original argument, model, or framework
+- Build an analytical tool or system for a defined purpose
+- Develop a proposal or recommendation grounded in evidence
+- Construct a novel approach by synthesizing ideas across sources
 
 ```python
-# Create: Design a goal-based portfolio allocation
-def design_portfolio(
-    age, risk_tolerance, time_horizon_years, goals
+# Create: Design a goal-based plan or allocation
+def design_plan(
+    context_factor, priority_level, time_horizon, goals
 ):
     """
-    Create a portfolio allocation based on investor profile.
+    Create a plan based on a given profile and goals.
 
-    Learning objective: Students synthesize knowledge of asset classes,
-    risk, time horizon, and diversification to create a coherent
-    portfolio recommendation.
+    Learning objective: Students synthesize knowledge of
+    constraints, priorities, and time horizon to create a
+    coherent, justified plan.
 
-    Note: This is an educational exercise. Not financial advice.
+    Note: This is an educational exercise.
     """
-    # Base equity allocation (rule of thumb: 110 - age)
-    base_equity = max(20, min(90, 110 - age))
+    # Base allocation (illustrative rule of thumb)
+    base = max(20, min(90, 110 - context_factor))
 
-    # Adjust for risk tolerance (scale: 1=conservative, 5=aggressive)
-    risk_adjustment = (risk_tolerance - 3) * 5
-    equity_pct = max(20, min(90, base_equity + risk_adjustment))
+    # Adjust for priority level (scale: 1=conservative, 5=ambitious)
+    priority_adjustment = (priority_level - 3) * 5
+    primary_pct = max(20, min(90, base + priority_adjustment))
 
     # Adjust for time horizon
-    if time_horizon_years < 3:
-        equity_pct = min(equity_pct, 30)
-    elif time_horizon_years < 5:
-        equity_pct = min(equity_pct, 50)
+    if time_horizon < 3:
+        primary_pct = min(primary_pct, 30)
+    elif time_horizon < 5:
+        primary_pct = min(primary_pct, 50)
 
-    bond_pct = 100 - equity_pct
+    secondary_pct = 100 - primary_pct
 
     allocation = {
-        "US Large Cap Equity": round(equity_pct * 0.50),
-        "International Equity": round(equity_pct * 0.30),
-        "US Small Cap Equity": round(equity_pct * 0.20),
-        "US Aggregate Bonds": round(bond_pct * 0.60),
-        "Treasury Inflation-Protected": round(bond_pct * 0.25),
-        "International Bonds": round(bond_pct * 0.15),
+        "Primary Component A": round(primary_pct * 0.50),
+        "Primary Component B": round(primary_pct * 0.30),
+        "Primary Component C": round(primary_pct * 0.20),
+        "Secondary Component A": round(secondary_pct * 0.60),
+        "Secondary Component B": round(secondary_pct * 0.25),
+        "Secondary Component C": round(secondary_pct * 0.15),
     }
 
     return allocation
 
-# Exercise: Create portfolios for three different investor profiles
+# Exercise: Create plans for three different profiles
 # and justify your allocation decisions.
 ```
 
-**Assessment types**: Portfolio projects, financial plans, model building, strategy design and defense, capstone projects.
+**Assessment types**: Design projects, written plans, model building, strategy design and defense, capstone projects.
 
-**Example capstone**: "Design a complete investment plan for a hypothetical client (age 35, moderate risk tolerance, $80,000 income, goals of retirement at 65, college funding for two children). Your plan should include: asset allocation, recommended account types, contribution schedule, rebalancing strategy, and a written justification for each decision."
+**Example capstone**: "Design a complete plan for a hypothetical scenario (specify the context, constraints, and goals). Your plan should include: an allocation or structure, a rationale for each decision, a timeline or schedule, a monitoring approach, and a written justification for each choice."
 
-## Progression Pattern for Financial Education
+## Progression Pattern
 
 ```
-Remember    -> Define P/E ratio
-Understand  -> Explain what P/E ratio tells you about valuation
-Apply       -> Calculate P/E ratios for 5 companies
-Analyze     -> Compare P/E ratios across an industry sector
-Evaluate    -> Assess whether a stock with a high P/E is overvalued
-Create      -> Build a multi-factor valuation model using P/E and other metrics
+Remember    -> Define the key concept
+Understand  -> Explain what the concept means and why it matters
+Apply       -> Use the concept to solve a specific problem
+Analyze     -> Compare the concept's role across different cases
+Evaluate    -> Assess whether a given application is well-justified
+Create      -> Build an original model or plan using the concept
 ```
 
 ## Mapping Bloom's to Module Design
 
-| Module Component     | Primary Bloom's Level | Example                     |
-| -------------------- | --------------------- | --------------------------- |
-| Concept introduction | Remember, Understand  | Video lecture, reading      |
-| Worked examples      | Apply                 | Instructor-led calculations |
-| Practice exercises   | Apply, Analyze        | Problem sets                |
-| Case studies         | Analyze, Evaluate     | Real-world scenarios        |
-| Discussion prompts   | Evaluate              | Peer discussion             |
-| Capstone project     | Create                | Portfolio construction      |
+| Module Component     | Primary Bloom's Level | Example                  |
+| -------------------- | --------------------- | ------------------------ |
+| Concept introduction | Remember, Understand  | Video lecture, reading   |
+| Worked examples      | Apply                 | Instructor-led problems  |
+| Practice exercises   | Apply, Analyze        | Problem sets             |
+| Case studies         | Analyze, Evaluate     | Real-world scenarios     |
+| Discussion prompts   | Evaluate              | Peer discussion          |
+| Capstone project     | Create                | Design and defend a plan |
 
-## Common Pitfalls in Financial Education Design
+## Common Pitfalls in Education Design
 
-1. **Stuck at Remember/Understand**: Many courses teach definitions and theory but never progress to application. Learners leave "knowing about" investing but unable to _do_ anything.
+1. **Stuck at Remember/Understand**: Many courses teach definitions and theory but never progress to application. Learners leave "knowing about" a subject but unable to _do_ anything with that knowledge.
 
-2. **Jumping to Create without foundations**: Asking learners to build portfolios before they can calculate returns or analyze risk metrics.
+2. **Jumping to Create without foundations**: Asking learners to design original solutions before they can apply core methods or analyze relevant evidence.
 
 3. **Testing at a lower level than teaching**: Teaching at the Analyze level but testing only at Remember (multiple choice on definitions).
 
-4. **Ignoring the affective domain**: Financial decisions involve emotions (fear, greed, overconfidence). Behavioral finance concepts (see **[10-behavioral-finance](../10-behavioral-finance/SKILL.md)**) should be woven into every level.
+4. **Ignoring the affective domain**: Learning decisions often involve motivation, confidence, and prior beliefs. Behavioral and psychological concepts should be woven into every level.
 
 ## Cross-References
 
 - See **[curriculum-patterns](curriculum-patterns.md)** for sequencing modules that build through Bloom's levels
 - See **[assessment-design](assessment-design.md)** for assessment types matched to each Bloom's level
 - See **[gamification](gamification.md)** for engagement strategies at each cognitive level
-- See **[10-behavioral-finance](../10-behavioral-finance/SKILL.md)** for incorporating psychological awareness into learning
-- See **[09-personal-finance](../09-personal-finance/SKILL.md)** for personal finance content at each Bloom's level

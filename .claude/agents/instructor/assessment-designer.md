@@ -30,12 +30,13 @@ For every assessment, specify:
 ## AI-Resilience Strategies
 
 Assessments resist trivial AI completion when they:
+
 - Require **context-specific application** (the student's own data, their institution, their clinical placement)
 - Involve **process documentation** (showing the reasoning journey, not just the destination)
 - Include **oral defense or viva** components
 - Require **in-class demonstration** of skills
 - Ask for **comparative evaluation** of AI-generated outputs (making AI a tool, not a shortcut)
-- Build on **cumulative portfolio** evidence across a semester
+- Build on **cumulative work-sample** evidence across a semester
 
 ## Output Standards
 

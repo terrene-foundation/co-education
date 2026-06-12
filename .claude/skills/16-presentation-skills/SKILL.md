@@ -1,11 +1,11 @@
 ---
 name: presentation-skills
-description: "Presentation skills for finance students. Use for slide design (assertion-evidence), financial data visualization, narrative structure (SCR framework), and delivery techniques."
+description: "Presentation skills for academic and professional contexts. Use for slide design (assertion-evidence), data visualization, narrative structure (SCR framework), and delivery techniques."
 ---
 
 # Presentation Skills
 
-How to present financial analysis, research findings, and investment recommendations effectively. Covers slide design principles (including the assertion-evidence model), data visualization best practices for finance, narrative structure for financial presentations, and practical delivery techniques. Aimed at finance students preparing for class presentations, thesis defenses, case competitions, and job interviews.
+How to present research findings, analytical work, and project proposals effectively. Covers slide design principles (including the assertion-evidence model), data visualization best practices, narrative structure for academic and professional presentations, and practical delivery techniques. Aimed at students preparing for class presentations, thesis defenses, case analyses, and oral assessments.
 
 ## Quick Reference
 
@@ -17,12 +17,12 @@ How to present financial analysis, research findings, and investment recommendat
 
 ## Files in This Module
 
-| File | Topic | Use When |
-|------|-------|----------|
-| [slide-design.md](slide-design.md) | One idea per slide, assertion-evidence model, font/color choices | Designing effective presentation slides |
-| [data-visualization.md](data-visualization.md) | Charts for finance, when to use each type, common mistakes | Choosing and creating financial charts and graphs |
-| [storytelling.md](storytelling.md) | Narrative arc, executive summary approach, SCR framework | Structuring the flow of a financial presentation |
-| [delivery-tips.md](delivery-tips.md) | Pacing, Q&A handling, managing nerves, professional presence | Preparing to deliver your presentation |
+| File                                           | Topic                                                            | Use When                                |
+| ---------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------- |
+| [slide-design.md](slide-design.md)             | One idea per slide, assertion-evidence model, font/color choices | Designing effective presentation slides |
+| [data-visualization.md](data-visualization.md) | Chart types, when to use each, common mistakes                   | Choosing and creating charts and graphs |
+| [storytelling.md](storytelling.md)             | Narrative arc, pyramid principle, SCR framework                  | Structuring the flow of a presentation  |
+| [delivery-tips.md](delivery-tips.md)           | Pacing, Q&A handling, managing nerves, professional presence     | Preparing to deliver your presentation  |
 
 ## Related Skills
 

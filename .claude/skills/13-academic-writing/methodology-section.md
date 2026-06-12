@@ -1,6 +1,6 @@
 # Methodology Section
 
-The methodology section describes how you conducted your research in enough detail that another researcher could replicate your study. In finance, this typically means specifying your data sources, sample construction, variable definitions, and statistical models.
+The methodology section describes how you conducted your research in enough detail that another researcher could replicate your study. This typically means specifying your data sources, sample construction, variable definitions, and analytical approach.
 
 ## Why the Methodology Section Matters
 
@@ -8,54 +8,50 @@ Your results are only as credible as your method. A reader who does not understa
 
 Think of it as a recipe: someone should be able to follow your instructions and produce the same dish.
 
-## Quantitative vs. Qualitative Research in Finance
+## Quantitative vs. Qualitative Research
 
-### Quantitative (Dominant in Finance)
+### Quantitative
 
 Uses numerical data and statistical analysis to test hypotheses.
 
-**Examples**: Event studies, panel regressions, time-series analysis, portfolio sorts, Monte Carlo simulations.
+**Examples**: Randomized controlled experiments, survey-based regression analysis, quasi-experimental designs, longitudinal studies, time-series analysis.
 
-**When to use**: When you have a testable hypothesis and access to numerical data (stock returns, financial ratios, economic indicators).
+**When to use**: When you have a testable hypothesis and access to numerical data (test scores, response rates, behavioral measures, administrative records).
 
 ### Qualitative
 
 Uses non-numerical data (interviews, case studies, textual analysis) to explore phenomena.
 
-**Examples**: CEO interview analysis, content analysis of annual reports, case studies of corporate events.
+**Examples**: Semi-structured interview analysis, thematic coding of documents, ethnographic observation, case studies of institutional change.
 
-**When to use**: When exploring new phenomena where quantitative data is limited, or when seeking deeper understanding of motivations and processes.
+**When to use**: When exploring new phenomena where quantitative data is limited, or when seeking deeper understanding of motivations, processes, and meanings.
 
 ### Mixed Methods
 
-Combines both approaches -- for instance, using interviews to develop hypotheses that are then tested quantitatively.
+Combines both approaches -- for instance, using interviews to develop hypotheses that are then tested quantitatively, or using statistical patterns to identify cases for in-depth qualitative investigation.
 
-## Data Sources for Finance Research
+## Data Sources
 
-### Major Databases
+### Types of Data Sources
 
-| Database | Coverage | Access | Best For |
-|----------|----------|--------|----------|
-| **CRSP** | US stock prices, returns, delisting data, 1926-present | University subscription (via WRDS) | Event studies, portfolio returns, market microstructure |
-| **Compustat** | US/global financial statement data | University subscription (via WRDS) | Cross-sectional studies of firm characteristics |
-| **WRDS** | Aggregator of CRSP, Compustat, IBES, and others | University subscription | One-stop access to most finance databases |
-| **Bloomberg** | Real-time and historical global data | Terminal subscription | Current market data, fixed income, derivatives |
-| **FRED** | US macroeconomic and financial data | Free (Federal Reserve Bank of St. Louis) | Interest rates, GDP, unemployment, inflation |
-| **World Bank WDI** | Global development indicators | Free | Cross-country studies, macro-finance |
-| **IMF IFS** | International financial statistics | Free/subscription | Exchange rates, balance of payments, reserves |
-| **Thomson Reuters/Refinitiv** | Global financial data | University subscription | M&A data, analyst forecasts, ownership |
-| **IBES** | Analyst earnings forecasts | University subscription (via WRDS) | Earnings surprises, analyst behavior |
-| **SDC Platinum** | M&A, IPO, debt issuance data | University subscription | Corporate events, deal characteristics |
+| Source Type                              | Coverage                                             | Access                                            | Best For                                            |
+| ---------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| **Institutional administrative records** | Records from schools, hospitals, government agencies | Restricted; institutional data-sharing agreements | Studies of outcomes in defined populations          |
+| **National survey datasets**             | Population-level survey data                         | Public/restricted (varies by country)             | Cross-sectional and longitudinal population studies |
+| **Experimental data**                    | Lab or field experiment records                      | Researcher-collected                              | Causal inference on specific interventions          |
+| **Published databases**                  | Aggregated secondary data                            | Open or subscription                              | Meta-analyses, cross-context comparisons            |
+| **Qualitative archives**                 | Interview transcripts, documents, fieldnotes         | Project-specific                                  | In-depth case and discourse studies                 |
 
 ### Citing Data Sources
 
 Always specify:
-1. The database name and provider
-2. The specific dataset or table used
-3. The date of data extraction
+
+1. The dataset name and provider
+2. The specific version, wave, or file used
+3. The date of data access or collection
 4. Any filters or selection criteria applied
 
-**Example**: "Stock return data are from the CRSP Monthly Stock File, accessed via WRDS on January 15, 2026. We include all NYSE, AMEX, and NASDAQ common stocks (share codes 10 and 11) from January 2010 to December 2024."
+**Example**: "Reading assessment scores are drawn from the school district's anonymized student records, accessed under a data-use agreement on March 3, 2026. We include all students enrolled in grades 3–8 from the 2018–19 through 2022–23 academic years."
 
 ## Sample Selection
 
@@ -64,28 +60,27 @@ Always specify:
 Explain every step of sample construction clearly:
 
 1. **Starting universe**: Where did you begin?
-2. **Inclusion criteria**: What firms/observations did you keep?
+2. **Inclusion criteria**: What units (participants, observations, cases) did you keep?
 3. **Exclusion criteria**: What did you remove, and why?
 4. **Final sample**: How many observations remain?
 
 ### Worked Example: Sample Construction
 
-> "We begin with all firms in the CRSP/Compustat merged database from 2010 to 2024 (initial universe: 85,432 firm-year observations). We exclude financial firms (SIC codes 6000-6999) because their capital structures are not comparable to non-financial firms (remaining: 67,891). We further exclude firms with negative book equity (remaining: 65,234) and those with missing data for our key variables (remaining: 58,117). Our final sample consists of 58,117 firm-year observations from 5,892 unique firms."
+> "We begin with all students enrolled in grades 3–8 in the district during the study period (initial universe: 42,317 student-year observations). We exclude students with fewer than 80% attendance, as their outcome data are likely unreliable (remaining: 38,904). We further exclude students who transferred mid-year and therefore lacked a complete pre-test record (remaining: 37,612). Our final analytic sample consists of 37,612 student-year observations from 9,428 unique students."
 
 **Present this as a table**:
 
-| Filter | Observations Dropped | Remaining |
-|--------|---------------------|-----------|
-| CRSP/Compustat merged, 2010-2024 | -- | 85,432 |
-| Exclude financial firms (SIC 6000-6999) | 17,541 | 67,891 |
-| Exclude negative book equity | 2,657 | 65,234 |
-| Require non-missing key variables | 7,117 | 58,117 |
+| Filter                                           | Observations Dropped | Remaining |
+| ------------------------------------------------ | -------------------- | --------- |
+| All enrolled students, grades 3–8, study period  | --                   | 42,317    |
+| Exclude <80% attendance                          | 3,413                | 38,904    |
+| Exclude mid-year transfers with missing pre-test | 1,292                | 37,612    |
 
-### Common Sample Issues in Finance
+### Common Sample Issues
 
-- **Survivorship bias**: Only including firms that survived to the end of the sample period. Use CRSP delisting data to include dead firms.
-- **Look-ahead bias**: Using information that was not available at the time. Ensure accounting data is lagged appropriately (Compustat data is typically available 3-6 months after fiscal year end).
-- **Selection bias**: Your sample may not be representative. Discuss who is included and excluded.
+- **Survivorship bias**: Only including units that remained in the dataset through the end of the study. Use full enrollment or registration records to include those who dropped out or left.
+- **Look-ahead bias**: Using information that was not available at the time of the decision being studied. Ensure administrative data reflects what was known when each decision was made.
+- **Selection bias**: Your sample may not be representative of the broader population. Discuss who is included and excluded and what that means for generalizability.
 
 ## Variable Definitions
 
@@ -93,24 +88,26 @@ Explain every step of sample construction clearly:
 
 State precisely what you are measuring and how.
 
-**Example**: "Our dependent variable is the three-day cumulative abnormal return (CAR[-1,+1]) around dividend announcement dates, calculated using the market model with a 200-day estimation window ending 20 days before the event."
+**Example**: "Our dependent variable is the student's end-of-year standardized reading score, expressed as a standardized z-score within each grade level and year to allow comparisons across cohorts."
 
 ### Independent Variables
 
 Define each variable with its formula and data source.
 
 **Example**:
+
 > "We define the following independent variables:
-> - **DivChange**: Percentage change in quarterly dividends per share, calculated as (D_t - D_{t-1}) / D_{t-1}
-> - **Size**: Natural logarithm of market capitalization (price x shares outstanding from CRSP) measured at fiscal year end
-> - **Leverage**: Total debt (Compustat: DLTT + DLC) divided by total assets (AT)
-> - **ROA**: Net income (NI) divided by total assets (AT)"
+>
+> - **Treatment**: Binary indicator equal to 1 if the student's classroom used the intervention curriculum during the study year
+> - **Prior achievement**: Standardized score on the previous year's reading assessment
+> - **Class size**: Number of students enrolled in the student's assigned classroom as of October census
+> - **Experience**: Years of teaching experience of the student's classroom teacher"
 
 ### Control Variables
 
 Explain why each control variable is included -- it should control for an alternative explanation.
 
-**Example**: "We control for firm size (ln(MktCap)) because larger firms have richer information environments, which may reduce the signaling value of dividends (Atiase, 1985)."
+**Example**: "We control for prior achievement because students with higher baseline skills may learn at different rates regardless of intervention assignment, which could confound the estimated treatment effect (Bloom, Hill, Black, & Lipsey, 2008)."
 
 ## Statistical Models
 
@@ -118,58 +115,58 @@ Explain why each control variable is included -- it should control for an altern
 
 Write out the regression equation explicitly.
 
-> **CAR_i = alpha + beta_1 x DivChange_i + beta_2 x Size_i + beta_3 x Leverage_i + beta_4 x ROA_i + epsilon_i**
+> **Score_i = alpha + beta_1 x Treatment_i + beta_2 x PriorScore_i + beta_3 x ClassSize_i + beta_4 x Experience_i + epsilon_i**
 
 ### Explain Your Choices
 
-- **Why this model?** (OLS, logit, panel regression, event study -- justify the choice)
-- **Fixed effects**: Do you include firm fixed effects? Year fixed effects? Industry fixed effects? Why?
-- **Standard errors**: How are they clustered? (By firm? By year? Two-way clustering?)
-- **Endogeneity**: What is your identification strategy?
+- **Why this model?** (OLS, logit, multilevel model, difference-in-differences -- justify the choice)
+- **Fixed effects**: Do you include unit fixed effects? Time fixed effects? Clustering levels? Why?
+- **Standard errors**: How are they clustered? (By classroom? By school? By cohort?)
+- **Identification**: What is your identification strategy for causal claims?
 
-### Common Econometric Approaches in Finance
+### Common Quantitative Approaches
 
-| Method | When to Use | Key Assumption |
-|--------|------------|----------------|
-| **OLS** | Cross-sectional analysis | Exogeneity of regressors |
-| **Panel regression (fixed effects)** | Multiple firms over time | Unobserved heterogeneity is time-invariant |
-| **Event study** | Measuring market reaction to an event | Market model correctly estimates expected returns |
-| **Difference-in-differences** | Natural experiment with treatment/control | Parallel trends assumption |
-| **Instrumental variables (2SLS)** | Addressing endogeneity | Valid instrument (relevant and excludable) |
-| **Logit/probit** | Binary dependent variable | Correct distributional assumption |
-| **Fama-MacBeth** | Cross-sectional risk premia | Returns are cross-sectionally independent |
+| Method                            | When to Use                                      | Key Assumption                                    |
+| --------------------------------- | ------------------------------------------------ | ------------------------------------------------- |
+| **OLS regression**                | Continuous outcome, testing associations         | Linearity and exogeneity of regressors            |
+| **Multilevel model**              | Units nested within groups (students in schools) | Independence across higher-level units            |
+| **Difference-in-differences**     | Natural experiment with treatment/control groups | Parallel pre-treatment trends                     |
+| **Regression discontinuity**      | Cutoff-based assignment rule                     | Continuity of potential outcomes at the threshold |
+| **Instrumental variables (2SLS)** | Addressing endogeneity                           | Valid instrument (relevant and excludable)        |
+| **Logit/probit**                  | Binary dependent variable                        | Correct distributional assumption                 |
+| **Interrupted time series**       | Longitudinal data with a discrete policy change  | Stable trend in the absence of the intervention   |
 
 ## Limitations
 
 Every methodology has limitations. Acknowledging them demonstrates intellectual honesty and strengthens your paper.
 
-### Common Limitations in Finance Research
+### Common Limitations
 
-1. **Endogeneity**: "We cannot fully rule out reverse causality. While we use lagged independent variables to mitigate this concern, the possibility remains that unobserved factors drive both dividend policy and firm performance."
+1. **Endogeneity**: "We cannot fully rule out reverse causality. While we use prior-year measures to reduce this concern, the possibility remains that unobserved student or family characteristics drive both program participation and outcomes."
 
-2. **Generalizability**: "Our sample is limited to US-listed firms and may not generalize to other markets with different institutional environments."
+2. **Generalizability**: "Our sample is drawn from a single urban district. Results may not generalize to rural settings or districts with different student population characteristics or resource levels."
 
-3. **Data limitations**: "We use annual Compustat data, which may mask within-year variation. Higher-frequency data could reveal dynamics not captured in our analysis."
+3. **Data limitations**: "We use annual administrative records, which may mask within-year variation. Higher-frequency data could reveal dynamics not captured in our analysis."
 
-4. **Measurement error**: "Our proxy for information environment (analyst coverage) is an imperfect measure. Alternative proxies, such as forecast dispersion, may capture different aspects of the information environment."
+4. **Measurement error**: "Our proxy for instructional quality (teacher experience) is an imperfect measure. More direct observation instruments, such as structured classroom observations, may capture different or more relevant dimensions of teaching practice."
 
 ## Common Mistakes
 
-1. **Insufficient detail**: "We ran a regression" is not a methodology. Specify the model, variables, estimation technique, and standard error treatment.
+1. **Insufficient detail**: "We ran a regression" is not a methodology. Specify the model, variables, estimation approach, and how standard errors are handled.
 
-2. **No justification for choices**: Every methodological choice should be justified. Why OLS? Why these controls? Why this sample period?
+2. **No justification for choices**: Every methodological choice should be justified. Why this model? Why these controls? Why this sample period or population?
 
-3. **Ignoring endogeneity**: In finance, most interesting relationships are potentially endogenous. At minimum, acknowledge the concern; ideally, address it with an identification strategy.
+3. **Ignoring threats to validity**: In most fields, the most important relationships are potentially confounded. At minimum, acknowledge the concern; ideally, address it with a clear identification strategy.
 
-4. **Not reporting robustness checks**: Readers want to know if your results survive alternative specifications (different controls, different time periods, different variable definitions).
+4. **Not reporting robustness checks**: Readers want to know if your results survive alternative specifications (different controls, different time periods, different variable definitions, or alternative samples).
 
-5. **Vague variable definitions**: "We control for size" -- measured how? Log of market cap? Log of total assets? Revenue? The choice matters.
+5. **Vague variable definitions**: "We control for ability" -- measured how? A standardized test score? A teacher rating? The choice matters.
 
-6. **Missing sample construction details**: Not explaining how you went from the raw database to your final sample. Include a sample selection table.
+6. **Missing sample construction details**: Not explaining how you went from the raw data to your final analytic sample. Include a sample selection table.
 
 ## Key References
 
-- Angrist, J.D. & Pischke, J.S. (2009). *Mostly Harmless Econometrics*, Princeton University Press.
-- Wooldridge, J.M. (2020). *Introductory Econometrics: A Modern Approach*, 7th ed., Cengage.
-- Roberts, M.R. & Whited, T.M. (2013). "Endogeneity in Empirical Corporate Finance." In Constantinides, G., Harris, M. & Stulz, R. (eds.), *Handbook of the Economics of Finance*, Vol. 2A, Elsevier.
-- Creswell, J.W. & Creswell, J.D. (2018). *Research Design: Qualitative, Quantitative, and Mixed Methods Approaches*, 5th ed., SAGE.
+- Angrist, J.D. & Pischke, J.S. (2009). _Mostly Harmless Econometrics_, Princeton University Press.
+- Wooldridge, J.M. (2020). _Introductory Econometrics: A Modern Approach_, 7th ed., Cengage.
+- Shadish, W.R., Cook, T.D., & Campbell, D.T. (2002). _Experimental and Quasi-Experimental Designs for Generalized Causal Inference_, Houghton Mifflin.
+- Creswell, J.W. & Creswell, J.D. (2018). _Research Design: Qualitative, Quantitative, and Mixed Methods Approaches_, 5th ed., SAGE.

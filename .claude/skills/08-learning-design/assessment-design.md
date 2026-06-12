@@ -1,6 +1,6 @@
-# Assessment Design for Financial Education
+# Assessment Design for Education
 
-Effective assessment in financial education measures whether learners can actually apply financial concepts, not just recall definitions. This guide covers assessment types, rubric design, difficulty calibration, and the distinction between formative and summative assessment.
+Effective assessment measures whether learners can actually apply concepts, not just recall definitions. This guide covers assessment types, rubric design, difficulty calibration, and the distinction between formative and summative assessment.
 
 ## Formative vs Summative Assessment
 
@@ -9,7 +9,7 @@ Effective assessment in financial education measures whether learners can actual
 | **Formative** | Guide learning, identify gaps        | During instruction   | Low or no stakes | Concept checks, practice exercises |
 | **Summative** | Evaluate mastery, certify competence | End of module/course | High stakes      | Final exams, capstone projects     |
 
-For financial education, formative assessment is often more valuable than summative. Learners need frequent feedback on whether their calculations are correct and their reasoning is sound _before_ they make real financial decisions.
+For most subjects, formative assessment is often more valuable than summative. Learners need frequent feedback on whether their reasoning is correct and their methods are sound _before_ they must apply them in high-stakes situations.
 
 ## Assessment Types
 
@@ -20,20 +20,19 @@ Quick, low-stakes checks embedded within learning content. Used for formative as
 **Format**: 3-5 questions after each concept section.
 
 ```
-Example Concept Check: Bond Pricing
+Example Concept Check: Cause and Effect Relationships
 
-1. When interest rates rise, bond prices:
-   (a) Rise  (b) Fall  (c) Stay the same  (d) It depends on the bond
+1. When one variable increases, a negatively correlated variable:
+   (a) Increases  (b) Decreases  (c) Stays the same  (d) It depends on context
 
-2. A bond trading at 95 is trading at:
-   (a) A premium  (b) Par  (c) A discount  (d) Cannot determine
+2. A result that falls outside the expected range is:
+   (a) Always an error  (b) Always significant  (c) Worth investigating  (d) Cannot determine
 
-3. True or False: A bond's coupon rate changes when market interest
-   rates change.
+3. True or False: A strong correlation between two variables proves that one causes the other.
    Justify your answer: ___________
 
-4. In your own words, explain why a 30-year bond's price is more
-   sensitive to interest rate changes than a 5-year bond's price.
+4. In your own words, explain why a small sample produces less reliable conclusions
+   than a large sample drawn from the same population.
 ```
 
 **Design principles**:
@@ -45,48 +44,48 @@ Example Concept Check: Bond Pricing
 
 ### 2. Calculation Exercises
 
-Structured problems that require applying formulas and interpreting results. Bloom's Apply level.
+Structured problems that require applying methods and interpreting results. Bloom's Apply level.
 
 ```python
-# Exercise: Returns Calculation
+# Exercise: Rate of Change Calculation
 # Difficulty: Beginner
 
 """
-EXERCISE: Calculate Returns
+EXERCISE: Calculate Rates of Change
 
-Given the following monthly closing prices for a stock:
-Jan: $150.00, Feb: $155.25, Mar: $148.50, Apr: $162.00, May: $159.75
+Given the following monthly measurements for a tracked indicator:
+Jan: 150.00, Feb: 155.25, Mar: 148.50, Apr: 162.00, May: 159.75
 
 Tasks:
-1. Calculate the monthly simple returns for Feb through May
-2. Calculate the cumulative return from Jan to May
-3. Calculate the annualized return (assuming these 4 months are representative)
-4. If you had invested $10,000 in January, what would it be worth in May?
+1. Calculate the month-over-month simple change rates for Feb through May
+2. Calculate the cumulative change from Jan to May
+3. Calculate the annualized rate (assuming these 4 months are representative)
+4. If you started with 10,000 units in January, what would you have in May?
 
 Show your work. Check your answers with the solution code below.
 """
 
 # Solution
-prices = [150.00, 155.25, 148.50, 162.00, 159.75]
-months = ["Jan", "Feb", "Mar", "Apr", "May"]
+values = [150.00, 155.25, 148.50, 162.00, 159.75]
+periods = ["Jan", "Feb", "Mar", "Apr", "May"]
 
-# Task 1: Monthly simple returns
-print("Monthly Returns:")
-for i in range(1, len(prices)):
-    ret = (prices[i] - prices[i-1]) / prices[i-1]
-    print(f"  {months[i]}: {ret:.2%}")
+# Task 1: Period-over-period simple change rates
+print("Period Change Rates:")
+for i in range(1, len(values)):
+    rate = (values[i] - values[i-1]) / values[i-1]
+    print(f"  {periods[i]}: {rate:.2%}")
 
-# Task 2: Cumulative return
-cumulative = (prices[-1] / prices[0]) - 1
-print(f"\nCumulative return (Jan-May): {cumulative:.2%}")
+# Task 2: Cumulative change
+cumulative = (values[-1] / values[0]) - 1
+print(f"\nCumulative change (Jan-May): {cumulative:.2%}")
 
-# Task 3: Annualized return
+# Task 3: Annualized rate
 annualized = (1 + cumulative) ** (12 / 4) - 1
-print(f"Annualized return: {annualized:.2%}")
+print(f"Annualized rate: {annualized:.2%}")
 
-# Task 4: Portfolio value
+# Task 4: Final quantity
 final_value = 10_000 * (1 + cumulative)
-print(f"$10,000 investment value: ${final_value:,.2f}")
+print(f"10,000 starting units ending value: {final_value:,.2f}")
 ```
 
 **Design principles**:
@@ -103,41 +102,42 @@ Real-world scenarios requiring analysis and judgment. Bloom's Analyze and Evalua
 **Grading approach**: Use a rubric (see below) rather than a single correct answer. Case studies often have multiple valid approaches.
 
 ```
-CASE STUDY: Portfolio Recovery After a Market Crash
+CASE STUDY: Recovery After a Sudden Setback
 
 Difficulty: Intermediate
 Time: 45 minutes
 Bloom's Level: Analyze, Evaluate
 
 SCENARIO:
-In March 2020, a global pandemic caused markets to fall roughly 34%
-in 23 trading days. An investor with a $200,000 portfolio (80% stocks,
-20% bonds) saw their portfolio drop to approximately $152,000.
+A sudden external disruption caused a measurable decline of roughly 34%
+in a key outcome over 23 days. An analyst with a structured approach
+(80% core strategy, 20% contingency reserves) saw their results drop
+to approximately 66% of the prior baseline.
 
 QUESTIONS:
-1. [Analyze] Calculate the exact portfolio impact assuming stocks fell
-   34% and bonds rose 5% during this period.
+1. [Analyze] Calculate the exact impact assuming the core strategy fell
+   34% and the contingency reserves rose 5% during this period.
 
-2. [Analyze] The investor panicked and sold all stocks at the bottom,
-   moving to 100% bonds. By December 2020, the S&P 500 had recovered
-   to its pre-crash level. Calculate the opportunity cost of this
-   decision.
+2. [Analyze] The analyst abandoned the core strategy at the worst point,
+   moving entirely to contingencies. By the end of the period, the core
+   strategy had recovered to its prior level. Calculate the opportunity
+   cost of this decision.
 
-3. [Evaluate] What behavioral biases were likely at play in the
-   investor's decision? (Reference specific biases from
-   behavioral finance.)
+3. [Evaluate] What cognitive or behavioral biases were likely at play in
+   the analyst's decision? (Reference specific biases from relevant
+   behavioral literature.)
 
-4. [Evaluate] Design a plan that this investor could have followed
-   BEFORE the crash to avoid panic selling. What specific
+4. [Evaluate] Design a plan that this analyst could have followed
+   BEFORE the disruption to avoid reactive abandonment. What specific
    pre-commitment strategies would you recommend?
 ```
 
-### 4. Portfolio Projects
+### 4. Capstone Projects
 
 Extended, multi-step assignments that require creating original work. Bloom's Create level.
 
 ```
-PORTFOLIO PROJECT: Build a Retirement Portfolio
+CAPSTONE PROJECT: Design a Long-Term Plan
 
 Difficulty: Advanced
 Time: 2-3 hours
@@ -145,77 +145,77 @@ Bloom's Level: Create, Evaluate
 
 DELIVERABLES:
 
-Part 1: Investor Profile (15 minutes)
-  Create a detailed investor profile including: age, income, risk
-  tolerance, time horizon, financial goals, and constraints.
+Part 1: Stakeholder Profile (15 minutes)
+  Create a detailed profile including: context, goals, constraints,
+  risk tolerance, time horizon, and success criteria.
 
-Part 2: Asset Allocation (30 minutes)
-  Design an asset allocation for this investor. Justify each
-  allocation decision with reference to the investor profile.
+Part 2: Strategic Allocation (30 minutes)
+  Design an approach for this stakeholder. Justify each
+  decision with reference to the profile.
 
 Part 3: Implementation (30 minutes)
-  Select specific funds (ETFs or index funds) for each asset class.
-  Explain your selection criteria (expense ratio, tracking error,
-  liquidity, tax efficiency).
+  Select specific methods or tools for each component.
+  Explain your selection criteria (efficiency, reliability,
+  adaptability, fit with constraints).
 
 Part 4: Analysis (45 minutes)
-  Using historical data:
-  - Calculate the portfolio's historical return and volatility
-  - Create a performance chart comparing to a benchmark
-  - Calculate the maximum historical drawdown
-  - Run a basic Monte Carlo simulation for 30-year outcomes
+  Using available data:
+  - Calculate the approach's historical performance and variability
+  - Create a comparison chart against a relevant baseline
+  - Calculate the worst observed deviation from expectations
+  - Run a basic scenario analysis for long-term outcomes
 
 Part 5: Critique (30 minutes)
-  Identify three weaknesses or risks in your portfolio design.
+  Identify three weaknesses or risks in your design.
   For each, explain: (a) what could go wrong, (b) how likely it is,
   and (c) what you could do to mitigate it.
 ```
 
 ### 5. Simulation Exercises
 
-Interactive exercises using paper trading or portfolio simulators. Combines Apply, Analyze, and Evaluate.
+Interactive exercises using structured simulations. Combines Apply, Analyze, and Evaluate.
 
 ```
-SIMULATION: 12-Week Paper Trading Challenge
+SIMULATION: 12-Week Applied Challenge
 
 Setup:
-- Starting capital: $100,000 (simulated)
-- Trading platform: Paper trading account
-- Universe: S&P 500 stocks
+- Starting resources: 100 units (simulated)
+- Platform: Scenario simulation environment
+- Problem set: Course case bank
 
 Weekly Requirements:
-1. Make at least one trade per week (buy or sell)
-2. Record your reasoning BEFORE each trade in a trading journal
-3. After each trade, record the outcome and what you learned
+1. Make at least one substantive decision per week
+2. Record your reasoning BEFORE each decision in a learning journal
+3. After each decision, record the outcome and what you learned
 
 Monthly Review:
-1. Calculate your portfolio's return for the month
-2. Compare to the S&P 500 benchmark
-3. Review your trading journal: How many of your trade rationales
+1. Calculate your cumulative results for the month
+2. Compare to the baseline benchmark
+3. Review your journal: How many of your reasoning rationales
    proved correct? What patterns do you see in your mistakes?
-4. Identify which behavioral biases (if any) affected your decisions
+4. Identify which cognitive biases (if any) affected your decisions
 
 Final Report:
-1. Total return vs benchmark
-2. Risk metrics (volatility, max drawdown, Sharpe ratio)
-3. Analysis of best and worst trades
-4. Reflection: What did you learn about yourself as an investor?
-5. What would you do differently in a real portfolio?
+1. Total result vs benchmark
+2. Quality metrics (variability, worst deviation, quality ratio)
+3. Analysis of best and worst decisions
+4. Reflection: What did you learn about your own reasoning patterns?
+5. What would you do differently in a real application?
 ```
 
 ## Rubric Design
 
-### General Financial Education Rubric Template
+### General Education Rubric Template
 
 ```
 RUBRIC: [Assessment Name]
 Scale: 4=Excellent, 3=Proficient, 2=Developing, 1=Beginning
 
-CRITERION 1: Accuracy of Calculations
-  4: All calculations correct, appropriate formulas used
-  3: Minor calculation errors, correct approach
-  2: Some correct calculations, some formula errors
-  1: Major calculation errors or wrong formulas
+CRITERION 1: Accuracy of Methods
+  4: All methods applied correctly, appropriate approach used
+  3: Minor errors, correct overall approach
+  2: Some correct steps, some methodological errors
+  1: Major errors or wrong approach
 
 CRITERION 2: Interpretation of Results
   4: Clear, insightful interpretation with practical implications
@@ -230,44 +230,44 @@ CRITERION 3: Critical Analysis
   1: No critical analysis or evaluation
 
 CRITERION 4: Communication
-  4: Clear, well-organized, appropriate use of financial terminology
+  4: Clear, well-organized, appropriate use of subject terminology
   3: Generally clear, minor organizational issues
   2: Somewhat unclear, inconsistent use of terminology
   1: Unclear, disorganized, misuse of terminology
 ```
 
-### Portfolio Project Rubric (Specific Example)
+### Capstone Project Rubric (Specific Example)
 
 ```
-CRITERION: Asset Allocation Justification
+CRITERION: Strategic Allocation Justification
   4 (Excellent):
-    - Allocation percentages tied directly to investor profile
+    - Allocation decisions tied directly to the stakeholder profile
     - Considers time horizon, risk tolerance, and goals
     - Discusses trade-offs explicitly
-    - References diversification principles
+    - References core principles of the subject area
   3 (Proficient):
-    - Allocation generally appropriate for the investor
+    - Allocation generally appropriate for the stakeholder
     - Most decisions justified
     - Some trade-off discussion
   2 (Developing):
     - Allocation exists but justification is weak
     - Some decisions seem arbitrary
-    - Limited connection to investor profile
+    - Limited connection to the stakeholder profile
   1 (Beginning):
-    - Allocation not appropriate for the investor
+    - Allocation not appropriate for the stakeholder
     - Little or no justification
-    - No connection to investor profile or principles
+    - No connection to the profile or principles
 ```
 
 ## Difficulty Calibration
 
 ### Bloom's Level to Difficulty Mapping
 
-| Difficulty   | Bloom's Primary Level | Financial Context                      |
-| ------------ | --------------------- | -------------------------------------- |
-| Beginner     | Remember, Understand  | Define terms, explain concepts         |
-| Intermediate | Apply, Analyze        | Calculate metrics, compare investments |
-| Advanced     | Evaluate, Create      | Critique strategies, build portfolios  |
+| Difficulty   | Bloom's Primary Level | Learning Context                      |
+| ------------ | --------------------- | ------------------------------------- |
+| Beginner     | Remember, Understand  | Define terms, explain concepts        |
+| Intermediate | Apply, Analyze        | Apply methods, compare approaches     |
+| Advanced     | Evaluate, Create      | Critique strategies, design solutions |
 
 ### Calibration Techniques
 
@@ -282,46 +282,44 @@ CRITERION: Asset Allocation Justification
 
 # BEGINNER: Formula and data provided
 """
-Calculate the Sharpe Ratio using the formula:
-Sharpe = (R_portfolio - R_riskfree) / StdDev_portfolio
+Calculate the quality ratio using the formula:
+Quality Ratio = (Average Change - Baseline) / Variability
 
-Given: R_portfolio = 12%, R_riskfree = 4%, StdDev = 18%
+Given: Average Change = 12%, Baseline = 4%, Variability = 18%
 """
 
 # INTERMEDIATE: Data provided, student selects formula
 """
-Given the following annual data for a portfolio:
-Returns: 15%, 8%, -5%, 22%, 12%
+Given the following periodic data for an observed indicator:
+Results: 15%, 8%, -5%, 22%, 12%
 
-Calculate the Sharpe ratio assuming a risk-free rate of 4%.
-You will need to calculate the average return and standard deviation first.
+Calculate the quality ratio assuming a baseline of 4%.
+You will need to calculate the average and standard deviation first.
 """
 
 # ADVANCED: Student must gather data and make decisions
 """
-Download 5 years of monthly returns for any ETF of your choice.
-Calculate and interpret the Sharpe ratio. Compare it to the
-S&P 500 Sharpe ratio over the same period. What does this
-comparison tell you about the risk-adjusted performance of
-your chosen ETF?
+Download 5 years of periodic data for any publicly available dataset of your choice.
+Calculate and interpret the quality ratio. Compare it to a relevant benchmark
+over the same period. What does this comparison tell you about the
+relative performance of your chosen subject?
 """
 ```
 
 ## Common Pitfalls
 
-1. **Testing recall when teaching application**: If you teach students to calculate returns, test them on calculating returns, not on defining returns.
+1. **Testing recall when teaching application**: If you teach students to apply a method, test them on applying it, not on reciting its definition.
 
 2. **Only one question type**: Multiple choice is efficient but insufficient. Mix in calculations, short answer, and open-ended analysis.
 
-3. **Trick questions**: Financial concepts are complex enough without tricks. Clear, direct questions that test genuine understanding are more effective.
+3. **Trick questions**: Concepts are complex enough without tricks. Clear, direct questions that test genuine understanding are more effective.
 
 4. **No partial credit for multi-step problems**: If a student uses the correct approach but makes an arithmetic error in step 2, they should receive credit for correct methodology.
 
-5. **Ignoring the "why"**: Asking students to calculate a Sharpe ratio without asking them to interpret what it means or when it is useful.
+5. **Ignoring the "why"**: Asking students to calculate a quality ratio without asking them to interpret what it means or when it is useful.
 
 ## Cross-References
 
 - See **[blooms-taxonomy](blooms-taxonomy.md)** for aligning assessments to learning objectives
 - See **[curriculum-patterns](curriculum-patterns.md)** for the mastery learning approach to assessment gating
 - See **[gamification](gamification.md)** for turning assessments into engaging challenges
-- See **[06-python-finance](../06-python-finance/SKILL.md)** for Python code examples to embed in exercises
