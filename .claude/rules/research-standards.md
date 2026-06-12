@@ -7,41 +7,34 @@ paths:
 
 ## Scope
 
-These rules apply to all research activities, including literature reviews, data collection, empirical analysis, thesis research, case study research, and any work that involves gathering, evaluating, or synthesizing information from external sources. They apply to both undergraduate and postgraduate finance research.
+These rules apply to all research activities, including literature reviews, data collection, empirical analysis, thesis research, case study research, and any work that involves gathering, evaluating, or synthesizing information from external sources. They apply to both undergraduate and postgraduate research across all disciplines.
 
 ## MUST Rules
 
 ### 1. Prefer Peer-Reviewed Sources from Academic Databases
 
-Research MUST prioritize peer-reviewed academic sources. For finance research, these include journals indexed in established databases.
+Research MUST prioritize peer-reviewed academic sources from established academic databases.
 
 **Preferred Academic Databases**:
 
 - **JSTOR** — Historical and current journal articles across disciplines
-- **SSRN** (Social Science Research Network) — Working papers and preprints in finance and economics
+- **SSRN** (Social Science Research Network) — Working papers and preprints across the social sciences
 - **Google Scholar** — Broad academic search (verify the source quality of results)
-- **EBSCOhost / Business Source Complete** — Business and finance journals
+- **Scopus** — Multidisciplinary abstract and citation database
+- **Web of Science** — Cross-disciplinary citation index covering sciences, social sciences, and humanities
 - **ProQuest** — Dissertations, theses, and journal articles
-- **ScienceDirect / Elsevier** — Major publisher of finance journals
-- **Wiley Online Library** — Publisher of many finance and accounting journals
+- **ScienceDirect / Elsevier** — Major publisher across science, technology, and social science journals
+- **Discipline-appropriate indexes** — Subject-specific databases relevant to the field of study (e.g., PubMed for health sciences, PsycINFO for psychology, ERIC for education)
 
-**Top Finance Journals** (not exhaustive, but a starting reference):
-
-- Journal of Finance
-- Journal of Financial Economics
-- Review of Financial Studies
-- Journal of Financial and Quantitative Analysis
-- Journal of Monetary Economics
-- Journal of Banking and Finance
-- Financial Analysts Journal
+**Top Journals** vary by discipline; consult your field's authoritative journal rankings. General indicators of quality include inclusion in Scopus or Web of Science, peer review by domain experts, and editorial board composition.
 
 **Source Priority Order**:
 
 1. Peer-reviewed journal articles
-2. Working papers from reputable institutions (NBER, SSRN from known authors, central bank working paper series)
+2. Working papers from reputable institutions (national research councils, SSRN from known authors, university working paper series)
 3. Books and textbook chapters by recognized authorities
-4. Official institutional reports (IMF, World Bank, BIS, central banks, SEC)
-5. Reputable financial press (for current events only, not for theoretical claims)
+4. Official institutional reports (intergovernmental bodies, government agencies, regulatory authorities)
+5. Reputable disciplinary press (for current events only, not for theoretical claims)
 
 **Enforced by**: research-assistant agent
 **Violation**: HIGH priority fix — replace or supplement with peer-reviewed sources
@@ -50,30 +43,31 @@ Research MUST prioritize peer-reviewed academic sources. For finance research, t
 
 Every source used in research MUST be evaluated against the CRAAP test before inclusion. This is especially important for non-journal sources.
 
-| Criterion | Question to Ask | Finance-Specific Guidance |
-|-----------|----------------|--------------------------|
-| **Currency** | When was it published or last updated? | Financial regulations, market structures, and economic conditions change rapidly. A paper on banking regulation from 2005 may not reflect post-2008 reforms. Check if the findings predate major structural changes. |
-| **Relevance** | Does it address your research question? | A paper on equity markets in developed economies may not apply to your research on emerging market debt. Verify that the context (geography, time period, market type) matches your scope. |
-| **Authority** | Who wrote it? What are their credentials? | Check the author's institutional affiliation, publication record, and expertise. A Federal Reserve economist writing about monetary policy carries different weight than an anonymous blog author. |
-| **Accuracy** | Is the information supported by evidence? | Does the source present data, methodology, and results transparently? Can the findings be verified or replicated? Are the statistical methods appropriate? |
-| **Purpose** | Why does this source exist? | Distinguish between academic research (seeking truth), advocacy (promoting a position), and marketing (selling a product). Industry white papers from asset managers may have promotional intent. |
+| Criterion     | Question to Ask                           | Guidance                                                                                                                                                                                                                                            |
+| ------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Currency**  | When was it published or last updated?    | Policies, regulations, and empirical conditions change. A study from a decade ago may not reflect current practice, legal frameworks, or structural changes in the field. Check whether findings predate major developments relevant to your topic. |
+| **Relevance** | Does it address your research question?   | A study conducted in one context (geography, population, time period, institutional setting) may not apply to a different context. Verify that the scope matches your research question.                                                            |
+| **Authority** | Who wrote it? What are their credentials? | Check the author's institutional affiliation, publication record, and disciplinary expertise. A domain specialist publishing in a peer-reviewed venue carries different weight than an anonymous online author.                                     |
+| **Accuracy**  | Is the information supported by evidence? | Does the source present data, methodology, and results transparently? Can the findings be verified or replicated? Are the methods appropriate for the claims made?                                                                                  |
+| **Purpose**   | Why does this source exist?               | Distinguish between academic research (seeking truth), advocacy (promoting a position), and marketing (selling a product). Industry reports and white papers may have promotional intent.                                                           |
 
 **Correct Evaluation**:
 
 ```
-Source: "The Impact of Quantitative Easing on Asset Prices" by Krishnamurthy
-and Vissing-Jorgensen (2011), Brookings Papers on Economic Activity.
+Source: "The Role of Feedback in Student Learning" by Hattie and Timperley
+(2007), Review of Educational Research.
 
-Currency: Published 2011, covers QE1 and QE2. Still relevant as a foundational
-study, but should be supplemented with research covering QE3 and post-COVID QE.
-Relevance: Directly addresses my research question on unconventional monetary policy.
-Authority: Both authors are established finance professors; published in a
-top-tier policy journal.
-Accuracy: Uses event-study methodology with clearly described data and methods.
+Currency: Published 2007; still widely cited as foundational. Should be
+supplemented with more recent studies where the research base has evolved.
+Relevance: Directly addresses feedback as a learning intervention — central
+to my research question.
+Authority: Both authors are recognized educational researchers; published in
+a top-tier peer-reviewed journal.
+Accuracy: Synthesizes a large body of studies with clearly described methods.
 Purpose: Academic research with no apparent commercial interest.
 
-Assessment: Strong source for foundational QE analysis. Will supplement with
-more recent studies for post-2020 developments.
+Assessment: Strong source for foundational claims. Will supplement with
+more recent empirical studies for current findings.
 ```
 
 **Enforced by**: research-assistant agent
@@ -83,29 +77,29 @@ more recent studies for post-2020 developments.
 
 The research methodology MUST be appropriate for the type of question being asked. Choosing the wrong method undermines the validity of the findings.
 
-**Common Finance Research Methodologies and Their Applications**:
+**Common Research Methodologies and Their Applications**:
 
-| Research Question Type | Appropriate Methods | Example |
-|----------------------|-------------------|---------|
-| "What is the effect of X on Y?" | Regression analysis, event study, difference-in-differences | "What is the effect of dividend announcements on stock prices?" |
-| "How does X relate to Y?" | Correlation analysis, panel data models, Granger causality | "How do interest rates relate to housing prices?" |
-| "What happened and why?" | Case study analysis, historical analysis, qualitative research | "Why did Long-Term Capital Management fail?" |
-| "What is the best strategy for X?" | Backtesting, optimization, simulation | "What is the optimal rebalancing frequency for a 60/40 portfolio?" |
-| "What do practitioners/experts think about X?" | Surveys, interviews, content analysis | "How do CFOs perceive the trade-off between debt and equity financing?" |
-| "What does the literature say about X?" | Systematic literature review, meta-analysis | "What is the consensus on the small-cap premium?" |
+| Research Question Type                         | Appropriate Methods                                            | Example                                                                           |
+| ---------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| "What is the effect of X on Y?"                | Regression analysis, experiment, difference-in-differences     | "What is the effect of class size on student outcomes?"                           |
+| "How does X relate to Y?"                      | Correlation analysis, survey analysis, mixed-methods           | "How do study habits relate to academic performance?"                             |
+| "What happened and why?"                       | Case study analysis, historical analysis, qualitative research | "Why did a particular policy intervention fail?"                                  |
+| "What is the best approach for X?"             | Systematic review, comparative analysis, simulation            | "What instructional strategies most effectively support self-regulated learning?" |
+| "What do practitioners/experts think about X?" | Surveys, interviews, content analysis                          | "How do teachers perceive the role of formative assessment?"                      |
+| "What does the literature say about X?"        | Systematic literature review, meta-analysis                    | "What is the consensus on the effectiveness of spaced repetition?"                |
 
 **Methodology Mismatch Examples**:
 
 ```
-Incorrect: Using a case study of one company to prove a general claim about
-all firms in an industry. (A single case cannot establish generalizability.)
+Incorrect: Using a case study of one institution to prove a general claim about
+all institutions. (A single case cannot establish generalizability.)
 
 Incorrect: Running a regression with 15 observations and drawing strong
 causal conclusions. (Insufficient sample size for statistical inference.)
 
 Incorrect: Using correlation to claim causation without addressing
-endogeneity. ("Countries with more ice cream sales have more drownings"
-does not mean ice cream causes drowning.)
+confounding variables. ("Countries with more ice cream sales have more
+drownings" does not mean ice cream causes drowning.)
 ```
 
 **Enforced by**: research-assistant agent
@@ -115,32 +109,28 @@ does not mean ice cream causes drowning.)
 
 All data used in research MUST come from authoritative, well-documented sources. The data source, time period, frequency, and any transformations MUST be documented.
 
-**Reputable Data Sources for Finance Research**:
+**Reputable Data Sources** (illustrative; discipline-appropriate equivalents apply):
 
-| Source | Data Available | Access |
-|--------|---------------|--------|
-| **FRED** (Federal Reserve Economic Data) | Interest rates, GDP, inflation, employment, monetary aggregates | Free |
-| **World Bank Open Data** | Global development indicators, GDP, trade, poverty | Free |
-| **IMF Data** | International financial statistics, balance of payments, exchange rates | Free |
-| **BIS Statistics** | International banking, derivatives, debt securities, exchange rates | Free |
-| **OECD Data** | Economic indicators for member countries | Free / institutional |
-| **SEC EDGAR** | Company filings, financial statements, insider transactions | Free |
-| **CRSP** (Center for Research in Security Prices) | US stock prices, returns, market indices | Institutional subscription |
-| **Compustat** | Company financial statements, fundamental data | Institutional subscription |
-| **Bloomberg Terminal** | Real-time and historical market data, news, analytics | Institutional subscription |
-| **Refinitiv (formerly Thomson Reuters)** | Market data, company fundamentals, ESG data | Institutional subscription |
+| Source                            | Data Available                                                                                 | Access               |
+| --------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------- |
+| **World Bank Open Data**          | Global development indicators, education, health, poverty                                      | Free                 |
+| **UN Data**                       | International statistics across social, economic, and environmental domains                    | Free                 |
+| **OECD Data**                     | Education, labor, health, and economic indicators for member countries                         | Free / institutional |
+| **National statistical agencies** | Country-level official statistics (population, health, education, labor)                       | Free                 |
+| **Institutional repositories**    | University and research center data archives                                                   | Varies               |
+| **Discipline-specific databases** | Subject-specific empirical datasets (e.g., ICPSR for social science; ROPER for public opinion) | Varies               |
 
 **Data Documentation Requirements**:
 
 ```
 Correct:
-"We use monthly adjusted closing prices for S&P 500 constituents from CRSP
-for the period January 2000 to December 2023 (n = 288 observations per firm).
-Returns are calculated as log returns. Firms with fewer than 60 months of
-continuous data are excluded, resulting in a final sample of 387 firms."
+"We use annual survey data from the national education assessment
+for the period 2010 to 2023 (n = 14 waves). Responses are aggregated
+at the school level. Schools with fewer than 20 respondents per wave
+are excluded, resulting in a final sample of 412 schools."
 
 Incorrect:
-"We got stock price data from the internet for the last few years."
+"We got data from the internet for the last few years."
 ```
 
 **Enforced by**: research-assistant agent
@@ -153,12 +143,11 @@ Research MUST correctly identify and appropriately use primary versus secondary 
 **Primary Sources** — original, first-hand evidence:
 
 - Original research articles reporting new empirical findings
-- Company financial statements (10-K, 10-Q filings)
-- Central bank meeting minutes, speeches, and press releases
+- Organizational records and official documents (government reports, institutional filings, meeting minutes)
 - Legislative and regulatory texts
 - Raw datasets
 - Interview transcripts or survey data you collected yourself
-- Historical documents (e.g., original text of the Bretton Woods agreement)
+- Historical documents (e.g., original policy texts, archival records)
 
 **Secondary Sources** — interpret, analyze, or summarize primary sources:
 
@@ -170,8 +159,8 @@ Research MUST correctly identify and appropriately use primary versus secondary 
 
 **Rules for Use**:
 
-- For theoretical claims, cite the **primary source** (the original paper or book), not a textbook that describes it. Write "Modigliani and Miller (1958)" not "as described in Brealey, Myers, and Allen (2020)."
-- When you cannot access the primary source, use "as cited in" format: "Modigliani and Miller (1958, as cited in Brealey et al., 2020)." This is a signal that you have not verified the original.
+- For theoretical claims, cite the **primary source** (the original paper or book), not a textbook that describes it. Write "Biggs (1996)" not "as described in Ramsden (2003)."
+- When you cannot access the primary source, use "as cited in" format: "Biggs (1996, as cited in Ramsden, 2003)." This is a signal that you have not verified the original.
 - Secondary sources are appropriate for providing context, summarizing broad literatures, or citing established consensus.
 - Your own empirical analysis should be treated as primary evidence within your paper.
 
@@ -184,22 +173,22 @@ All research MUST honestly acknowledge its limitations, including data limitatio
 
 **Common Limitations to Address**:
 
-- **Survivorship bias**: If your dataset only includes firms that still exist, you are missing firms that failed or were acquired, which can distort performance conclusions
+- **Survivorship bias**: If your dataset only includes units that persisted (institutions still operating, programs still running), you are missing those that did not continue, which can distort conclusions about performance or effectiveness
 - **Sample selection bias**: If your sample is not representative of the population you are making claims about
-- **Look-ahead bias**: If your analysis uses information that would not have been available at the time of the decision being studied
-- **Data limitations**: Short time series, missing observations, low frequency data for high-frequency questions
-- **Geographic or temporal scope**: Findings from US equity markets may not generalize to European bond markets or emerging economies
+- **Retrospective bias**: If your analysis uses information that would not have been available at the time of the events being studied
+- **Data limitations**: Short time series, missing observations, low-granularity data for finer-grained questions
+- **Geographic or contextual scope**: Findings from one country, institution type, or student population may not generalize to others
 
 **Correct**:
 
 ```
 This study has several limitations. First, the sample period (2015-2024)
-does not include a prolonged bear market, which may limit the generalizability
-of the risk management findings to severe downturn conditions. Second, the
-dataset excludes firms with market capitalization below $500 million, which
-means the results may not apply to small-cap stocks. Third, the use of
-monthly return data may obscure intra-month volatility dynamics that would
-be visible at daily or intraday frequencies.
+covers a time of significant disruption (the COVID-19 pandemic), which may
+limit the generalizability of the findings to more typical conditions.
+Second, the dataset includes only institutions that voluntarily reported data,
+which introduces a potential self-selection bias. Third, the use of annual
+outcome data may obscure shorter-term fluctuations that would be visible
+at higher frequency.
 ```
 
 **Incorrect**:
@@ -222,21 +211,22 @@ MUST NOT selectively present only evidence that supports your thesis while ignor
 **Detection Patterns**:
 
 ```
-"All studies support the efficient market hypothesis."
-(This ignores decades of behavioral finance research documenting anomalies.)
+"All studies support this intervention's effectiveness."
+(This likely ignores studies with null or negative results.)
 
-"The evidence unanimously shows that value investing outperforms."
-(This ignores periods and studies where value underperformed, such as 2010-2020.)
+"The evidence unanimously shows that X leads to Y."
+(This ignores studies with contradictory findings or boundary conditions.)
 ```
 
 **Correct Approach**: Present the strongest evidence on all sides, then explain why your interpretation is more compelling.
 
 ```
-"While Fama and French (1993) demonstrated a persistent value premium in US
-equities, Asness et al. (2018) documented significant time variation in the
-premium, including an extended period of value underperformance from 2010 to
-2020. This paper argues that the value premium remains economically meaningful
-over full market cycles, but acknowledges that its timing is unpredictable."
+"While early studies documented strong positive effects of the intervention
+(Smith, 2010; Jones, 2012), more recent replications found smaller or null
+effects in different populations (Lee, 2019; Patel, 2022). This paper argues
+the intervention is effective under specific conditions — smaller class sizes
+and trained facilitators — and examines the boundary conditions that determine
+when those effects hold."
 ```
 
 **Consequence**: HIGH priority fix — present counterevidence and address it
@@ -248,9 +238,9 @@ MUST NOT present data from more than 5 years ago as current without acknowledgin
 **Detection Patterns**:
 
 ```
-"The unemployment rate in the United States is 3.7%."
-(If this statistic is from 2023 and the paper is being written in 2026,
-the actual rate may have changed significantly.)
+"The literacy rate in [country] is 85%."
+(If this statistic is from 2019 and the paper is being written in 2026,
+the actual rate may have changed.)
 ```
 
 **Acceptable Uses of Older Data**:
@@ -269,21 +259,21 @@ MUST NOT claim that one variable causes another based solely on a statistical co
 **Detection Patterns**:
 
 ```
-"Our regression shows that higher ESG scores cause better stock returns."
+"Our regression shows that higher attendance causes better outcomes."
 (Regression coefficients do not establish causation without addressing
-endogeneity, omitted variables, and reverse causality.)
+confounding, omitted variables, and reverse causality.)
 ```
 
 **Correct Alternative**:
 
 ```
 "Our regression results indicate a positive and statistically significant
-association between ESG scores and stock returns. However, this relationship
-may be driven by omitted variables such as firm quality or management
-competence, and we cannot rule out reverse causality — that is, better-
-performing firms may invest more in ESG initiatives because they can afford
-to. Future research using instrumental variables or natural experiments
-could help establish the causal direction."
+association between attendance and outcomes. However, this relationship
+may be driven by confounding factors such as student motivation or
+socioeconomic background, and we cannot rule out reverse causality — that
+is, students with better outcomes may be more likely to attend. Future
+research using randomized designs or natural experiments could help
+establish the causal direction."
 ```
 
 **Consequence**: HIGH priority fix — qualify the causal language
@@ -299,6 +289,6 @@ MUST NOT run multiple statistical tests until a significant result appears and t
 Research standards exceptions include:
 
 1. **Preliminary or exploratory research**: Early-stage research may use less rigorous sources for initial scoping. However, the final submission must meet the standards above.
-2. **Practitioner-oriented assignments**: Some courses ask for industry-style research (e.g., equity research reports, consulting memos). These may rely more heavily on industry sources and less on peer-reviewed journals, but data quality and source documentation requirements still apply.
-3. **Qualitative research**: Case studies and qualitative analyses follow different methodological standards (e.g., Yin's case study methodology). The rigor requirement applies, but the specific methods differ from quantitative research.
+2. **Practitioner-oriented assignments**: Some courses ask for practice-oriented research (e.g., policy briefs, professional reports, consulting memos). These may rely more heavily on practitioner sources and less on peer-reviewed journals, but data quality and source documentation requirements still apply.
+3. **Qualitative research**: Case studies and qualitative analyses follow different methodological standards (e.g., Yin's case study methodology, grounded theory). The rigor requirement applies, but the specific methods differ from quantitative research.
 4. **Unavailable primary sources**: When a primary source is behind a paywall or in a language you cannot read, citing through a reputable secondary source with "as cited in" notation is acceptable. Note this as a limitation.

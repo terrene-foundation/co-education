@@ -1,11 +1,11 @@
 ---
 name: academic-writing
-description: "Academic writing for finance students. Use for thesis structure, claim-evidence-warrant arguments, literature review synthesis, methodology sections, and research questions."
+description: "Academic writing for students. Use for thesis structure, claim-evidence-warrant arguments, literature review synthesis, methodology sections, and research questions."
 ---
 
 # Academic Writing
 
-A practical guide to writing well-structured academic papers in finance. Covers the standard thesis/dissertation structure, how to construct rigorous arguments, how to write literature reviews that synthesize rather than summarize, and how to describe research methodology clearly. Aimed at UG/PG students writing research papers, honours theses, or dissertations in finance and economics.
+A practical guide to writing well-structured academic papers in any subject. Covers the standard thesis/dissertation structure, how to construct rigorous arguments, how to write literature reviews that synthesize rather than summarize, and how to describe research methodology clearly. Aimed at UG/PG students writing research papers, honours theses, or dissertations across any academic discipline.
 
 ## Quick Reference
 
@@ -17,12 +17,12 @@ A practical guide to writing well-structured academic papers in finance. Covers 
 
 ## Files in This Module
 
-| File | Topic | Use When |
-|------|-------|----------|
-| [thesis-structure.md](thesis-structure.md) | Introduction, lit review, methodology, results, discussion, conclusion | Planning and organizing a research paper or thesis |
-| [argument-construction.md](argument-construction.md) | Claim-evidence-warrant, counterarguments, logical fallacies | Building persuasive, rigorous academic arguments |
-| [literature-review.md](literature-review.md) | Thematic organization, synthesis, identifying gaps, critical evaluation | Writing or improving a literature review |
-| [methodology-section.md](methodology-section.md) | Quantitative vs qualitative, data sources, sample selection, limitations | Describing your research design and methods |
+| File                                                 | Topic                                                                    | Use When                                           |
+| ---------------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------- |
+| [thesis-structure.md](thesis-structure.md)           | Introduction, lit review, methodology, results, discussion, conclusion   | Planning and organizing a research paper or thesis |
+| [argument-construction.md](argument-construction.md) | Claim-evidence-warrant, counterarguments, logical fallacies              | Building persuasive, rigorous academic arguments   |
+| [literature-review.md](literature-review.md)         | Thematic organization, synthesis, identifying gaps, critical evaluation  | Writing or improving a literature review           |
+| [methodology-section.md](methodology-section.md)     | Quantitative vs qualitative, data sources, sample selection, limitations | Describing your research design and methods        |
 
 ## Related Skills
 

@@ -1,11 +1,11 @@
 ---
 name: exam-preparation
-description: "Exam preparation for finance students. Use for study strategies (active recall, spaced repetition, Feynman), exam question types (calculation, conceptual, case, essay), and formula sheets."
+description: "Exam preparation for students in any subject. Use for study strategies (active recall, spaced repetition, Feynman), exam question types (calculation, conceptual, case, essay), and formula sheets."
 ---
 
 # Exam Preparation
 
-Evidence-based study techniques and exam strategies specifically tailored for finance courses. Covers how to study effectively using active recall and spaced repetition, how to approach different types of exam questions (calculations, conceptual, case analysis, essays), and how to create formula sheets that actually help during exams. Aimed at UG/PG students preparing for midterms, finals, and professional certification exams.
+Evidence-based study techniques and exam strategies applicable to any academic subject or course. Covers how to study effectively using active recall and spaced repetition, how to approach different types of exam questions (calculations, conceptual, case analysis, essays), and how to create formula sheets that actually help during exams. Aimed at UG/PG students preparing for midterms, finals, and professional certification exams.
 
 ## Quick Reference
 
@@ -17,16 +17,14 @@ Evidence-based study techniques and exam strategies specifically tailored for fi
 
 ## Files in This Module
 
-| File | Topic | Use When |
-|------|-------|----------|
-| [study-strategies.md](study-strategies.md) | Active recall, spaced repetition, Feynman technique, interleaving | Planning your study approach weeks before the exam |
-| [problem-types.md](problem-types.md) | Calculation, conceptual, case analysis, essay strategies | Understanding what each question type demands and how to answer |
-| [formula-sheets.md](formula-sheets.md) | Creating effective formula sheets, key formula relationships | Building a study aid or preparing an allowed formula sheet |
+| File                                       | Topic                                                             | Use When                                                        |
+| ------------------------------------------ | ----------------------------------------------------------------- | --------------------------------------------------------------- |
+| [study-strategies.md](study-strategies.md) | Active recall, spaced repetition, Feynman technique, interleaving | Planning your study approach weeks before the exam              |
+| [problem-types.md](problem-types.md)       | Calculation, conceptual, case analysis, essay strategies          | Understanding what each question type demands and how to answer |
+| [formula-sheets.md](formula-sheets.md)     | Creating effective formula sheets, key formula relationships      | Building a study aid or preparing an allowed formula sheet      |
 
 ## Related Skills
 
-- **[19-formula-reference](../19-formula-reference/SKILL.md)** -- The actual formulas organized by course
-- **[12-fnce101-foundations](../12-fnce101-foundations/SKILL.md)** -- Core concepts tested in introductory finance exams
-- **[10-corporate-finance](../10-corporate-finance/SKILL.md)** -- Corporate finance topics and formulas
-- **[11-international-finance](../11-international-finance/SKILL.md)** -- International finance topics and formulas
+- **[19-formula-reference](../19-formula-reference/SKILL.md)** -- Subject formula references organized by course
+- **[12-fnce101-foundations](../12-fnce101-foundations/SKILL.md)** -- Core concepts tested in introductory course exams
 - **[18-case-study-framework](../18-case-study-framework/SKILL.md)** -- Framework for case-based exam questions

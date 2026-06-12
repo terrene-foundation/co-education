@@ -1,12 +1,12 @@
-# Problem Types in Finance Exams
+# Problem Types in Exams
 
-Finance exams typically include four types of questions: calculations, conceptual, case analysis, and essays. Each type demands a different approach. Knowing what each type tests and how to structure your answer is half the battle.
+Exams typically include four types of questions: calculations, conceptual, case analysis, and essays. Each type demands a different approach. Knowing what each type tests and how to structure your answer is half the battle.
 
 ## Calculation Problems
 
 ### What They Test
 
-Your ability to apply financial formulas correctly, set up problems with the right inputs, and arrive at a numerically correct answer.
+Your ability to apply formulas correctly, set up problems with the right inputs, and arrive at a numerically correct answer.
 
 ### Strategy: The Five-Step Method
 
@@ -14,41 +14,45 @@ Your ability to apply financial formulas correctly, set up problems with the rig
 2. **Define variables**: List what each variable represents and its value from the problem.
 3. **Substitute**: Plug the values into the formula. Show every substitution.
 4. **Compute**: Carry out the arithmetic step by step.
-5. **Interpret**: State what the answer means in context. "The NPV is $37,839, which is positive, so the project should be accepted."
+5. **Interpret**: State what the answer means in context. "The standard deviation is 4.2, meaning the typical data point is 4.2 units away from the mean."
 
 ### Worked Example
 
-**Question**: A stock just paid a dividend of $2.50. Dividends are expected to grow at 6% per year. The required return is 11%. What is the stock's intrinsic value?
+**Question**: A dataset has values {2, 4, 4, 6, 8, 10}. What is the sample standard deviation?
 
 **Answer**:
 
-Step 1 -- Formula: P_0 = D_1 / (r - g) [Gordon Growth Model]
+Step 1 -- Formula: s = sqrt[ sum(x_i - x_bar)^2 / (n - 1) ]
 
-Step 2 -- Variables: D_0 = $2.50, g = 6% = 0.06, r = 11% = 0.11
+Step 2 -- Variables: n = 6; x_bar = (2+4+4+6+8+10)/6 = 34/6 ≈ 5.667
 
-Step 3 -- Calculate D_1: D_1 = D_0 x (1 + g) = $2.50 x 1.06 = $2.65
+Step 3 -- Deviations squared:
 
-Step 4 -- Substitute: P_0 = $2.65 / (0.11 - 0.06) = $2.65 / 0.05
+- (2 - 5.667)^2 = 13.44
+- (4 - 5.667)^2 = 2.78 (twice)
+- (6 - 5.667)^2 = 0.11
+- (8 - 5.667)^2 = 5.44
+- (10 - 5.667)^2 = 18.78
 
-Step 5 -- Compute: P_0 = **$53.00**
+Step 4 -- Sum = 13.44 + 2.78 + 2.78 + 0.11 + 5.44 + 18.78 = 43.33; s = sqrt(43.33 / 5) = sqrt(8.667) ≈ **2.94**
 
-Interpretation: Based on the Gordon Growth Model, the intrinsic value of the stock is $53.00 per share.
+Step 5 -- Interpretation: The typical value in this dataset is about 2.94 units from the mean of 5.67.
 
 ### Common Calculation Errors
 
-| Error | Example | Fix |
-|-------|---------|-----|
-| Using D_0 instead of D_1 | P = $2.50 / 0.05 = $50 (wrong) | Always multiply D_0 by (1+g) first |
-| Mismatching periods | Using annual rate with monthly payments | Convert: monthly rate = annual / 12 |
-| Forgetting to square for variance | sigma^2 = sum of deviations (not squared) | Always square the deviations |
-| Rounding too early | Rounding intermediate steps | Keep 4+ decimal places until the final answer |
-| Wrong sign on cash flows | Treating outflows as positive in NPV | Initial investment is negative in NPV |
+| Error                                              | Example                                   | Fix                                                              |
+| -------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------- |
+| Dividing by n instead of (n-1) for sample variance | s^2 = sum/6 instead of sum/5              | Check whether the problem asks for population or sample variance |
+| Mismatching units                                  | Mixing rates per day with totals per year | Convert all inputs to the same unit before substituting          |
+| Forgetting to square deviations                    | Summing raw deviations (always zero)      | Always square before summing                                     |
+| Rounding too early                                 | Rounding intermediate steps               | Keep 4+ decimal places until the final answer                    |
+| Wrong sign or direction                            | Treating a decrease as positive           | Re-read the sign convention the question specifies               |
 
 ## Conceptual Questions
 
 ### What They Test
 
-Your understanding of financial concepts, theories, and their implications -- not just formulas but the reasoning behind them.
+Your understanding of the concepts and theories in the subject, and the reasoning behind them -- not just formulas but the ideas that make them work.
 
 ### Strategy
 
@@ -59,29 +63,29 @@ Your understanding of financial concepts, theories, and their implications -- no
 
 ### Worked Example
 
-**Question**: Explain why diversification reduces portfolio risk.
+**Question**: Explain why a larger sample size reduces estimation uncertainty.
 
 **Answer**:
 
-**Definition**: Diversification is the practice of combining assets that are not perfectly correlated to reduce the total risk of a portfolio.
+**Definition**: Sample size is the number of observations used to estimate a population parameter. Estimation uncertainty -- measured by the standard error -- describes how much the estimate is likely to vary from the true value.
 
-**Intuition**: When one asset is performing poorly, another may be performing well (or at least not declining as much), partially offsetting the loss. This occurs because assets respond differently to economic events. The key mathematical insight is that portfolio variance depends on the correlation between assets. When correlation (rho) is less than +1, the portfolio's standard deviation is less than the weighted average of individual standard deviations.
+**Intuition**: Each additional observation provides more information about the population. With more observations, extreme individual values average out, so the sample mean fluctuates less around the true mean. The standard error formula makes this precise: SE = sigma / sqrt(n). Doubling n reduces the standard error by a factor of sqrt(2) ≈ 1.41.
 
-**Example**: Consider a portfolio of airline stocks and oil company stocks. When oil prices rise, airline profits fall (higher fuel costs) but oil company profits rise. Combining both in a portfolio reduces volatility because their returns partially offset each other.
+**Example**: Estimating the average height of students in a university. A sample of 10 students might give a mean of 172 cm or 168 cm depending on who happens to be selected. A sample of 1,000 students will consistently give a mean much closer to the true population average because extreme individual heights cancel out.
 
-**Limitation**: Diversification cannot eliminate systematic (market) risk -- the risk that affects all assets simultaneously (e.g., a recession). It eliminates only unsystematic (company-specific) risk. With approximately 25-30 stocks, most unsystematic risk is diversified away.
+**Limitation**: A larger sample reduces random error but cannot correct systematic bias. If the sample is drawn only from one department, increasing n does not make it representative of the whole university.
 
 ### Conceptual Question Pitfalls
 
-- **Vague answers**: "Diversification is good because it reduces risk." This lacks specificity. *How* does it reduce risk? *What kind* of risk?
-- **Formula-only answers**: Writing the portfolio variance formula without explaining the intuition. Formulas support conceptual answers; they do not replace them.
+- **Vague answers**: "A larger sample is more accurate." This lacks specificity. _How_ does it reduce uncertainty? _What kind_ of uncertainty?
+- **Formula-only answers**: Writing SE = sigma / sqrt(n) without explaining the intuition. Formulas support conceptual answers; they do not replace them.
 - **Missing limitations**: Every concept has boundaries. Mentioning them demonstrates deeper understanding.
 
 ## Case Analysis Questions
 
 ### What They Test
 
-Your ability to apply frameworks and financial tools to a realistic business scenario, weigh tradeoffs, and make a recommendation.
+Your ability to apply course frameworks and tools to a realistic scenario, weigh trade-offs, and make a recommendation.
 
 ### Strategy: The STAR Framework
 
@@ -92,27 +96,26 @@ Your ability to apply frameworks and financial tools to a realistic business sce
 
 ### Worked Example
 
-**Question**: XYZ Corp is considering acquiring ABC Inc for $500 million. XYZ has WACC of 10%, and the projected synergies are $30 million per year in perpetuity. ABC's standalone DCF value is $400 million. Should XYZ proceed? What is the maximum they should pay?
+**Question**: A study measures the test scores of two groups of students: Group A used a new teaching method (n=30, mean=78, SD=8) and Group B used the traditional method (n=30, mean=74, SD=9). Should the institution adopt the new teaching method? What further evidence would strengthen the conclusion?
 
 **Answer**:
 
-**Situation**: XYZ Corp is evaluating a $500M acquisition of ABC Inc, with expected annual synergies of $30M in perpetuity.
+**Situation**: Two groups of equal size were taught by different methods and then assessed. The new method group scored 4 points higher on average.
 
-**Task**: Determine whether the proposed price creates value for XYZ shareholders.
+**Task**: Determine whether the observed difference is meaningful and whether the institution should act on it.
 
 **Analysis**:
-- Standalone value of ABC = $400M (given from DCF)
-- PV of synergies = $30M / 0.10 = $300M (perpetuity formula)
-- Combined value = $400M + $300M = $700M
-- Premium over standalone = $500M - $400M = $100M
-- NPV of acquisition to XYZ = $700M - $500M = **$200M** (positive)
-- Maximum price = Combined value = $700M (above this, NPV turns negative)
 
-**Recommendation**: XYZ should proceed at $500M because the NPV is $200M (positive value creation). However, this assumes the $30M in annual synergies are achievable. The maximum price XYZ should pay is $700M, but paying the maximum would transfer all synergy value to ABC's shareholders. I would recommend negotiating a price closer to $500M to retain most of the synergy value for XYZ shareholders.
+- Observed difference = 78 - 74 = 4 points
+- Pooled SE of the difference ≈ sqrt((8^2 + 9^2)/30) ≈ sqrt(4.83) ≈ 2.20
+- Effect size (Cohen's d) ≈ 4 / 8.5 ≈ 0.47 (medium effect)
+- The difference is approximately 1.8 standard errors, suggesting it is unlikely to be purely by chance, though a formal significance test would confirm this
+
+**Recommendation**: The evidence is suggestive but not conclusive on its own. The 4-point difference represents a medium effect size -- meaningful in educational terms. However, the institution should verify with a formal hypothesis test and, ideally, a replication study before full adoption. The new method shows enough promise to warrant a larger pilot.
 
 ### Case Question Tips
 
-- Always quantify when possible -- dollar values strengthen arguments
+- Always quantify when possible -- numbers strengthen arguments
 - Acknowledge risks and assumptions
 - State your recommendation clearly (do not hedge excessively)
 - Consider multiple stakeholders if relevant
@@ -121,7 +124,7 @@ Your ability to apply frameworks and financial tools to a realistic business sce
 
 ### What They Test
 
-Your ability to construct a coherent, well-supported argument about a financial topic, drawing on theory, evidence, and critical thinking.
+Your ability to construct a coherent, well-supported argument about a topic in the subject, drawing on theory, evidence, and critical thinking.
 
 ### Strategy: The Three-Part Essay
 
@@ -131,22 +134,22 @@ Your ability to construct a coherent, well-supported argument about a financial 
 
 ### Worked Example
 
-**Question**: "Markets are efficient." Discuss.
+**Question**: "Correlation implies causation." Discuss.
 
-**Introduction**: "The efficient market hypothesis (EMH), proposed by Fama (1970), states that security prices fully reflect all available information. While the EMH provides a powerful benchmark, the evidence suggests that markets are largely but not perfectly efficient -- with pockets of inefficiency that are difficult to exploit after accounting for transaction costs and risk."
+**Introduction**: "The claim that correlation implies causation is one of the most common errors in reasoning from data. While a correlation between two variables is a necessary condition for a causal relationship, it is far from sufficient. Spurious correlations, confounding variables, and reverse causation can all produce strong correlations where no direct causal link exists."
 
-**Body paragraph 1** (evidence for): "Tests of the weak form show that simple trading rules based on past prices generally do not outperform a buy-and-hold strategy after transaction costs (Fama, 1970). Index funds consistently outperform the majority of actively managed funds over horizons of 10+ years (Malkiel, 2003), consistent with market efficiency."
+**Body paragraph 1** (evidence for the error being common): "Numerous widely-cited examples illustrate the problem. Ice cream sales and drowning rates are strongly positively correlated -- not because ice cream causes drowning, but because both increase in summer. Any analysis that stopped at the correlation would recommend reducing ice cream sales as a drowning-prevention strategy, an absurd conclusion that highlights the stakes of confusing correlation with causation."
 
-**Body paragraph 2** (evidence against): "However, persistent anomalies challenge the EMH. The momentum effect (Jegadeesh and Titman, 1993), the value premium (Fama and French, 1993), and excess volatility relative to fundamentals (Shiller, 1981) are difficult to reconcile with strict efficiency. Behavioral finance attributes these patterns to systematic investor biases."
+**Body paragraph 2** (when correlation is informative): "Correlation is not useless for causal inference. Under certain conditions -- controlled experiments with random assignment, or observational studies with carefully chosen instrumental variables -- a correlation can provide strong evidence of causation. The distinction is not that correlations are always uninformative, but that they require additional structural assumptions before a causal claim is warranted."
 
-**Body paragraph 3** (reconciliation): "The debate may be best resolved by recognizing that markets are 'efficiently inefficient' (Pedersen, 2015). Markets are efficient enough that easy profits are rare, but inefficient enough that informed, skilled investors can earn returns that compensate for the cost of their research. Anomalies exist but are difficult and costly to exploit."
+**Body paragraph 3** (reconciliation): "The practitioner's rule is: treat correlation as a prompt to investigate, not a conclusion. A strong correlation motivates a causal hypothesis. Testing that hypothesis requires ruling out confounders, verifying temporal ordering (cause must precede effect), and ideally replicating the finding across different populations and methods."
 
-**Conclusion**: "In summary, the EMH remains the best starting assumption for most investors. However, treating it as an absolute truth ignores robust evidence of predictable patterns in returns. The practical implication is that passive investing is appropriate for most individuals, while skilled institutional investors may earn modest excess returns in specific, well-researched strategies."
+**Conclusion**: "In summary, correlation is a starting point for causal investigation, not its destination. The claim that correlation implies causation is false as a general rule, but correlation remains an essential empirical signal when interpreted within a sound analytical framework."
 
 ### Essay Question Tips
 
 - Take a position (but acknowledge the other side)
-- Cite specific studies (even if you cannot remember exact dates, cite author names)
+- Cite specific studies or examples (even approximate citations demonstrate familiarity with the literature)
 - Structure your answer clearly with topic sentences
 - Manage time -- for a 30-minute essay, spend 5 minutes planning, 20 minutes writing, 5 minutes reviewing
 
@@ -160,11 +163,11 @@ Your ability to construct a coherent, well-supported argument about a financial 
 
 4. **Writing everything you know instead of answering the question**: A focused, well-structured answer that directly addresses the question is better than a brain dump of everything related to the topic.
 
-5. **Not interpreting calculation results**: "NPV = $37,839" without interpretation misses easy marks. Add: "Since NPV > 0, the project creates value and should be accepted."
+5. **Not interpreting calculation results**: A bare number without interpretation misses easy marks. State what the number means in the context of the problem.
 
 6. **Ignoring mark allocation**: If a question is worth 2 marks, a two-sentence answer is appropriate. If it is worth 20 marks, you need a structured, detailed response.
 
 ## Key References
 
-- Dunlosky, J. et al. (2013). "Improving Students' Learning With Effective Learning Techniques." *Psychological Science in the Public Interest*, 14(1), 4-58.
-- Brown, P.C., Roediger, H.L. & McDaniel, M.A. (2014). *Make It Stick: The Science of Successful Learning*. Harvard University Press.
+- Dunlosky, J. et al. (2013). "Improving Students' Learning With Effective Learning Techniques." _Psychological Science in the Public Interest_, 14(1), 4-58.
+- Brown, P.C., Roediger, H.L. & McDaniel, M.A. (2014). _Make It Stick: The Science of Successful Learning_. Harvard University Press.

@@ -7,67 +7,73 @@ paths:
 
 ## Scope
 
-These rules apply to all academic work that includes citations, references, or bibliographic entries. They cover in-text citations, reference lists, bibliographies, and footnotes across the three citation styles most commonly used in finance education: APA 7th edition, Chicago/Turabian, and Harvard. Always use the style specified by your instructor or institution. When no style is specified, default to APA 7th edition.
+These rules apply to all academic work that includes citations, references, or bibliographic entries. They cover in-text citations, reference lists, bibliographies, and footnotes across the three citation styles most commonly used in higher education: APA 7th edition, Chicago/Turabian, and Harvard. Always use the style specified by your instructor or institution. When no style is specified, default to APA 7th edition.
 
 ## MUST Rules
 
 ### 1. Follow APA 7th Edition Format When Specified
 
-APA (American Psychological Association) 7th edition is the most commonly assigned style in North American business and finance programs.
+APA (American Psychological Association) 7th edition is the most commonly assigned style in North American universities across the social sciences, education, and related fields.
 
 **In-Text Citation Rules**:
 
-- Parenthetical: (Author, Year) — e.g., (Fama, 1970)
-- Narrative: Author (Year) — e.g., Fama (1970) argued that...
-- Two authors: (Fama & French, 1993) or Fama and French (1993)
-- Three or more authors: (Fama et al., 2023) from the first citation onward
-- Direct quote: Include page number — (Fama, 1970, p. 383)
-- Multiple works in one citation: Separate with semicolons, alphabetical order — (Black & Scholes, 1973; Merton, 1973)
-- Same author, same year: Add lowercase letter — (Shiller, 2015a, 2015b)
-- Organization as author: First citation: (International Monetary Fund [IMF], 2023); subsequent: (IMF, 2023)
-- No author: Use shortened title in quotation marks — ("Global Financial Stability Report," 2023)
+- Parenthetical: (Author, Year) — e.g., (Vygotsky, 1978)
+- Narrative: Author (Year) — e.g., Vygotsky (1978) argued that...
+- Two authors: (Brown & Lee, 2019) or Brown and Lee (2019)
+- Three or more authors: (Brown et al., 2023) from the first citation onward
+- Direct quote: Include page number — (Vygotsky, 1978, p. 57)
+- Multiple works in one citation: Separate with semicolons, alphabetical order — (Brown & Lee, 2019; Nguyen, 2021)
+- Same author, same year: Add lowercase letter — (Bandura, 1997a, 1997b)
+- Organization as author: First citation: (World Health Organization [WHO], 2023); subsequent: (WHO, 2023)
+- No author: Use shortened title in quotation marks — ("Global Education Monitoring Report," 2023)
 
 **Reference List Format** (labeled "References"):
 
 Journal article:
+
 ```
-Fama, E. F., & French, K. R. (1993). Common risk factors in the returns
-    on stocks and bonds. Journal of Financial Economics, 33(1), 3-56.
-    https://doi.org/10.1016/0304-405X(93)90023-5
+Brown, A. L., & Lee, S. Y. (2019). Collaborative learning and knowledge
+    transfer in higher education. Journal of Educational Psychology, 111(4),
+    612-628. https://doi.org/10.1037/edu0000312
 ```
 
 Book:
+
 ```
-Mishkin, F. S. (2019). The economics of money, banking, and financial
-    markets (12th ed.). Pearson.
+Vygotsky, L. S. (1978). Mind in society: The development of higher
+    psychological processes. Harvard University Press.
 ```
 
 Book chapter:
+
 ```
-Shiller, R. J. (2014). Speculative asset prices. In Nobel Prize Committee
-    (Eds.), Nobel lectures in economic sciences 2010-2014 (pp. 459-501).
-    Nobel Foundation.
+Bandura, A. (2001). Social cognitive theory of mass communication. In
+    J. Bryant & D. Zillmann (Eds.), Media effects: Advances in theory and
+    research (2nd ed., pp. 121-153). Lawrence Erlbaum.
 ```
 
 Report from organization:
+
 ```
-International Monetary Fund. (2023). Global financial stability report:
-    Navigating global divergences. https://www.imf.org/en/Publications/GFSR
+World Health Organization. (2023). Global status report on physical
+    activity. https://www.who.int/publications/i/item/9789240077120
 ```
 
 Working paper:
+
 ```
-Greenwald, D. L., Lettau, M., & Ludvigson, S. C. (2022). How the wealth
-    was won: Factor shares as market fundamentals (NBER Working Paper
-    No. 25769). National Bureau of Economic Research.
-    https://doi.org/10.3386/w25769
+Nguyen, T. H., Patel, R., & Kim, J. (2022). Metacognitive strategies and
+    long-term retention in undergraduate learners (Working Paper No. 48).
+    National Bureau of Education Research.
+    https://doi.org/10.xxxx/nber.w48
 ```
 
 Website:
+
 ```
-Board of Governors of the Federal Reserve System. (2023, March 22).
-    Federal Reserve issues FOMC statement [Press release].
-    https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm
+United Nations Educational, Scientific and Cultural Organization. (2023,
+    September 12). New report highlights global literacy gaps [Press release].
+    https://www.unesco.org/en/articles/new-report-highlights-global-literacy-gaps
 ```
 
 **APA 7th Key Formatting Rules**:
@@ -85,49 +91,55 @@ Board of Governors of the Federal Reserve System. (2023, March 22).
 
 ### 2. Follow Chicago/Turabian Format When Specified
 
-Chicago style has two variants. Finance courses typically use **Author-Date** (similar to APA), while history and qualitative research courses may use **Notes-Bibliography**. Always confirm which variant your instructor expects.
+Chicago style has two variants. Social-science and quantitative courses typically use **Author-Date** (similar to APA), while humanities and qualitative research courses may use **Notes-Bibliography**. Always confirm which variant your instructor expects.
 
-**Chicago Author-Date (commonly used in economics and finance)**:
+**Chicago Author-Date (commonly used in social sciences and quantitative fields)**:
 
 In-text citation:
+
 ```
-(Fama 1970)
-(Fama and French 1993)
-Fama (1970, 383) argued that...
-(Black and Scholes 1973; Merton 1973)
+(Vygotsky 1978)
+(Brown and Lee 2019)
+Brown (2019, 47) argued that...
+(Bandura 1997; Nguyen 2021)
 ```
 
 Note: Chicago Author-Date does not use a comma between author and year.
 
 Reference list (labeled "References"):
-```
-Fama, Eugene F., and Kenneth R. French. 1993. "Common Risk Factors in the
-    Returns on Stocks and Bonds." Journal of Financial Economics 33 (1):
-    3-56. https://doi.org/10.1016/0304-405X(93)90023-5.
 
-Mishkin, Frederic S. 2019. The Economics of Money, Banking, and Financial
-    Markets. 12th ed. New York: Pearson.
+```
+Brown, Alicia L., and Seung-Yeon Lee. 2019. "Collaborative Learning and
+    Knowledge Transfer in Higher Education." Journal of Educational
+    Psychology 111 (4): 612-628. https://doi.org/10.1037/edu0000312.
+
+Vygotsky, Lev S. 1978. Mind in Society: The Development of Higher
+    Psychological Processes. Cambridge, MA: Harvard University Press.
 ```
 
 **Chicago Notes-Bibliography**:
 
 Footnote/endnote (first citation):
+
 ```
-1. Eugene F. Fama and Kenneth R. French, "Common Risk Factors in the
-Returns on Stocks and Bonds," Journal of Financial Economics 33, no. 1
-(1993): 3-56, https://doi.org/10.1016/0304-405X(93)90023-5.
+1. Alicia L. Brown and Seung-Yeon Lee, "Collaborative Learning and
+Knowledge Transfer in Higher Education," Journal of Educational Psychology
+111, no. 4 (2019): 612-628, https://doi.org/10.1037/edu0000312.
 ```
 
 Shortened footnote (subsequent citations of the same work):
+
 ```
-2. Fama and French, "Common Risk Factors," 15.
+2. Brown and Lee, "Collaborative Learning," 620.
 ```
 
 Bibliography entry:
+
 ```
-Fama, Eugene F., and Kenneth R. French. "Common Risk Factors in the
-    Returns on Stocks and Bonds." Journal of Financial Economics 33,
-    no. 1 (1993): 3-56. https://doi.org/10.1016/0304-405X(93)90023-5.
+Brown, Alicia L., and Seung-Yeon Lee. "Collaborative Learning and
+    Knowledge Transfer in Higher Education." Journal of Educational
+    Psychology 111, no. 4 (2019): 612-628.
+    https://doi.org/10.1037/edu0000312.
 ```
 
 **Key Differences from APA**:
@@ -144,16 +156,16 @@ Fama, Eugene F., and Kenneth R. French. "Common Risk Factors in the
 
 ### 3. Follow Harvard Format When Specified
 
-Harvard style is widely used in UK, Australian, and some European finance programs. It is similar to APA but has distinct formatting conventions.
+Harvard style is widely used in UK, Australian, and some European universities across many disciplines. It is similar to APA but has distinct formatting conventions.
 
 **In-Text Citation Rules**:
 
 ```
-(Fama 1970)
-(Fama and French 1993)
-(Fama et al. 2023)
-Fama (1970, p. 383) argued that...
-(Black and Scholes 1973; Merton 1973)
+(Vygotsky 1978)
+(Brown and Lee 2019)
+(Brown et al. 2023)
+Brown (2019, p. 47) argued that...
+(Bandura 1997; Nguyen 2021)
 ```
 
 Note: Harvard typically omits the comma between author and year (like Chicago Author-Date, unlike APA).
@@ -161,23 +173,27 @@ Note: Harvard typically omits the comma between author and year (like Chicago Au
 **Reference List Format** (labeled "Reference List" or "Bibliography"):
 
 Journal article:
+
 ```
-Fama, E.F. and French, K.R. (1993) 'Common risk factors in the returns
-    on stocks and bonds', Journal of Financial Economics, 33(1), pp. 3-56.
-    doi:10.1016/0304-405X(93)90023-5.
+Brown, A.L. and Lee, S.Y. (2019) 'Collaborative learning and knowledge
+    transfer in higher education', Journal of Educational Psychology,
+    111(4), pp. 612-628. doi:10.1037/edu0000312.
 ```
 
 Book:
+
 ```
-Mishkin, F.S. (2019) The economics of money, banking, and financial
-    markets. 12th edn. New York: Pearson.
+Vygotsky, L.S. (1978) Mind in society: The development of higher
+    psychological processes. Cambridge, MA: Harvard University Press.
 ```
 
 Report:
+
 ```
-International Monetary Fund (2023) Global financial stability report:
-    Navigating global divergences. Available at:
-    https://www.imf.org/en/Publications/GFSR (Accessed: 15 March 2026).
+World Health Organization (2023) Global status report on physical
+    activity. Available at:
+    https://www.who.int/publications/i/item/9789240077120
+    (Accessed: 15 March 2026).
 ```
 
 **Key Differences from APA and Chicago**:
@@ -197,13 +213,13 @@ International Monetary Fund (2023) Global financial stability report:
 
 Every in-text citation MUST have a corresponding entry in the reference list, and every reference list entry MUST be cited at least once in the text.
 
-**Correct**: The in-text citation (Sharpe, 1964) matches a reference list entry for Sharpe, W. F. (1964).
+**Correct**: The in-text citation (Brown, 2019) matches a reference list entry for Brown, A. L. (2019).
 
 **Incorrect Patterns**:
 
-- An in-text citation "(Jensen, 1968)" with no corresponding reference list entry
-- A reference list entry for "Ross, S. A. (1976)" that is never cited in the text
-- An in-text citation reading "(Markowitz, 1952)" but the reference list says "(Markowitz, 1959)" — the years do not match
+- An in-text citation "(Lee, 2018)" with no corresponding reference list entry
+- A reference list entry for "Nguyen, T. H. (2021)" that is never cited in the text
+- An in-text citation reading "(Vygotsky, 1978)" but the reference list says "(Vygotsky, 1986)" — the years do not match
 
 **Enforced by**: citation-specialist agent
 **Violation**: BLOCK submission — mismatched citations undermine credibility and may indicate careless or fabricated referencing
@@ -215,27 +231,29 @@ Direct quotations MUST be formatted according to the rules of the active citatio
 **Short Quotes** (under 40 words in APA, under 100 words in Chicago):
 
 ```
-Fama (1970) defined an efficient market as one "in which prices always
-'fully reflect' available information" (p. 383).
+Vygotsky (1978) described learning as inherently social, arguing that
+"every function in the child's cultural development appears twice: first,
+on the social level, and later, on the individual level" (p. 57).
 ```
 
 **Block Quotes** (40+ words in APA, 100+ words in Chicago): Indent the entire quote, no quotation marks, citation at the end.
 
 ```
-Fama (1970) provided the foundational definition:
+Vygotsky (1978) described the central mechanism of learning:
 
-    A market in which prices always "fully reflect" available information
-    is called "efficient." The primary role of the capital market is
-    allocation of ownership of the economy's capital stock. In general
-    terms, the ideal is a market in which prices provide accurate signals
-    for resource allocation. (p. 383)
+    Every function in the child's cultural development appears twice:
+    first, on the social level, and later, on the individual level;
+    first, between people (interpsychological), and then inside the
+    child (intrapsychological). This applies equally to voluntary
+    attention, to logical memory, and to the formation of concepts.
+    (p. 57)
 ```
 
 **Modifying Quotes**:
 
-- Use square brackets for insertions: "The [efficient market] hypothesis..."
-- Use ellipsis for omissions: "prices always...reflect available information"
-- Use [sic] for errors in the original: "the principle [sic] investment"
+- Use square brackets for insertions: "every function in the [learner's] cultural development..."
+- Use ellipsis for omissions: "appears twice...first, between people"
+- Use [sic] for errors in the original: "the principle [sic] finding"
 - Preserve original spelling and grammar even if it differs from your style
 
 **Enforced by**: citation-specialist agent
@@ -243,27 +261,27 @@ Fama (1970) provided the foundational definition:
 
 ### 6. Cite Data Sources and Datasets Properly
 
-Financial data used in analysis MUST be cited with the same rigor as textual sources. Include the provider, the specific dataset or series, and the retrieval date.
+Empirical data used in analysis MUST be cited with the same rigor as textual sources. Include the provider, the specific dataset or series, and the retrieval date.
 
 **APA Format for Data**:
 
 ```
-Federal Reserve Bank of St. Louis. (2023). 10-year Treasury constant
-    maturity rate [Data set]. FRED Economic Data.
-    https://fred.stlouisfed.org/series/DGS10
+Our World in Data. (2023). Learning outcomes by country [Data set].
+    https://ourworldindata.org/learning-outcomes
 
-Center for Research in Security Prices. (2024). CRSP US stock database
-    [Data set]. Wharton Research Data Services.
-    https://wrds-www.wharton.upenn.edu/
+United Nations Educational, Scientific and Cultural Organization. (2024).
+    UIS education statistics database [Data set].
+    https://uis.unesco.org/en/topic/education
 ```
 
 **In-Text Data Citation**:
 
 ```
-We obtained daily closing prices from CRSP (Center for Research in Security
-Prices, 2024) for the period January 2015 to December 2024. Risk-free rate
-data were sourced from the FRED database (Federal Reserve Bank of St. Louis,
-2023), using the 3-month Treasury bill rate (series DTB3).
+We obtained national literacy rates from the UNESCO Institute for Statistics
+(United Nations Educational, Scientific and Cultural Organization, 2024) for
+the period 2010 to 2023. Cross-national learning outcome comparisons used
+the Our World in Data repository (Our World in Data, 2023), which aggregates
+data from standardised international assessments.
 ```
 
 **Enforced by**: citation-specialist agent
@@ -278,7 +296,7 @@ MUST NOT use APA formatting for some citations and Chicago or Harvard for others
 **Detection Patterns**:
 
 ```
-(Fama, 1970) ... Fama and French (1993, 3-56) ... see footnote 3
+(Brown, 2019) ... Brown and Lee (2019, 612-628) ... see footnote 3
 ```
 
 (The first is APA, the second mixes APA with Chicago-style page ranges, the third is Notes-Bibliography. Pick one.)
@@ -313,9 +331,9 @@ MUST NOT use vague attributions that prevent the reader from locating the source
 **Correct Alternative**:
 
 ```
-"Fama and French (1993) demonstrated that..."
-"According to the IMF's 2023 Global Financial Stability Report..."
-"A meta-analysis by Harvey et al. (2016) found that..."
+"Brown and Lee (2019) demonstrated that..."
+"According to UNESCO's 2023 Global Education Monitoring Report..."
+"A meta-analysis by Nguyen et al. (2022) found that..."
 ```
 
 **Consequence**: HIGH priority fix — replace vague attribution with a specific citation
@@ -335,10 +353,10 @@ MUST NOT include reference list entries that are missing essential information. 
 **Detection Patterns**:
 
 ```
-Fama, E. F. (1970). Efficient capital markets.
+Brown, A. L. (2019). Collaborative learning and knowledge transfer.
 (Missing: journal name, volume, issue, pages, DOI)
 
-International Monetary Fund. Global Financial Stability Report.
+World Health Organization. Global Status Report on Physical Activity.
 (Missing: year, URL or publisher)
 ```
 
@@ -348,34 +366,34 @@ International Monetary Fund. Global Financial Stability Report.
 
 These are frequent errors that appear in student papers across all citation styles:
 
-| Mistake | Example | Correction |
-|---------|---------|------------|
-| Citing the wrong year | Citing Fama (1965) when meaning Fama (1970) | Verify the year matches the specific paper |
-| Et al. too early | Using "et al." for two-author works in APA | APA: Always name both authors for two-author works |
-| Inconsistent author names | "Fama" in text but "Eugene Fama" in another spot | Use the same format consistently per your style |
-| Missing DOI | Omitting DOI when it is available | Always include DOIs — they are persistent links |
-| URL instead of DOI | Using a long URL when a DOI exists | DOIs are preferred over URLs for journal articles |
-| Citing an entire book for a specific claim | (Mishkin, 2019) for a claim on page 247 | Include the page: (Mishkin, 2019, p. 247) for direct quotes and specific claims |
-| Alphabetizing by first name | Reference list starting with "Eugene Fama" under E | Alphabetize by last name: Fama, E. F. |
-| Forgetting hanging indent | Reference list with no indentation | All styles require hanging indent in the reference list |
-| Using "ibid." in APA | Writing "ibid." to refer to the previous source | APA does not use "ibid." — repeat the citation. Chicago Notes-Bibliography does allow "ibid." |
-| Citing ChatGPT or AI as an author | (ChatGPT, 2024) | APA 7th treats AI-generated text as a non-recoverable source. Format per your institution's AI policy. Cite the underlying sources the AI helped you find, not the AI itself. |
+| Mistake                                    | Example                                             | Correction                                                                                                                                                                    |
+| ------------------------------------------ | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Citing the wrong year                      | Citing Brown (2015) when meaning Brown (2019)       | Verify the year matches the specific paper                                                                                                                                    |
+| Et al. too early                           | Using "et al." for two-author works in APA          | APA: Always name both authors for two-author works                                                                                                                            |
+| Inconsistent author names                  | "Brown" in text but "Alicia Brown" in another spot  | Use the same format consistently per your style                                                                                                                               |
+| Missing DOI                                | Omitting DOI when it is available                   | Always include DOIs — they are persistent links                                                                                                                               |
+| URL instead of DOI                         | Using a long URL when a DOI exists                  | DOIs are preferred over URLs for journal articles                                                                                                                             |
+| Citing an entire book for a specific claim | (Vygotsky, 1978) for a claim on page 57             | Include the page: (Vygotsky, 1978, p. 57) for direct quotes and specific claims                                                                                               |
+| Alphabetizing by first name                | Reference list starting with "Lev Vygotsky" under L | Alphabetize by last name: Vygotsky, L. S.                                                                                                                                     |
+| Forgetting hanging indent                  | Reference list with no indentation                  | All styles require hanging indent in the reference list                                                                                                                       |
+| Using "ibid." in APA                       | Writing "ibid." to refer to the previous source     | APA does not use "ibid." — repeat the citation. Chicago Notes-Bibliography does allow "ibid."                                                                                 |
+| Citing ChatGPT or AI as an author          | (ChatGPT, 2024)                                     | APA 7th treats AI-generated text as a non-recoverable source. Format per your institution's AI policy. Cite the underlying sources the AI helped you find, not the AI itself. |
 
 ## Quick Reference: Style Comparison
 
-| Feature | APA 7th | Chicago Author-Date | Chicago Notes-Bib | Harvard |
-|---------|---------|--------------------|--------------------|---------|
-| In-text format | (Author, Year) | (Author Year) | Footnotes | (Author Year) |
-| Comma between author and year | Yes | No | N/A | No |
-| Author connector (in-text) | & | and | and | and |
-| Author connector (references) | & | and | and | and |
-| Article title format | Sentence case, no quotes | Sentence case, in quotes | In quotes | In single quotes |
-| Journal name format | Italicized, title case | Italicized, title case | Italicized, title case | Italicized |
-| Reference list label | References | References | Bibliography | Reference List |
-| Author names in references | Last, Initials. | Last, First. | Last, First. | Last, Initials. |
-| Et al. threshold (in-text) | 3+ authors from first citation | 4+ authors | 4+ authors | 3+ or 4+ (varies) |
-| Use of "ibid." | No | No | Yes | No |
-| Access date for online sources | Only if no publication date | Only if no publication date | Recommended | Required |
+| Feature                        | APA 7th                        | Chicago Author-Date         | Chicago Notes-Bib      | Harvard           |
+| ------------------------------ | ------------------------------ | --------------------------- | ---------------------- | ----------------- |
+| In-text format                 | (Author, Year)                 | (Author Year)               | Footnotes              | (Author Year)     |
+| Comma between author and year  | Yes                            | No                          | N/A                    | No                |
+| Author connector (in-text)     | &                              | and                         | and                    | and               |
+| Author connector (references)  | &                              | and                         | and                    | and               |
+| Article title format           | Sentence case, no quotes       | Sentence case, in quotes    | In quotes              | In single quotes  |
+| Journal name format            | Italicized, title case         | Italicized, title case      | Italicized, title case | Italicized        |
+| Reference list label           | References                     | References                  | Bibliography           | Reference List    |
+| Author names in references     | Last, Initials.                | Last, First.                | Last, First.           | Last, Initials.   |
+| Et al. threshold (in-text)     | 3+ authors from first citation | 4+ authors                  | 4+ authors             | 3+ or 4+ (varies) |
+| Use of "ibid."                 | No                             | No                          | Yes                    | No                |
+| Access date for online sources | Only if no publication date    | Only if no publication date | Recommended            | Required          |
 
 ## Exceptions
 

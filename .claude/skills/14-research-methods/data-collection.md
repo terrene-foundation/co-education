@@ -1,110 +1,38 @@
 # Data Collection
 
-Finance is an empirical discipline -- almost every research question requires data. Knowing where to find data, what each database covers, and how to cite it properly is a foundational research skill.
+Empirical research across every discipline requires data. Knowing where to find data, what each source covers, and how to cite it properly is a foundational research skill.
 
 ## Why Data Collection Matters
 
-The quality of your research is bounded by the quality of your data. Using the wrong database, misunderstanding variable definitions, or failing to account for data quirks (survivorship bias, look-ahead bias, backfill bias) can invalidate your entire study.
+The quality of your research is bounded by the quality of your data. Using the wrong source, misunderstanding variable definitions, or failing to account for data quirks (survivorship bias, look-ahead bias, backfill bias) can invalidate your entire study.
 
-## Major Financial and Economic Databases
+## Major General-Purpose Data Sources
 
-### FRED (Federal Reserve Economic Data)
+### Government and National Statistics Offices
 
-**Provider**: Federal Reserve Bank of St. Louis
-**Access**: Free (fred.stlouisfed.org)
-**Coverage**: 800,000+ US and international economic time series
+**Access**: Typically free via agency websites
+**Coverage**: Official statistics on population, economy, labor, health, education, environment, and more
 
-**Key series for finance research**:
+National statistics offices (e.g., a country's central statistics bureau) publish authoritative administrative and survey data. Coverage varies by country but generally includes:
 
-| Series ID | Description | Use For |
-|-----------|-------------|---------|
-| DFF | Federal funds effective rate | Risk-free rate proxy, monetary policy |
-| DTB3 | 3-month Treasury bill rate | Short-term risk-free rate |
-| DGS10 | 10-year Treasury constant maturity rate | Long-term rate, yield curve |
-| T10Y2Y | 10-year minus 2-year Treasury spread | Yield curve slope, recession predictor |
-| CPIAUCSL | Consumer Price Index for All Urban Consumers | Inflation adjustment |
-| GDPC1 | Real GDP | Business cycle dating |
-| UNRATE | Civilian unemployment rate | Economic conditions |
-| VIXCLS | CBOE Volatility Index (VIX) | Market fear/uncertainty |
-| DEXUSEU | USD/EUR exchange rate | International finance |
-| BAMLH0A0HYM2 | High yield corporate bond spread | Credit conditions |
+| Data Type                   | Examples                                  | Use For                                           |
+| --------------------------- | ----------------------------------------- | ------------------------------------------------- |
+| Population and demographics | Census microdata, vital records           | Social science, public health, education research |
+| Labor and employment        | Employment surveys, wage data             | Labor economics, policy analysis                  |
+| Prices and output           | Consumer price indices, national accounts | Macroeconomic analysis, inflation adjustment      |
+| Health and education        | Administrative records, program data      | Public policy, program evaluation                 |
+| Environment                 | Emissions registries, weather records     | Environmental science, climate research           |
 
-**How to cite**: "Data obtained from FRED, Federal Reserve Bank of St. Louis; [Series ID], [URL], accessed [date]."
+**How to cite**: "Data obtained from [Agency Name], [Dataset name], [URL], accessed [date]."
 
-### CRSP (Center for Research in Security Prices)
+### Open Government Data Portals
 
-**Provider**: University of Chicago Booth School of Business
-**Access**: University subscription, typically via WRDS
-**Coverage**: US stock prices, returns, and market data, 1925-present
+**Access**: Free (e.g., data.gov, data.europa.eu, and equivalents in most countries)
+**Coverage**: Cross-agency collections of machine-readable datasets
 
-**Key files**:
-- **Monthly Stock File**: Monthly prices, returns, shares outstanding, volume
-- **Daily Stock File**: Daily prices and returns
-- **Delisting Returns**: Returns when a stock is removed from an exchange (critical for avoiding survivorship bias)
-- **Index Files**: Value-weighted and equal-weighted market returns
+Most national and regional governments operate open data portals that aggregate datasets from multiple agencies. These are good starting points when you do not yet know which specific agency holds the data you need.
 
-**Essential variables**:
-- PERMNO: Permanent security identifier (use this to track stocks over time)
-- RET: Holding period return (includes dividends)
-- SHRCD: Share code (10, 11 = common stock)
-- EXCHCD: Exchange code (1 = NYSE, 2 = AMEX, 3 = NASDAQ)
-
-**How to cite**: "Stock return data are from the Center for Research in Security Prices (CRSP), accessed via WRDS on [date]."
-
-### Compustat
-
-**Provider**: S&P Global Market Intelligence
-**Access**: University subscription, typically via WRDS
-**Coverage**: Financial statement data for US (North America) and global firms
-
-**Key variables (Compustat annual)**:
-
-| Variable | Mnemonic | Description |
-|----------|----------|-------------|
-| Total Assets | AT | Balance sheet total assets |
-| Total Revenue | REVT | Income statement revenue |
-| Net Income | NI | Bottom-line profit |
-| Common Equity | CEQ | Book value of equity |
-| Long-Term Debt | DLTT | Long-term borrowings |
-| Current Debt | DLC | Short-term borrowings |
-| Capital Expenditures | CAPX | Investment in fixed assets |
-| Depreciation | DP | Depreciation and amortization |
-| Dividends per Share | DVPSX_F | Dividends paid per share |
-| SIC Code | SIC | Industry classification |
-
-**Critical note on timing**: Compustat reports fiscal year data, but this data becomes publicly available only after the fiscal year ends (typically a 60-90 day lag). When merging with CRSP returns, lag accounting data by at least 3-6 months to avoid look-ahead bias.
-
-**How to cite**: "Financial statement data are from Compustat North America Annual File, accessed via WRDS on [date]."
-
-### WRDS (Wharton Research Data Services)
-
-**Provider**: University of Pennsylvania, Wharton School
-**Access**: University subscription
-**Coverage**: Aggregator providing access to 50+ databases
-
-WRDS is not a database itself but a platform that provides standardized access to CRSP, Compustat, IBES, Thomson Reuters, and many other databases. It also provides tools for merging datasets (the CRSP/Compustat Merged database is especially popular).
-
-**How to cite**: "Data accessed through Wharton Research Data Services (WRDS), wrds-web.wharton.upenn.edu, on [date]."
-
-### Bloomberg Terminal
-
-**Provider**: Bloomberg L.P.
-**Access**: Terminal subscription (typically available in university finance labs)
-**Coverage**: Real-time and historical data across all asset classes, globally
-
-**Best for**:
-- Real-time market data and news
-- Fixed income data (corporate bonds, sovereign bonds, CDS)
-- Derivatives data (options, futures)
-- ESG data
-- M&A deal data
-
-**Key functions**:
-- BDH (Bloomberg Data History): Historical time series
-- BDP (Bloomberg Data Point): Current data snapshot
-- FA (Financial Analysis): Company financial statements
-
-**How to cite**: "Data obtained from Bloomberg L.P., accessed on [date] via Bloomberg Terminal."
+**How to cite**: "Data from [Portal name], [Dataset title], accessed [date] at [URL]."
 
 ### World Bank Open Data
 
@@ -112,102 +40,162 @@ WRDS is not a database itself but a platform that provides standardized access t
 **Access**: Free (data.worldbank.org)
 **Coverage**: Development indicators for 200+ countries, 1960-present
 
-**Key indicators for finance**:
-- GDP per capita (NY.GDP.PCAP.CD)
-- Inflation (FP.CPI.TOTL.ZG)
-- Stock market capitalization to GDP (CM.MKT.LCAP.GD.ZS)
-- Domestic credit to private sector (FS.AST.PRVT.GD.ZS)
-- Rule of law index (various governance indicators)
+**Key indicators**:
+
+- GDP per capita and growth rates
+- Inflation and price indices
+- Education enrollment and completion
+- Health outcomes (mortality, disease burden)
+- Governance and rule-of-law indices
+- Access to infrastructure and services
 
 **How to cite**: "Data from World Bank, World Development Indicators database, [indicator name], accessed [date]."
 
-### IMF Data
+### United Nations Data (UNdata)
 
-**Provider**: International Monetary Fund
-**Access**: Free (data.imf.org)
-**Coverage**: International financial statistics, balance of payments, direction of trade
+**Provider**: United Nations Statistics Division
+**Access**: Free (data.un.org)
+**Coverage**: Demographic, social, economic, and environmental statistics across member states
 
 **Key datasets**:
-- **International Financial Statistics (IFS)**: Exchange rates, interest rates, prices, national accounts
-- **Balance of Payments Statistics**: Current account, capital flows
-- **Direction of Trade Statistics (DOTS)**: Bilateral trade flows
-- **World Economic Outlook (WEO)**: GDP forecasts, fiscal data
 
-**How to cite**: "Data from International Monetary Fund, [Dataset name], accessed [date]."
+- Demographic Yearbook: births, deaths, migration, population structure
+- National Accounts Statistics: GDP, expenditure, production
+- Energy Statistics: production, consumption, supply by source
+- Environment Statistics: freshwater, biodiversity, waste
 
-### Additional Specialized Databases
+**How to cite**: "Data from UNdata, [Dataset name], United Nations Statistics Division, accessed [date]."
 
-| Database | Coverage | Access | Best For |
-|----------|----------|--------|----------|
-| **IBES** | Analyst earnings forecasts | WRDS | Earnings surprises, analyst behavior |
-| **SDC Platinum** | M&A deals, IPOs, debt issuance | University subscription | Corporate events |
-| **TAQ** | Intraday trades and quotes (NYSE) | WRDS | Market microstructure, HFT |
-| **TRACE** | Corporate bond transactions | WRDS | Fixed income liquidity, pricing |
-| **13F filings** | Institutional holdings | SEC EDGAR (free) | Institutional investor behavior |
-| **ExecuComp** | Executive compensation | WRDS | CEO pay, incentives |
-| **BoardEx** | Board of directors data | University subscription | Corporate governance |
+### OECD Data
+
+**Provider**: Organisation for Economic Co-operation and Development
+**Access**: Free for most datasets (data.oecd.org)
+**Coverage**: Comparable cross-country data for OECD and partner countries
+
+**Key datasets**:
+
+- Health at a Glance: health system performance, outcomes
+- Education at a Glance: enrolment, attainment, expenditure
+- PISA: student assessment outcomes across countries
+- Labour Force Statistics: employment, unemployment, hours worked
+- Environmental indicators: greenhouse gases, water, biodiversity
+
+**How to cite**: "Data from OECD, [Dataset name], accessed [date], doi:[DOI if available]."
+
+### Institutional Repositories and Disciplinary Archives
+
+**Access**: Free or via university subscription depending on the archive
+**Coverage**: Varies by discipline; typically includes curated datasets from published research
+
+Most academic disciplines maintain data archives where researchers deposit datasets alongside published studies:
+
+| Discipline            | Example Archives                 | Content                                                    |
+| --------------------- | -------------------------------- | ---------------------------------------------------------- |
+| Social sciences       | ICPSR, UK Data Service           | Survey data, administrative records, experimental data     |
+| Political science     | Harvard Dataverse, GESIS         | Cross-national surveys, election data, legislative records |
+| Public health         | IPUMS Health Surveys, CDC WONDER | Health interview and examination surveys                   |
+| Education             | NCES, PISA data portal           | Student assessments, longitudinal cohort studies           |
+| Environmental science | PANGAEA, ICOS                    | Earth observation, oceanographic, atmospheric data         |
+| Experimental sciences | OSF, Zenodo                      | Replication datasets, lab experiment records               |
+
+**How to cite**: Follow the repository's preferred citation format; most generate citations automatically. Always include the persistent identifier (DOI or handle).
+
+### Survey Microdata
+
+**Access**: Public-use files free; restricted-access files via data enclaves or approved projects
+**Coverage**: Individual-level responses to structured questionnaires
+
+Large-scale surveys generate microdata — individual records rather than aggregate statistics. Examples include labor-force surveys, household income and expenditure surveys, health examination surveys, and academic achievement assessments. Microdata enable subgroup analyses that aggregate tables cannot support.
+
+**Note on restricted data**: Some microdata contain information that could identify respondents and are available only through secure enclaves or formal data-access agreements. Plan for the application timeline (weeks to months) early in your project.
+
+**How to cite**: "Data from [Survey name], [Wave/year], [Organization], [Access mode], accessed [date]."
+
+### APIs and Programmatic Data Access
+
+Many repositories and agencies expose data via application programming interfaces (APIs) — structured access points that allow you to request specific variables, geographies, and time periods without downloading entire databases.
+
+**Key considerations when using APIs**:
+
+- Rate limits (maximum requests per time period)
+- Terms of use and attribution requirements
+- Version stability (API endpoints can change; pin the version you used)
+- Documentation of the query parameters used (part of your reproducibility record)
+
+**How to cite**: "Data retrieved via [API name], [version/endpoint], [Organization], on [date]. Query parameters: [describe or link to query script]."
 
 ## Data Quality Considerations
 
 ### Survivorship Bias
 
-**Problem**: Databases may only include currently active firms, excluding those that failed, merged, or delisted.
+**Problem**: A dataset may include only entities that persisted to the end of the observation window, excluding those that dropped out, failed, or were otherwise removed.
 
-**Impact**: Overstates average returns (dead firms had below-average returns before dying).
+**Impact**: Overstates average outcomes for surviving units (those that did not survive typically had below-average outcomes before exiting).
 
-**Solution**: Use CRSP delisting returns. When a firm delists, its final return is recorded. Include these in your sample.
+**Solution**: Confirm whether the archive includes complete records for all entities that entered the sample — including those that exited mid-period. Obtain exit records or attrition-flagging variables where available. Document any known attrition in your methodology section.
 
 ### Look-Ahead Bias
 
-**Problem**: Using information that was not publicly available at the time.
+**Problem**: Using information in your analysis that was not publicly available at the time the outcome occurred.
 
-**Impact**: Inflates apparent predictability of returns or events.
+**Impact**: Inflates apparent predictability of outcomes or events. Results that look strong in the analysis may not have been achievable in practice because the "predictor" was not yet observable.
 
-**Solution**: Lag accounting data by 3-6 months when using it to predict returns. Use point-in-time databases when available.
+**Solution**: When using administrative or registry data merged with outcome data, lag predictors by the realistic reporting delay. Use point-in-time snapshots of data when archives support them. Document the temporal relationship between your predictors and outcomes explicitly.
 
 ### Backfill Bias
 
-**Problem**: When new firms are added to a database, their historical data may be backfilled, but only if they survived long enough to be added.
+**Problem**: When new records are added to a database, their historical data may be entered retroactively — but only for entities that survived long enough to be included.
 
-**Impact**: Similar to survivorship bias -- inflates historical returns.
+**Impact**: Similar to survivorship bias — inflates historical averages because records for failed or discontinued entities are not backfilled.
 
-**Solution**: Use "as-reported" data rather than restated data. Note when your database was accessed.
+**Solution**: Use "as-reported" data rather than revised or restated data where the archive distinguishes them. Note when your database was accessed and what revision state the data represent.
+
+### Non-Response and Coverage Bias
+
+**Problem**: Survey respondents differ systematically from non-respondents; administrative records cover only the population that interacts with the relevant institution.
+
+**Impact**: Estimates may not generalize to the target population.
+
+**Solution**: Examine response rates, use survey weights where provided, and acknowledge coverage gaps in the limitations section.
 
 ## Worked Example: Constructing a Research Dataset
 
-**Research question**: Does institutional ownership reduce earnings management?
+**Research question**: Does access to early childhood education programs improve primary school readiness outcomes?
 
 **Step 1: Identify needed data**
-- Earnings management measure: Discretionary accruals (from Compustat)
-- Institutional ownership: 13F filings (from Thomson Reuters Institutional Holdings via WRDS)
-- Control variables: Firm size, leverage, ROA, auditor quality (from Compustat)
+
+- Outcome measure: school readiness assessment scores (from a national education survey or administrative school enrollment data)
+- Program participation: enrollment records from the relevant government program (from an administrative registry or household survey)
+- Control variables: household income level, caregiver education, urban/rural location, child age (from a linked household survey or census)
 
 **Step 2: Specify sample**
-- Period: 2010-2024
-- Universe: All US common stocks in CRSP (share codes 10, 11)
-- Exclusions: Financial firms (SIC 6000-6999), utilities (SIC 4900-4999)
-- Merge: CRSP/Compustat via PERMNO-GVKEY link table
+
+- Period: three cohorts of children reaching school-entry age over a five-year window
+- Universe: all children in the target age range residing in the study region
+- Exclusions: children with missing baseline assessments (document the exclusion and test whether excluded cases differ from included ones)
+- Merge: link program participation records to outcome records using a consistent individual identifier; document the linkage method and any unmatched cases
 
 **Step 3: Data citation paragraph**
-> "We construct our sample from three sources. Financial statement data are from Compustat North America Annual File. Stock return data and delisting information are from the CRSP Monthly Stock File. Institutional ownership data are from the Thomson Reuters Institutional Holdings (13F) database. All data are accessed via WRDS on March 1, 2026. We merge CRSP and Compustat using the CRSP/Compustat Merged database link table, requiring a valid PERMNO-GVKEY match."
+
+> "We construct our analysis sample from two administrative sources. School readiness assessment data are from the [Assessment Program Name], administered by the [Ministry/Agency] and accessed under data-sharing agreement [reference number] on [date]. Early childhood program enrollment records are from the [Program Name] administrative registry, provided by [Agency] for cohort years [years]. We link the two sources using the national education identifier, retaining all children with a valid match. Unmatched records (N = [n], [x]% of the potential sample) are excluded; a balance check confirms no significant differences on observable baseline characteristics between matched and unmatched cases (see Appendix Table A1)."
 
 ## Common Mistakes
 
-1. **Not specifying the exact database and access date**: "Data from Bloomberg" is insufficient. Specify the function, fields, and access date.
+1. **Not specifying the exact source and access date**: "Data from a government survey" is insufficient. Specify the survey name, wave, access mode, and date. Different waves of the same survey can have substantially different coverage or variable definitions.
 
-2. **Ignoring survivorship bias**: Using only currently listed firms systematically biases your results. Always include delisted firms from CRSP.
+2. **Ignoring attrition and non-response**: Using only complete cases without examining whether incomplete cases differ systematically biases your results. Always characterize attrition and test for differential dropout.
 
-3. **Confusing Compustat variables**: AT is total assets, ACT is current assets. One letter can change your entire analysis. Always verify variable definitions in the data dictionary.
+3. **Confusing similarly named variables**: Many datasets contain variables with nearly identical names that differ in important ways (e.g., gross versus net income, total versus completed years of education). Always verify variable definitions in the codebook before using them.
 
-4. **Look-ahead bias in merging**: Merging December 2023 accounting data with January 2024 returns assumes the accounting data was available on January 1 -- it was not. Lag by at least 3 months.
+4. **Temporal mismatch between predictors and outcomes**: Merging predictor and outcome records from different time points without accounting for realistic reporting lags or policy implementation timelines introduces look-ahead contamination. Document the date each variable was recorded.
 
-5. **Not documenting sample construction**: Your methodology section must explain every step from raw database to final sample, including all filters and exclusions.
+5. **Not documenting sample construction**: Your methodology section must explain every step from raw source files to the final analysis sample, including all filters, exclusions, and linkage decisions with the counts at each step.
 
-6. **Using free data without understanding its limitations**: yfinance data may have errors in adjusted prices around splits. FRED data may be revised after initial release.
+6. **Using convenience data without understanding its limitations**: Openly available datasets that are easy to access (public-use survey files, scraped web data, pre-packaged research datasets) may have been processed or weighted in ways that affect your analysis. Read the technical documentation before treating any variable as face-value.
 
 ## Key References
 
-- Beaver, W.H., McNichols, M.F. & Price, R.A. (2007). "Delisting Returns and Their Effect on Accounting-Based Market Anomalies." *Journal of Accounting and Economics*, 43(2-3), 341-368.
-- Shumway, T. (1997). "The Delisting Bias in CRSP Data." *Journal of Finance*, 52(1), 327-340.
-- WRDS Research Team. *WRDS Data Manual*. Available at wrds-www.wharton.upenn.edu.
-- Fama, E.F. & French, K.R. (1993). "Common Risk Factors in the Returns on Stocks and Bonds." *Journal of Financial Economics*, 33(1), 3-56.
+- Shadish, W.R., Cook, T.D., & Campbell, D.T. (2002). _Experimental and Quasi-Experimental Designs for Generalized Causal Inference_. Houghton Mifflin. (Chapters on data sources and threats to validity)
+- King, G., Keohane, R.O., & Verba, S. (1994). _Designing Social Inquiry: Scientific Inference in Qualitative Research_. Princeton University Press. (Chapter 2 on data and inference)
+- Groves, R.M., et al. (2009). _Survey Methodology_ (2nd ed.). Wiley. (Coverage and non-response error)
+- Wilkinson, M.D., et al. (2016). "The FAIR Guiding Principles for scientific data management and stewardship." _Scientific Data_, 3, 160018. (FAIR: Findable, Accessible, Interoperable, Reusable)

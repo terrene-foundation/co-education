@@ -12,13 +12,13 @@ Research on communication consistently shows that delivery accounts for more of 
 
 For a 15-minute presentation with 12 slides:
 
-| Section | Time | Slides |
-|---------|------|--------|
-| Introduction and motivation | 2 min | 1-2 |
-| Main content | 9 min | 3-9 |
-| Conclusion and recommendation | 2 min | 10-11 |
-| Summary/thank you | 1 min | 12 |
-| Buffer for transitions | 1 min | -- |
+| Section                       | Time  | Slides |
+| ----------------------------- | ----- | ------ |
+| Introduction and motivation   | 2 min | 1-2    |
+| Main content                  | 9 min | 3-9    |
+| Conclusion and recommendation | 2 min | 10-11  |
+| Summary/thank you             | 1 min | 12     |
+| Buffer for transitions        | 1 min | --     |
 
 ### Speed
 
@@ -30,6 +30,7 @@ For a 15-minute presentation with 12 slides:
 ### The Power of Pausing
 
 Pauses serve multiple purposes:
+
 - **After a key statement**: Let the point sink in
 - **Before a transition**: Signal that you are moving to a new topic
 - **After asking a rhetorical question**: Let the audience mentally formulate an answer
@@ -44,6 +45,7 @@ Speak loudly enough for the back row to hear without straining. If using a micro
 ### Variety
 
 Vary your pitch, speed, and volume to maintain attention:
+
 - **Important point**: Slow down and drop your voice slightly
 - **Exciting finding**: Speed up slightly and raise your energy
 - **Transition**: Brief pause, then slightly louder to recapture attention
@@ -53,6 +55,7 @@ Vary your pitch, speed, and volume to maintain attention:
 "Um," "uh," "like," "you know," "so," and "basically" are verbal fillers. Everyone uses them, but overuse is distracting.
 
 **How to reduce fillers**:
+
 - Become aware of your specific fillers (record yourself practicing)
 - Replace fillers with pauses (silence is more authoritative)
 - Practice transitions between slides -- these are where fillers cluster
@@ -84,29 +87,30 @@ Vary your pitch, speed, and volume to maintain attention:
 
 ### Preparation
 
-Before presenting, anticipate the three most likely questions and prepare answers. In finance presentations, common question categories include:
+Before presenting, anticipate the three most likely questions and prepare answers. Common question categories include:
+
 - **Methodology**: "Why did you use this approach instead of...?"
-- **Assumptions**: "What if your growth rate assumption is wrong?"
+- **Assumptions**: "What if your key assumption here is wrong?"
 - **Alternatives**: "Have you considered...?"
 - **Data**: "Where did you get this data? What is the sample period?"
 
 ### During Q&A
 
 1. **Listen fully**: Do not start formulating your answer while the questioner is still talking
-2. **Repeat or paraphrase the question**: "So the question is about whether our results hold with a different benchmark. Great question."
+2. **Repeat or paraphrase the question**: "So the question is about whether our results hold with a different comparison group. Great question."
 3. **Answer concisely**: 30-60 seconds per answer. If you need longer, offer to discuss after the presentation
 4. **Admit when you do not know**: "I have not analyzed that specific scenario, but it is a good direction for future work." Honesty builds credibility; bluffing destroys it
 5. **Bridge to your key messages**: "That connects to our broader finding that..."
 
 ### Difficult Questions
 
-| Question Type | Strategy |
-|--------------|----------|
-| **Hostile/challenging** | Stay calm, acknowledge the point, respond with evidence |
-| **Off-topic** | "That is an interesting point. It is a bit outside the scope of today's presentation, but I would be happy to discuss it afterward." |
-| **Multi-part** | "There are several parts to that question. Let me start with..." |
-| **You do not know the answer** | "That is a great question. I do not have the data to answer that right now, but I will look into it." |
-| **Clarifying (confused questioner)** | Rephrase your point differently; do not just repeat the same words louder |
+| Question Type                        | Strategy                                                                                                                             |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Hostile/challenging**              | Stay calm, acknowledge the point, respond with evidence                                                                              |
+| **Off-topic**                        | "That is an interesting point. It is a bit outside the scope of today's presentation, but I would be happy to discuss it afterward." |
+| **Multi-part**                       | "There are several parts to that question. Let me start with..."                                                                     |
+| **You do not know the answer**       | "That is a great question. I do not have the data to answer that right now, but I will look into it."                                |
+| **Clarifying (confused questioner)** | Rephrase your point differently; do not just repeat the same words louder                                                            |
 
 ## Managing Nerves
 
@@ -127,13 +131,13 @@ Before presenting, anticipate the three most likely questions and prepare answer
 ### Reframing Anxiety
 
 - Nervousness and excitement produce the same physiological response (elevated heart rate, adrenaline). Tell yourself "I am excited" rather than "I am nervous" -- the reframe is supported by research (Brooks, 2014).
-- Some nervousness sharpens performance. Elite speakers still feel nervous; they have learned to channel it.
+- Some nervousness sharpens performance. Experienced speakers still feel nervous; they have learned to channel it.
 
 ## Professional Presence
 
 ### Dress
 
-Dress one level above your audience. For a finance class presentation, business casual is usually appropriate. For a case competition or job interview, business formal.
+Dress one level above your audience. For a class presentation, business casual is usually appropriate. For a conference, thesis defense, or formal evaluation, business professional.
 
 ### Timing
 
@@ -162,7 +166,7 @@ Start on time. End on time or slightly early. Going over time signals disrespect
 
 ## Key References
 
-- Reynolds, G. (2019). *Presentation Zen: Simple Ideas on Presentation Design and Delivery*. 3rd ed. New Riders.
-- Duarte, N. (2010). *Resonate: Present Visual Stories that Transform Audiences*. Wiley.
-- Brooks, A.W. (2014). "Get Excited: Reappraising Pre-Performance Anxiety as Excitement." *Journal of Experimental Psychology: General*, 143(3), 1144-1158.
-- Anderson, C. (2016). *TED Talks: The Official TED Guide to Public Speaking*. Houghton Mifflin Harcourt.
+- Reynolds, G. (2019). _Presentation Zen: Simple Ideas on Presentation Design and Delivery_. 3rd ed. New Riders.
+- Duarte, N. (2010). _Resonate: Present Visual Stories that Transform Audiences_. Wiley.
+- Brooks, A.W. (2014). "Get Excited: Reappraising Pre-Performance Anxiety as Excitement." _Journal of Experimental Psychology: General_, 143(3), 1144-1158.
+- Anderson, C. (2016). _TED Talks: The Official TED Guide to Public Speaking_. Houghton Mifflin Harcourt.

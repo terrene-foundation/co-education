@@ -1,6 +1,6 @@
 # Slide Design
 
-A well-designed slide communicates one idea clearly in three seconds. Most finance presentation slides fail this test -- they are crammed with text, cluttered with data, and impossible to read from the back of the room. Good slide design is not about aesthetics; it is about communication.
+A well-designed slide communicates one idea clearly in three seconds. Most presentation slides fail this test -- they are crammed with text, cluttered with data, and impossible to read from the back of the room. Good slide design is not about aesthetics; it is about communication.
 
 ## Why Slide Design Matters
 
@@ -14,7 +14,7 @@ Every slide should make exactly one point. The audience should be able to grasp 
 
 ## The Assertion-Evidence Model
 
-The most effective slide structure for technical and financial presentations.
+The most effective slide structure for technical and academic presentations.
 
 ### Structure
 
@@ -24,43 +24,48 @@ The most effective slide structure for technical and financial presentations.
 ### Comparison
 
 **Weak (topic-label title)**:
-> Title: "Portfolio Returns"
-> Body: Bullet points listing various return statistics
+
+> Title: "Study Results"
+> Body: Bullet points listing various outcome statistics
 
 **Strong (assertion-evidence)**:
-> Title: "The equal-weight portfolio outperformed the value-weight portfolio by 2.1% annually from 2010-2024"
-> Body: A single line chart comparing both portfolios over the period
+
+> Title: "The intervention group outperformed the control group by 12 points on the post-test across all three cohorts"
+> Body: A single grouped bar chart comparing both groups across cohorts
 
 The assertion title tells the audience what to conclude. The evidence confirms it visually.
 
 ### Worked Example: Transforming a Slide
 
 **Before** (typical bad slide):
-> Title: "Company Financial Overview"
-> - Revenue: $5.2B (up 12% YoY)
-> - EBITDA: $1.1B (margin 21%)
-> - Net Income: $650M
-> - Debt/EBITDA: 2.3x
-> - ROE: 18.5%
-> - Free Cash Flow: $480M
-> - Dividend Yield: 2.1%
+
+> Title: "Project Overview"
+>
+> - Scope: 4 research sites, 180 participants
+> - Duration: 18 months
+> - Primary outcome: 14% improvement
+> - Secondary outcome: reduced dropout rate
+> - Cost per participant: $340
+> - Completion rate: 87%
+> - Satisfaction score: 4.2/5
 
 **After** (assertion-evidence):
-> Title: "Revenue growth accelerated to 12% while margins held steady at 21%"
-> Body: Two-panel chart: (left) revenue bar chart showing 3 years of growth; (right) EBITDA margin line holding at 21%
 
-Supporting details (Net Income, D/EBITDA, ROE) go on a backup slide or in speaker notes.
+> Title: "Completion rate and satisfaction both exceeded targets after the curriculum redesign"
+> Body: Two-panel chart: (left) completion rate bar showing target vs. actual; (right) satisfaction score trend over three semesters
+
+Supporting details (cost, sample size, duration) go on a backup slide or in speaker notes.
 
 ## Font and Typography
 
 ### Size Guidelines
 
-| Element | Minimum Size | Recommended |
-|---------|-------------|-------------|
-| Slide title | 28pt | 32-36pt |
-| Body text | 20pt | 24-28pt |
-| Chart labels | 14pt | 16-18pt |
-| Footnotes/sources | 10pt | 12pt |
+| Element           | Minimum Size | Recommended |
+| ----------------- | ------------ | ----------- |
+| Slide title       | 28pt         | 32-36pt     |
+| Body text         | 20pt         | 24-28pt     |
+| Chart labels      | 14pt         | 16-18pt     |
+| Footnotes/sources | 10pt         | 12pt        |
 
 **Rule of thumb**: If you cannot read it from the back of the room, it is too small.
 
@@ -76,37 +81,38 @@ Supporting details (Net Income, D/EBITDA, ROE) go on a backup slide or in speake
 
 - **High contrast**: Dark text on light background (or vice versa, but not mid-tone on mid-tone)
 - **Limited palette**: Use 3-4 colors maximum in your data visualizations
-- **Consistent meaning**: If blue represents Portfolio A on one slide, it must represent Portfolio A on every slide
+- **Consistent meaning**: If blue represents Group A on one slide, it must represent Group A on every slide
 - **Color-blind safe**: Avoid relying solely on red/green distinctions. Use patterns or labels as backup.
 
-### Finance Color Conventions
+### Common Color Conventions
 
-| Color | Common Meaning |
-|-------|---------------|
-| Green | Positive / gain / buy |
-| Red | Negative / loss / sell |
-| Blue | Primary data series / neutral |
-| Gray | Secondary / benchmark / historical |
+| Color | Common Meaning                        |
+| ----- | ------------------------------------- |
+| Green | Positive / above target / improvement |
+| Red   | Negative / below target / decline     |
+| Blue  | Primary data series / neutral         |
+| Gray  | Secondary / baseline / comparison     |
 
 **Caution**: Red-green is the most common color blindness. Add labels, patterns, or use blue/orange as alternatives.
 
-## Data-Dense Financial Slides
+## Data-Dense Slides
 
-Finance presentations often require showing substantial data (financial tables, comparable company analysis, portfolio attribution). Rules for data-dense slides:
+Presentations often require showing substantial data (summary tables, cross-tabulations, multi-condition comparisons). Rules for data-dense slides:
 
 ### 1. Highlight What Matters
 
 Do not present a raw data table and ask the audience to find the insight. Bold, color, or otherwise visually highlight the key numbers.
 
-**Example**: In a comparable company table with 8 columns and 10 rows, shade the row for your target company and bold the EV/EBITDA column.
+**Example**: In a results table with 8 columns and 10 rows, shade the row for your key finding and bold the primary outcome column.
 
 ### 2. Use Heat Maps for Large Tables
 
-Color-code cells by value (e.g., darker green for higher returns, darker red for lower). This turns a wall of numbers into a visual pattern.
+Color-code cells by value (e.g., darker green for higher scores, darker red for lower). This turns a wall of numbers into a visual pattern.
 
 ### 3. Progressive Disclosure
 
 For complex analyses, build up the slide in stages using animation:
+
 1. First: Show the overall result
 2. Then: Reveal the supporting detail
 3. Finally: Highlight the key takeaway
@@ -130,6 +136,7 @@ Do not fill every pixel. White space (empty space) helps the audience focus on w
 ### Visual Hierarchy
 
 The eye should be drawn to the most important element first. Use size, color, and position to create hierarchy:
+
 1. **Title** (top, largest, boldest)
 2. **Key visual/number** (center, largest visual element)
 3. **Supporting detail** (smaller, below the key visual)
@@ -151,7 +158,7 @@ The eye should be drawn to the most important element first. Use size, color, an
 
 ## Key References
 
-- Reynolds, G. (2019). *Presentation Zen: Simple Ideas on Presentation Design and Delivery*. 3rd ed. New Riders.
-- Duarte, N. (2008). *slide:ology: The Art and Science of Creating Great Presentations*. O'Reilly Media.
-- Garner, J.K. & Alley, M.P. (2013). "How the Design of Presentation Slides Affects Audience Comprehension." *Technical Communication*, 60(3), 234-254.
-- Schwabish, J. (2017). *Better Presentations: A Guide for Scholars, Researchers, and Wonks*. Columbia University Press.
+- Reynolds, G. (2019). _Presentation Zen: Simple Ideas on Presentation Design and Delivery_. 3rd ed. New Riders.
+- Duarte, N. (2008). _slide:ology: The Art and Science of Creating Great Presentations_. O'Reilly Media.
+- Garner, J.K. & Alley, M.P. (2013). "How the Design of Presentation Slides Affects Audience Comprehension." _Technical Communication_, 60(3), 234-254.
+- Schwabish, J. (2017). _Better Presentations: A Guide for Scholars, Researchers, and Wonks_. Columbia University Press.

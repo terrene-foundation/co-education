@@ -1,10 +1,10 @@
 # APA 7th Edition Citation Guide
 
-The American Psychological Association (APA) style is the most widely used citation format in business schools and social science journals. APA 7th edition (published 2019) introduced several updates from the 6th edition. This guide covers the source types finance students cite most frequently.
+The American Psychological Association (APA) style is the most widely used citation format in social science and academic journals. APA 7th edition (published 2019) introduced several updates from the 6th edition. This guide covers the source types students and researchers cite most frequently.
 
 ## Why APA 7th Matters
 
-Many finance courses, business school journals, and conference proceedings require APA format. Consistent, correct citations demonstrate academic rigor and allow readers to locate your sources. Incorrect citations undermine your credibility.
+Many courses, academic journals, and conference proceedings require APA format. Consistent, correct citations demonstrate academic rigor and allow readers to locate your sources. Incorrect citations undermine your credibility.
 
 ## General Principles
 
@@ -12,15 +12,15 @@ Many finance courses, business school journals, and conference proceedings requi
 
 APA uses the author-date system.
 
-**One author**: (Fama, 1970) or Fama (1970) argued that...
+**One author**: (Smith, 2018) or Smith (2018) argued that...
 
-**Two authors**: (Fama & French, 1993) or Fama and French (1993)
+**Two authors**: (Brown & Lee, 2020) or Brown and Lee (2020)
 
-**Three or more authors**: (Fama et al., 2015) -- always use et al. from the first citation. (This is a change from APA 6th, which required all names on first citation.)
+**Three or more authors**: (Brown et al., 2021) -- always use et al. from the first citation. (This is a change from APA 6th, which required all names on first citation.)
 
-**Multiple works in one citation**: (Fama, 1970; Jensen, 1986; Myers, 1984) -- alphabetical order, separated by semicolons.
+**Multiple works in one citation**: (Brown, 2015; Jones, 2019; Smith, 2021) -- alphabetical order, separated by semicolons.
 
-**Direct quote**: (Fama, 1970, p. 383) -- always include page number for direct quotes.
+**Direct quote**: (Smith, 2018, p. 47) -- always include page number for direct quotes.
 
 **No date**: (World Bank, n.d.)
 
@@ -36,106 +36,119 @@ APA uses the author-date system.
 
 ### Journal Article (with DOI)
 
-> Author, A. A., & Author, B. B. (Year). Title of article. *Title of Periodical*, *Volume*(Issue), Page range. https://doi.org/xxxxx
+> Author, A. A., & Author, B. B. (Year). Title of article. _Title of Periodical_, _Volume_(Issue), Page range. https://doi.org/xxxxx
 
 **Example**:
-> Fama, E. F., & French, K. R. (1993). Common risk factors in the returns on stocks and bonds. *Journal of Financial Economics*, *33*(1), 3-56. https://doi.org/10.1016/0304-405X(93)90023-5
+
+> Brown, T. R., & Nguyen, S. L. (2019). Long-term effects of structured feedback on student writing quality. _Journal of Educational Research_, _112_(4), 451-468. https://doi.org/10.1080/00220671.2019.1568958
 
 ### Journal Article (without DOI, with URL)
 
-> Author, A. A. (Year). Title of article. *Title of Periodical*, *Volume*(Issue), Page range. https://www.journalurl.com/article
+> Author, A. A. (Year). Title of article. _Title of Periodical_, _Volume_(Issue), Page range. https://www.journalurl.com/article
 
 **Example**:
-> Sharpe, W. F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. *The Journal of Finance*, *19*(3), 425-442. https://www.jstor.org/stable/2977928
+
+> Vygotsky, L. S. (1978). Mind in society: The development of higher psychological processes. _Harvard Educational Review_, _48_(2), 210-215. https://www.jstor.org/stable/example
 
 ### Journal Article (21+ authors)
 
-> Author, A. A., Author, B. B., Author, C. C., Author, D. D., Author, E. E., Author, F. F., Author, G. G., Author, H. H., Author, I. I., Author, J. J., Author, K. K., Author, L. L., Author, M. M., Author, N. N., Author, O. O., Author, P. P., Author, Q. Q., Author, R. R., Author, S. S., . . . Author, Z. Z. (Year). Title. *Journal*, *Vol*(Issue), Pages. DOI
+> Author, A. A., Author, B. B., Author, C. C., Author, D. D., Author, E. E., Author, F. F., Author, G. G., Author, H. H., Author, I. I., Author, J. J., Author, K. K., Author, L. L., Author, M. M., Author, N. N., Author, O. O., Author, P. P., Author, Q. Q., Author, R. R., Author, S. S., . . . Author, Z. Z. (Year). Title. _Journal_, _Vol_(Issue), Pages. DOI
 
 ### Book
 
-> Author, A. A. (Year). *Title of work: Capital letter also for subtitle*. Publisher. https://doi.org/xxxxx
+> Author, A. A. (Year). _Title of work: Capital letter also for subtitle_. Publisher. https://doi.org/xxxxx
 
 **Example**:
-> Bodie, Z., Kane, A., & Marcus, A. J. (2021). *Investments* (12th ed.). McGraw-Hill Education.
+
+> Biggs, J., & Tang, C. (2011). _Teaching for quality learning at university_ (4th ed.). Open University Press.
 
 ### Edited Book Chapter
 
-> Author, A. A. (Year). Title of chapter. In E. E. Editor (Ed.), *Title of book* (pp. xx-xx). Publisher. https://doi.org/xxxxx
+> Author, A. A. (Year). Title of chapter. In E. E. Editor (Ed.), _Title of book_ (pp. xx-xx). Publisher. https://doi.org/xxxxx
 
 **Example**:
-> Roberts, M. R., & Whited, T. M. (2013). Endogeneity in empirical corporate finance. In G. M. Constantinides, M. Harris, & R. M. Stulz (Eds.), *Handbook of the economics of finance* (Vol. 2A, pp. 493-572). Elsevier. https://doi.org/10.1016/B978-0-44-453594-8.00007-0
+
+> Hattie, J., & Timperley, H. (2012). Feedback and learning. In D. H. Schunk & B. J. Zimmerman (Eds.), _Handbook of self-regulation of learning and performance_ (pp. 197-214). Routledge. https://doi.org/10.4324/9780203839010
 
 ### Working Paper / Preprint
 
-> Author, A. A. (Year). *Title of working paper* (Working Paper No. xxx). Institution or Repository Name. https://doi.org/xxxxx or URL
+> Author, A. A. (Year). _Title of working paper_ (Working Paper No. xxx). Institution or Repository Name. https://doi.org/xxxxx or URL
 
 **Example**:
-> Cochrane, J. H. (2005). *Writing tips for PhD students* [Unpublished manuscript]. University of Chicago Booth School of Business.
 
-**SSRN example**:
-> Baker, M., & Wurgler, J. (2019). *Do strict capital requirements raise the cost of capital? Bank regulation, capital structure, and the low-risk anomaly* (NBER Working Paper No. 25864). National Bureau of Economic Research. https://doi.org/10.3386/w25864
+> Pellegrino, J. W., & Hilton, M. L. (2022). _Assessing 21st century competencies: Lessons from a decade of research_ [Unpublished manuscript]. University of Illinois at Chicago.
+
+**Repository preprint example**:
+
+> Mollick, E., & Mollick, L. (2023). _Using AI to implement effective teaching strategies in classrooms_ (EdWorkingPaper No. 23-1). Annenberg Institute at Brown University. https://doi.org/10.26300/example
 
 ### Government / Institutional Report
 
-> Organization Name. (Year). *Title of report* (Report No. if applicable). https://www.url.com
+> Organization Name. (Year). _Title of report_ (Report No. if applicable). https://www.url.com
 
 **Example**:
-> International Monetary Fund. (2025). *Global financial stability report: Navigating uncertainty*. https://www.imf.org/en/Publications/GFSR
+
+> United Nations Educational, Scientific and Cultural Organization. (2024). _Global education monitoring report: Technology in education_. https://www.unesco.org/gem-report
 
 **Example (specific author within organization)**:
-> Board of Governors of the Federal Reserve System. (2024). *Financial stability report*. https://www.federalreserve.gov/publications/financial-stability-report.htm
+
+> National Center for Education Statistics. (2024). _Digest of education statistics_. U.S. Department of Education. https://nces.ed.gov/programs/digest/
 
 ### Website / Webpage
 
-> Author, A. A. (Year, Month Day). *Title of page*. Site Name. https://www.url.com
+> Author, A. A. (Year, Month Day). _Title of page_. Site Name. https://www.url.com
 
 **Example**:
-> U.S. Securities and Exchange Commission. (2024, January 15). *Investor bulletin: How fees and expenses affect your investment portfolio*. https://www.sec.gov/investor/alerts
+
+> American Psychological Association. (2023, September 5). _How to cite generative AI in APA style_. https://apastyle.apa.org/blog/how-to-cite-chatgpt
 
 ### Dataset
 
-> Author/Organization. (Year). *Title of dataset* (Version number) [Data set]. Publisher. https://doi.org/xxxxx
+> Author/Organization. (Year). _Title of dataset_ (Version number) [Data set]. Publisher. https://doi.org/xxxxx
 
 **Example**:
-> Federal Reserve Bank of St. Louis. (2026). *10-year Treasury constant maturity rate* [Data set]. FRED Economic Data. https://fred.stlouisfed.org/series/DGS10
 
-### Annual Report / SEC Filing
+> OECD. (2024). _Programme for international student assessment (PISA) 2022 results_ [Data set]. OECD iLibrary. https://doi.org/10.1787/example
 
-> Company Name. (Year). *Title of filing* (Form type). U.S. Securities and Exchange Commission. https://www.sec.gov/cgi-bin/browse-edgar
+### Primary Source / Archival Document
+
+> Author or Organization. (Year). _Title of document_. Repository Name, Collection Name.
 
 **Example**:
-> Apple Inc. (2024). *Annual report pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934* (Form 10-K). U.S. Securities and Exchange Commission. https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AAPL
+
+> Darwin, C. (1859). _On the origin of species by means of natural selection_. John Murray. https://doi.org/10.5962/bhl.title.82303
 
 ### Conference Paper
 
-> Author, A. A. (Year, Month). *Title of paper*. Conference Name, Location.
+> Author, A. A. (Year, Month). _Title of paper_. Conference Name, Location.
 
 **Example**:
-> Brav, A. (2024, January). *Corporate payout policy in the era of AI*. American Finance Association Annual Meeting, San Antonio, TX.
 
-### Newspaper / Financial Press Article
+> Bearman, M., & Ajjawi, R. (2023, July). _Designing assessments in an age of generative AI_. Higher Education Research and Development Society of Australasia Annual Conference, Christchurch, New Zealand.
 
-> Author, A. A. (Year, Month Day). Title of article. *Newspaper Name*. https://www.url.com
+### Newspaper Article
+
+> Author, A. A. (Year, Month Day). Title of article. _Newspaper Name_. https://www.url.com
 
 **Example**:
-> Mackintosh, J. (2025, March 10). Why passive investing keeps winning. *The Wall Street Journal*. https://www.wsj.com/articles/passive-investing
+
+> Carey, B. (2014, September 4). Studying for exams? Forget what you know about good study habits. _The New York Times_. https://www.nytimes.com/2014/09/07/magazine/studying-for-exams.html
 
 ## Worked Example: Complete Reference List
 
 > **References**
 >
-> Bodie, Z., Kane, A., & Marcus, A. J. (2021). *Investments* (12th ed.). McGraw-Hill Education.
+> Bearman, M., & Ajjawi, R. (2023, July). _Designing assessments in an age of generative AI_. Higher Education Research and Development Society of Australasia Annual Conference, Christchurch, New Zealand.
 >
-> Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. *The Journal of Finance*, *25*(2), 383-417. https://doi.org/10.2307/2325486
+> Biggs, J., & Tang, C. (2011). _Teaching for quality learning at university_ (4th ed.). Open University Press.
 >
-> Fama, E. F., & French, K. R. (1993). Common risk factors in the returns on stocks and bonds. *Journal of Financial Economics*, *33*(1), 3-56. https://doi.org/10.1016/0304-405X(93)90023-5
+> Brown, T. R., & Nguyen, S. L. (2019). Long-term effects of structured feedback on student writing quality. _Journal of Educational Research_, _112_(4), 451-468. https://doi.org/10.1080/00220671.2019.1568958
 >
-> Federal Reserve Bank of St. Louis. (2026). *Federal funds effective rate* [Data set]. FRED Economic Data. https://fred.stlouisfed.org/series/DFF
+> Hattie, J., & Timperley, H. (2012). Feedback and learning. In D. H. Schunk & B. J. Zimmerman (Eds.), _Handbook of self-regulation of learning and performance_ (pp. 197-214). Routledge. https://doi.org/10.4324/9780203839010
 >
-> International Monetary Fund. (2025). *Global financial stability report: Navigating uncertainty*. https://www.imf.org/en/Publications/GFSR
+> OECD. (2024). _Programme for international student assessment (PISA) 2022 results_ [Data set]. OECD iLibrary. https://doi.org/10.1787/example
 >
-> Sharpe, W. F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. *The Journal of Finance*, *19*(3), 425-442. https://doi.org/10.1111/j.1540-6261.1964.tb02865.x
+> United Nations Educational, Scientific and Cultural Organization. (2024). _Global education monitoring report: Technology in education_. https://www.unesco.org/gem-report
 
 ## Common Mistakes
 
@@ -153,6 +166,6 @@ APA uses the author-date system.
 
 ## Key References
 
-- American Psychological Association. (2020). *Publication manual of the American Psychological Association* (7th ed.). https://doi.org/10.1037/0000165-000
+- American Psychological Association. (2020). _Publication manual of the American Psychological Association_ (7th ed.). https://doi.org/10.1037/0000165-000
 - APA Style website: https://apastyle.apa.org
 - Purdue Online Writing Lab (OWL). APA Formatting and Style Guide. https://owl.purdue.edu/owl/research_and_citation/apa_style/

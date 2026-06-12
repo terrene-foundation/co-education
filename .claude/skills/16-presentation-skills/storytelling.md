@@ -1,14 +1,14 @@
-# Storytelling for Financial Presentations
+# Storytelling for Presentations
 
 Numbers do not speak for themselves. The same dataset can support multiple narratives depending on how you frame it. Storytelling is the skill of structuring your analysis into a narrative that guides the audience from context to conclusion.
 
 ## Why Storytelling Matters
 
-Research shows that audiences remember stories far better than they remember isolated facts. A well-structured financial presentation does not just present data -- it takes the audience on a journey: here is the situation, here is the challenge, and here is what we should do about it.
+Research shows that audiences remember stories far better than they remember isolated facts. A well-structured presentation does not just present data -- it takes the audience on a journey: here is the situation, here is the challenge, and here is what we should do about it.
 
 ## The Situation-Complication-Resolution (SCR) Framework
 
-The most widely used narrative structure in business and finance presentations. Developed by Barbara Minto at McKinsey.
+The most widely used narrative structure in academic and professional presentations. Developed by Barbara Minto at McKinsey.
 
 ### Structure
 
@@ -16,21 +16,21 @@ The most widely used narrative structure in business and finance presentations. 
 2. **Complication**: Introduce the problem, challenge, or change that disrupts the situation
 3. **Resolution**: Present your recommendation or finding
 
-### Worked Example: Investment Recommendation
+### Worked Example: Research Findings Presentation
 
-> **Situation**: "Our portfolio has generated consistent returns of 8-10% annually over the past five years, outperforming the benchmark by 150 basis points."
+> **Situation**: "Retention rates in introductory courses have remained stable at around 80% for the past five years, in line with sector benchmarks."
 >
-> **Complication**: "However, our allocation to long-duration bonds exposes us to significant interest rate risk. With the central bank signaling further rate increases, our fixed income positions could lose 5-8% of their value over the next 12 months."
+> **Complication**: "However, our data show that students who miss more than two sessions in the first three weeks are three times more likely to withdraw before the mid-semester assessment — and current advising processes do not flag these students until Week 6."
 >
-> **Resolution**: "I recommend reducing our long-duration bond allocation from 30% to 15% and reallocating to short-duration Treasuries and floating-rate notes. This reduces interest rate duration from 6.2 years to 3.1 years while maintaining income generation."
+> **Resolution**: "We recommend implementing an early-alert protocol triggered at the second absence in the first three weeks. Piloting this in two sections last semester reduced early withdrawals by 40%."
 
-### Worked Example: Research Presentation
+### Worked Example: Research Paper Presentation
 
-> **Situation**: "The efficient market hypothesis is the foundational framework in modern finance. It predicts that stock prices fully reflect all available information."
+> **Situation**: "Collaborative learning is widely cited as effective for deep conceptual understanding, and most instructional frameworks recommend it for higher-order tasks."
 >
-> **Complication**: "Yet a growing body of evidence documents persistent anomalies -- momentum, value, and low-volatility effects -- that standard risk models cannot fully explain."
+> **Complication**: "Yet a growing body of evidence shows that collaboration benefits are unevenly distributed — students with lower prior knowledge often defer to stronger peers rather than engaging actively, which widens rather than narrows achievement gaps."
 >
-> **Resolution**: "Our study examines whether these anomalies persist after accounting for transaction costs, market impact, and data-snooping bias. We find that momentum survives, but the value premium has weakened significantly since 2005."
+> **Resolution**: "Our study examines whether structured role assignments within collaborative groups reduce this disparity. We find that assigning rotating roles significantly increases participation from lower-prior-knowledge students and closes the gap on post-test scores."
 
 ## The Pyramid Principle
 
@@ -60,30 +60,21 @@ Main Message (the answer)
 
 **Right approach** (pyramid): "Our conclusion is X, supported by three findings. First... Second... Third..."
 
-**Finance application**: In an investment pitch, state your recommendation first: "We recommend buying Company X at a target price of $45, representing 30% upside." Then support it with your three strongest arguments.
+**Application**: In a project proposal, state your recommendation first: "We recommend adopting the revised assessment framework, which our pilot data show increases both reliability and student engagement." Then support it with your three strongest arguments.
 
 ## The Rule of Three
 
 Structure your presentation around three key messages. Audiences remember three things well; they struggle with four or more.
 
 **Examples**:
-- "Three reasons to increase our allocation to emerging markets: higher growth, lower correlation, and attractive valuations"
-- "This strategy outperforms on three dimensions: returns, risk-adjusted returns, and maximum drawdown"
+
+- "Three reasons to revise the assessment schedule: reduced bunching, better spacing for retrieval practice, and more actionable feedback windows"
+- "This approach outperforms the baseline on three dimensions: completion rate, post-test scores, and student-reported confidence"
 - "Our analysis reveals three gaps in the literature: contextual, methodological, and temporal"
 
 ## Narrative Arc for Different Presentation Types
 
-### Investment Pitch (5-10 minutes)
-
-1. **Hook**: One compelling statistic or insight about the opportunity
-2. **Thesis**: Your investment recommendation (buy/sell/hold) with target price
-3. **Business overview**: What the company does, competitive position, management quality
-4. **Valuation**: How you arrived at the target price (DCF, multiples, comparable analysis)
-5. **Risks**: What could go wrong (be honest -- it builds credibility)
-6. **Catalysts**: What will drive the price toward your target
-7. **Conclusion**: Restate the recommendation
-
-### Research Presentation (15-20 minutes)
+### Research Findings Presentation (15-20 minutes)
 
 1. **Motivation**: Why should anyone care about this question? (1-2 slides)
 2. **Research question**: What specific question are you answering? (1 slide)
@@ -93,14 +84,24 @@ Structure your presentation around three key messages. Audiences remember three 
 6. **Discussion**: What does it mean? (1-2 slides)
 7. **Conclusion**: So what? (1 slide)
 
-### Case Competition (10-15 minutes)
+### Project Proposal (5-10 minutes)
+
+1. **Hook**: One compelling statistic or insight about the problem
+2. **Thesis**: Your proposed approach and the outcome you expect
+3. **Context**: The situation you are responding to and why it matters now
+4. **Approach**: What you will do, why this approach, and what alternatives you considered
+5. **Risks**: What could go wrong (be honest -- it builds credibility)
+6. **Evidence**: Pilot data, comparable cases, or prior literature supporting feasibility
+7. **Conclusion**: Restate the recommendation and the ask
+
+### Case Analysis (10-15 minutes)
 
 1. **Problem statement**: What is the core challenge? (1 slide)
-2. **Situation analysis**: Key facts from the case (2-3 slides)
+2. **Situation analysis**: Key facts and context (2-3 slides)
 3. **Alternatives**: Options considered (1-2 slides)
 4. **Recommendation**: Your proposed solution (1-2 slides)
 5. **Implementation**: How to execute (1-2 slides)
-6. **Financials**: Projected impact (1-2 slides)
+6. **Projected outcomes**: Expected impact (1-2 slides)
 7. **Risks and mitigation**: What could go wrong and how to handle it (1 slide)
 
 ## Creating Transitions
@@ -109,13 +110,13 @@ Transitions connect your slides and maintain narrative flow. Without them, your 
 
 ### Types of Transitions
 
-**Bridge**: "Now that we have established the company's competitive position, let us examine its financial health."
+**Bridge**: "Now that we have established the study's context, let us examine what the data show."
 
-**Preview**: "I will address three key risks. The first is regulatory."
+**Preview**: "I will address three key risks. The first is around participant attrition."
 
-**Callback**: "Remember the 12% revenue growth we saw earlier? That growth came entirely from the Asia-Pacific segment."
+**Callback**: "Remember the 18% gap we saw in the baseline data? That gap disappeared entirely by Week 8."
 
-**Contrast**: "While the top-line numbers look strong, the underlying margin story tells a different tale."
+**Contrast**: "While the overall completion numbers look strong, the pattern within subgroups tells a different story."
 
 ## Common Mistakes
 
@@ -133,7 +134,7 @@ Transitions connect your slides and maintain narrative flow. Without them, your 
 
 ## Key References
 
-- Minto, B. (2009). *The Pyramid Principle: Logic in Writing and Thinking*. 3rd ed. Pearson Education.
-- Duarte, N. (2010). *Resonate: Present Visual Stories that Transform Audiences*. Wiley.
-- Heath, C. & Heath, D. (2007). *Made to Stick: Why Some Ideas Survive and Others Die*. Random House.
-- Knaflic, C.N. (2015). *Storytelling with Data: A Data Visualization Guide for Business Professionals*. Wiley.
+- Minto, B. (2009). _The Pyramid Principle: Logic in Writing and Thinking_. 3rd ed. Pearson Education.
+- Duarte, N. (2010). _Resonate: Present Visual Stories that Transform Audiences_. Wiley.
+- Heath, C. & Heath, D. (2007). _Made to Stick: Why Some Ideas Survive and Others Die_. Random House.
+- Knaflic, C.N. (2015). _Storytelling with Data: A Data Visualization Guide for Business Professionals_. Wiley.

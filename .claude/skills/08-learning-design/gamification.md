@@ -1,60 +1,60 @@
-# Gamification for Financial Education
+# Gamification for Education
 
-Gamification applies game mechanics to educational contexts to increase engagement, motivation, and retention. When done well, it transforms passive learning into active participation. When done poorly, it trivializes serious financial concepts.
+Gamification applies game mechanics to educational contexts to increase engagement, motivation, and retention. When done well, it transforms passive learning into active participation. When done poorly, it trivializes serious concepts.
 
 ## Core Gamification Elements
 
-| Element          | Description                               | Financial Education Application            |
-| ---------------- | ----------------------------------------- | ------------------------------------------ |
-| **Points**       | Numerical score for completing activities | XP for exercises, quizzes, journal entries |
-| **Badges**       | Visual markers of achievement             | "Ratio Master," "Portfolio Architect"      |
-| **Leaderboards** | Competitive ranking                       | Paper trading returns, quiz scores         |
-| **Streaks**      | Consecutive days/weeks of activity        | Daily learning streaks, weekly check-ins   |
-| **Levels**       | Progressive difficulty tiers              | Beginner -> Intermediate -> Advanced       |
-| **Quests**       | Multi-step challenges                     | "Build Your First Portfolio" quest         |
-| **Milestones**   | Significant progress markers              | "Completed all risk modules"               |
+| Element          | Description                               | Educational Application                      |
+| ---------------- | ----------------------------------------- | -------------------------------------------- |
+| **Points**       | Numerical score for completing activities | XP for exercises, quizzes, journal entries   |
+| **Badges**       | Visual markers of achievement             | "Analysis Expert," "Project Architect"       |
+| **Leaderboards** | Competitive ranking                       | Problem set scores, simulation results       |
+| **Streaks**      | Consecutive days/weeks of activity        | Daily learning streaks, weekly check-ins     |
+| **Levels**       | Progressive difficulty tiers              | Beginner -> Intermediate -> Advanced         |
+| **Quests**       | Multi-step challenges                     | "Complete Your First Research Project" quest |
+| **Milestones**   | Significant progress markers              | "Completed all foundational modules"         |
 
-## Paper Trading Competitions
+## Simulation Competitions
 
-Paper trading (simulated trading with no real money) is one of the most effective gamification tools for financial education.
+Simulation-based competitions (applying concepts in a controlled environment with no real-world stakes) are among the most effective gamification tools for education.
 
 ### Design Principles
 
 ```python
-# Paper trading competition configuration
+# Simulation competition configuration
 COMPETITION_CONFIG = {
-    "name": "Fall 2024 Investment Challenge",
+    "name": "Fall 2024 Analysis Challenge",
     "duration_weeks": 12,
-    "starting_capital": 100_000,  # Simulated dollars
-    "universe": "S&P 500",       # Tradable securities
+    "starting_resources": 100,     # Simulated resource units
+    "problem_universe": "course_case_bank",  # Available scenarios
     "rules": {
-        "max_position_pct": 0.20,        # Max 20% in any single stock
-        "min_positions": 5,               # Must hold at least 5 stocks
-        "max_trades_per_week": 10,        # Prevent excessive trading
-        "short_selling": False,            # Keep it simple for beginners
-        "margin": False,                   # No leverage
-        "commission_per_trade": 0.00,      # Zero commission (realistic for modern brokers)
+        "max_allocation_pct": 0.20,   # Max 20% on any single option
+        "min_elements": 5,             # Must engage at least 5 elements
+        "max_submissions_per_week": 10,  # Prevent superficial rushing
+        "advanced_strategies": False,   # Keep it accessible for beginners
+        "external_aids": False,         # Self-contained exercise
+        "cost_per_submission": 0.00,    # Zero friction for iteration
     },
     "scoring": {
-        # Not just raw return — incentivize risk-adjusted performance
+        # Not just raw output — incentivize quality reasoning
         "metrics": {
-            "sharpe_ratio": 0.40,          # 40% weight
-            "total_return": 0.30,          # 30% weight
-            "max_drawdown_penalty": 0.15,  # 15% weight (less drawdown = better)
-            "journal_quality": 0.15,       # 15% weight (documented reasoning)
+            "quality_ratio": 0.40,          # 40% weight
+            "total_output": 0.30,           # 30% weight
+            "consistency_penalty": 0.15,    # 15% weight (fewer errors = better)
+            "journal_quality": 0.15,        # 15% weight (documented reasoning)
         },
     },
     "educational_requirements": {
-        "trade_journal": True,             # Must log reasoning for each trade
-        "weekly_review": True,             # Must submit weekly portfolio review
-        "final_report": True,              # Must submit final analysis
+        "reasoning_journal": True,      # Must log reasoning for each submission
+        "weekly_review": True,          # Must submit weekly reflection
+        "final_report": True,           # Must submit final analysis
     },
 }
 ```
 
-### Why Risk-Adjusted Scoring Matters
+### Why Process-Adjusted Scoring Matters
 
-Scoring purely on returns encourages reckless behavior — concentrating in one stock and hoping for the best. Risk-adjusted scoring (Sharpe ratio, drawdown penalties) rewards thoughtful investing.
+Scoring purely on outcomes encourages reckless behavior — concentrating effort randomly and hoping for the best. Process-adjusted scoring (quality ratio, consistency penalties) rewards thoughtful engagement.
 
 ### Implementation Pattern
 
@@ -63,115 +63,111 @@ import numpy as np
 from datetime import datetime
 
 
-class PaperTradingAccount:
-    """Simplified paper trading account for educational competitions."""
+class SimulationAccount:
+    """Simplified simulation account for educational competitions."""
 
-    def __init__(self, starting_capital=100_000):
-        self.cash = starting_capital
-        self.positions = {}  # {ticker: {"shares": n, "avg_cost": price}}
-        self.trade_history = []
-        self.daily_values = []
+    def __init__(self, starting_resources=100):
+        self.resources = starting_resources
+        self.allocations = {}  # {option: {"units": n, "avg_cost": value}}
+        self.submission_history = []
+        self.periodic_values = []
 
-    def buy(self, ticker, shares, price, reasoning=""):
-        """Execute a buy order with required reasoning."""
-        cost = shares * price
-        if cost > self.cash:
-            return {"status": "rejected", "reason": "Insufficient cash"}
+    def allocate(self, option, units, value, reasoning=""):
+        """Record an allocation with required reasoning."""
+        cost = units * value
+        if cost > self.resources:
+            return {"status": "rejected", "reason": "Insufficient resources"}
 
-        self.cash -= cost
-        if ticker in self.positions:
-            existing = self.positions[ticker]
-            total_shares = existing["shares"] + shares
+        self.resources -= cost
+        if option in self.allocations:
+            existing = self.allocations[option]
+            total_units = existing["units"] + units
             avg_cost = (
-                (existing["shares"] * existing["avg_cost"] + cost)
-                / total_shares
+                (existing["units"] * existing["avg_cost"] + cost)
+                / total_units
             )
-            self.positions[ticker] = {"shares": total_shares, "avg_cost": avg_cost}
+            self.allocations[option] = {"units": total_units, "avg_cost": avg_cost}
         else:
-            self.positions[ticker] = {"shares": shares, "avg_cost": price}
+            self.allocations[option] = {"units": units, "avg_cost": value}
 
-        self.trade_history.append({
+        self.submission_history.append({
             "date": datetime.now().isoformat(),
-            "action": "BUY",
-            "ticker": ticker,
-            "shares": shares,
-            "price": price,
+            "action": "ALLOCATE",
+            "option": option,
+            "units": units,
+            "value": value,
             "reasoning": reasoning,  # Educational: require documented reasoning
         })
 
-        return {"status": "filled", "ticker": ticker, "shares": shares}
+        return {"status": "accepted", "option": option, "units": units}
 
-    def portfolio_value(self, current_prices):
-        """Calculate total portfolio value."""
-        stock_value = sum(
-            self.positions[t]["shares"] * current_prices.get(t, 0)
-            for t in self.positions
+    def total_value(self, current_values):
+        """Calculate total current value."""
+        option_value = sum(
+            self.allocations[o]["units"] * current_values.get(o, 0)
+            for o in self.allocations
         )
-        return self.cash + stock_value
+        return self.resources + option_value
 
     def performance_metrics(self):
         """Calculate performance metrics for scoring."""
-        if len(self.daily_values) < 2:
+        if len(self.periodic_values) < 2:
             return {}
 
-        values = np.array(self.daily_values)
-        returns = np.diff(values) / values[:-1]
+        values = np.array(self.periodic_values)
+        changes = np.diff(values) / values[:-1]
 
-        total_return = (values[-1] / values[0]) - 1
-        annual_vol = np.std(returns) * np.sqrt(252)
-        annual_return = (1 + total_return) ** (252 / len(returns)) - 1
-        sharpe = (annual_return - 0.04) / annual_vol if annual_vol > 0 else 0
+        total_change = (values[-1] / values[0]) - 1
+        variability = np.std(changes)
+        avg_change = np.mean(changes)
+        quality_ratio = (avg_change) / variability if variability > 0 else 0
 
         running_max = np.maximum.accumulate(values)
-        drawdowns = (values - running_max) / running_max
-        max_drawdown = drawdowns.min()
+        deviations = (values - running_max) / running_max
+        max_deviation = deviations.min()
 
         return {
-            "total_return": total_return,
-            "annualized_return": annual_return,
-            "volatility": annual_vol,
-            "sharpe_ratio": sharpe,
-            "max_drawdown": max_drawdown,
+            "total_change": total_change,
+            "average_change": avg_change,
+            "variability": variability,
+            "quality_ratio": quality_ratio,
+            "max_deviation": max_deviation,
         }
 ```
 
-**Educational Disclaimer**: Paper trading simulations are for learning purposes only. Simulated results do not reflect actual market conditions, including slippage, market impact, and emotional pressure of real money at risk. See **[07-regulatory-framework/hypothetical-performance](../07-regulatory-framework/hypothetical-performance.md)**.
+**Educational Disclaimer**: Simulation exercises are for learning purposes only. Simulated outcomes do not reflect real-world conditions, including the pressure and complexity of live environments. See **[07-regulatory-framework/hypothetical-performance](../07-regulatory-framework/hypothetical-performance.md)**.
 
-## Portfolio Simulators
+## Scenario Simulators
 
-Unlike paper trading (which mirrors real-time markets), portfolio simulators let learners experiment with historical scenarios.
+Unlike live simulations (which mirror real-time conditions), scenario simulators let learners experiment with historical or constructed cases.
 
 ### Scenario-Based Simulations
 
 ```python
 SIMULATION_SCENARIOS = [
     {
-        "name": "The 2008 Financial Crisis",
-        "period": "2007-01-01 to 2009-12-31",
-        "context": "Housing bubble burst, bank failures, global recession",
-        "challenge": "Can you build a portfolio that limits drawdown to 20%?",
-        "learning_goal": "Understand defensive positioning and diversification limits",
+        "name": "The Organizational Crisis",
+        "context": "A sudden external shock disrupts normal operations",
+        "challenge": "Can you identify the three decisions that most limit negative impact?",
+        "learning_goal": "Understand defensive reasoning and the limits of planning",
     },
     {
-        "name": "COVID Crash and Recovery",
-        "period": "2020-01-01 to 2020-12-31",
-        "context": "Pandemic-driven crash followed by rapid recovery",
-        "challenge": "Would you have stayed invested or sold during the 34% drop?",
-        "learning_goal": "Experience the emotional challenge of volatility",
+        "name": "Rapid Recovery",
+        "context": "A sharp setback followed by unexpected recovery",
+        "challenge": "Would you have held your position or abandoned it during the worst point?",
+        "learning_goal": "Experience the challenge of decision-making under uncertainty",
     },
     {
-        "name": "The Lost Decade",
-        "period": "2000-01-01 to 2009-12-31",
-        "context": "Dot-com bust followed by financial crisis",
-        "challenge": "Build a portfolio that achieves positive real returns",
-        "learning_goal": "Understand why diversification beyond US stocks matters",
+        "name": "The Long Plateau",
+        "context": "A decade of stagnation with no clear cause",
+        "challenge": "Build an approach that produces positive outcomes despite no tailwind",
+        "learning_goal": "Understand why diversification of method matters in flat environments",
     },
     {
-        "name": "The Bull Run",
-        "period": "2010-01-01 to 2019-12-31",
-        "context": "Post-crisis recovery, extended bull market",
-        "challenge": "How does your allocation compare to 100% S&P 500?",
-        "learning_goal": "Understand that diversification costs returns in bull markets",
+        "name": "The Exceptional Period",
+        "context": "An extended run of favorable conditions",
+        "challenge": "How does your approach compare to simply doing nothing?",
+        "learning_goal": "Understand that strong conditions can mask weak reasoning",
     },
 ]
 ```
@@ -184,52 +180,52 @@ Badges mark specific accomplishments. They should reflect genuine learning miles
 
 **Knowledge Badges** (Completing learning modules):
 
-- "Market Basics" - Complete the introductory module
-- "Ratio Reader" - Master financial ratio calculations
-- "Options Explorer" - Complete the derivatives module
+- "Core Concepts" - Complete the introductory module
+- "Framework Reader" - Master core analytical frameworks
+- "Advanced Methods Explorer" - Complete the advanced methods module
 
 **Skill Badges** (Demonstrating capabilities):
 
-- "Returns Calculator" - Correctly calculate returns 10 times
-- "Portfolio Architect" - Build a portfolio meeting all constraints
-- "Risk Analyst" - Complete a risk analysis case study
+- "Method Calculator" - Correctly apply a method 10 times
+- "Project Architect" - Complete a project meeting all constraints
+- "Critical Analyst" - Complete a structured critique case study
 
 **Achievement Badges** (Exceptional performance):
 
 - "Perfect Score" - 100% on any module quiz
-- "Top Performer" - Top 10% in paper trading competition
-- "Consistency King" - 12-week learning streak
+- "Top Performer" - Top 10% in a simulation competition
+- "Consistency Award" - 12-week learning streak
 
-**Behavioral Badges** (Good investing habits):
+**Behavioral Badges** (Good study habits):
 
-- "Journal Keeper" - Log reasoning for 20 consecutive trades
+- "Journal Keeper" - Log reasoning for 20 consecutive exercises
 - "Bias Spotter" - Correctly identify 5 cognitive biases in case studies
-- "Rebalancer" - Rebalance portfolio within 5% of target allocation for 3 months
+- "Systematic Reviewer" - Revisit and recalibrate work within prescribed tolerances for 3 months
 
 ### Implementation Tips
 
 ```python
 BADGE_DEFINITIONS = {
-    "returns_calculator": {
-        "name": "Returns Calculator",
-        "description": "Correctly calculated returns in 10 exercises",
+    "method_calculator": {
+        "name": "Method Calculator",
+        "description": "Correctly applied a core method in 10 exercises",
         "icon": "chart_trending_up",
         "criteria": {
             "type": "exercise_completion",
-            "category": "returns_calculation",
+            "category": "method_application",
             "count": 10,
             "accuracy_threshold": 0.95,
         },
         "rarity": "common",
     },
-    "drawdown_survivor": {
-        "name": "Drawdown Survivor",
-        "description": "Maintained composure during a 20%+ simulated drawdown",
+    "resilience_award": {
+        "name": "Resilience Award",
+        "description": "Maintained composure during a major simulated setback",
         "icon": "shield",
         "criteria": {
             "type": "simulation_event",
-            "event": "experienced_20pct_drawdown",
-            "action": "did_not_panic_sell",
+            "event": "experienced_major_setback",
+            "action": "did_not_abandon_approach",
         },
         "rarity": "uncommon",
     },
@@ -249,11 +245,11 @@ BADGE_DEFINITIONS = {
 
 ## Leaderboards
 
-Leaderboards add competition but must be designed carefully in financial education.
+Leaderboards add competition but must be designed carefully in education.
 
 ### Design Guidelines
 
-1. **Multiple leaderboards**: Not just returns. Include Sharpe ratio, journal quality, quiz scores. Different learners excel in different areas.
+1. **Multiple leaderboards**: Not just outcomes. Include quality ratios, journal quality, quiz scores. Different learners excel in different areas.
 
 2. **Team leaderboards**: Reduce individual pressure by allowing team competition.
 
@@ -265,7 +261,7 @@ Leaderboards add competition but must be designed carefully in financial educati
 
 ## Streak Tracking
 
-Streaks reward consistent engagement, which is critical for financial education (financial literacy is a habit, not a one-time event).
+Streaks reward consistent engagement, which is critical for education (durable understanding is a habit, not a one-time event).
 
 ```python
 STREAK_TYPES = {
@@ -278,17 +274,17 @@ STREAK_TYPES = {
         },
     },
     "weekly_journal": {
-        "description": "Submit a portfolio review every week",
+        "description": "Submit a reflection or review every week",
         "milestone_rewards": {
             4: "Consistent Reviewer badge",
             12: "Quarterly Analyst badge",
         },
     },
-    "market_checkup": {
-        "description": "Review your portfolio allocation weekly",
+    "periodic_checkup": {
+        "description": "Review your approach and progress weekly",
         "milestone_rewards": {
-            4: "Portfolio Monitor badge",
-            12: "Disciplined Investor badge",
+            4: "Progress Monitor badge",
+            12: "Disciplined Learner badge",
         },
     },
 }
@@ -304,46 +300,46 @@ Mark significant progress points with meaningful celebrations.
 
 ```python
 MILESTONES = {
-    "first_portfolio": {
-        "trigger": "User creates their first portfolio allocation",
-        "message": "You built your first portfolio! You have taken the most "
+    "first_project": {
+        "trigger": "Learner completes their first structured project",
+        "message": "You completed your first project! You have taken the most "
                    "important step — starting.",
-        "next_step": "Now let's see how it would have performed historically.",
+        "next_step": "Now let's see how your approach holds up to scrutiny.",
     },
-    "first_rebalance": {
-        "trigger": "User rebalances portfolio for the first time",
-        "message": "You just rebalanced! Most investors never do this. "
-                   "Systematic rebalancing is one of the most reliable "
-                   "strategies for managing risk.",
-        "next_step": "Set a reminder to check your allocation quarterly.",
+    "first_revision": {
+        "trigger": "Learner revises and resubmits work for the first time",
+        "message": "You just revised your work! Most learners avoid this. "
+                   "Systematic self-correction is one of the most reliable "
+                   "habits for sustained improvement.",
+        "next_step": "Set a reminder to revisit your approach periodically.",
     },
-    "survived_drawdown": {
-        "trigger": "User holds through a 15%+ simulated drawdown",
-        "message": "Your portfolio dropped 15% and you held steady. "
-                   "In the real world, this discipline separates successful "
-                   "long-term investors from those who buy high and sell low.",
-        "next_step": "Review the behavioral biases module to understand "
-                     "why holding through drawdowns is so hard.",
+    "persisted_through_difficulty": {
+        "trigger": "Learner continues work after a major simulated setback",
+        "message": "Your results dropped sharply and you kept going. "
+                   "In real-world contexts, this discipline separates learners "
+                   "who improve long-term from those who only engage when conditions "
+                   "are easy.",
+        "next_step": "Review the cognitive biases module to understand "
+                     "why persisting through setbacks is so hard.",
     },
 }
 ```
 
 ## Anti-Patterns to Avoid
 
-1. **Gamifying outcomes, not process**: Rewarding "highest return" without rewarding the learning process (journaling, analysis, risk management) teaches the wrong lesson.
+1. **Gamifying outcomes, not process**: Rewarding "highest score" without rewarding the learning process (journaling, analysis, self-correction) teaches the wrong lesson.
 
-2. **Trivializing risk**: Making investing feel like a game where losses do not matter. Always reinforce that real investing involves real risk of loss.
+2. **Trivializing difficulty**: Making learning feel like a game where errors do not matter. Always reinforce that real-world applications involve genuine consequences.
 
 3. **Extrinsic motivation only**: Points and badges should supplement intrinsic motivation (understanding, competence, autonomy), not replace it. If students only engage for points, the gamification has failed.
 
 4. **One-size-fits-all**: Some learners are motivated by competition (leaderboards), others by completion (badges), others by mastery (streaks). Offer multiple engagement paths.
 
-5. **Ignoring the emotional dimension**: The most important "gamification" in financial education is experiencing simulated losses and learning to manage the emotional response. See **[10-behavioral-finance](../10-behavioral-finance/SKILL.md)**.
+5. **Ignoring the emotional dimension**: The most important "gamification" in education is experiencing simulated setbacks and learning to manage the emotional response.
 
 ## Cross-References
 
 - See **[blooms-taxonomy](blooms-taxonomy.md)** for aligning game mechanics to learning levels
 - See **[assessment-design](assessment-design.md)** for integrating gamified assessment
 - See **[curriculum-patterns](curriculum-patterns.md)** for the mastery learning progression that badges can track
-- See **[10-behavioral-finance](../10-behavioral-finance/SKILL.md)** for the psychological aspects of investing that simulations should capture
-- See **[07-regulatory-framework/hypothetical-performance](../07-regulatory-framework/hypothetical-performance.md)** for disclaimers on simulated trading results
+- See **[07-regulatory-framework/hypothetical-performance](../07-regulatory-framework/hypothetical-performance.md)** for disclaimers on simulated results

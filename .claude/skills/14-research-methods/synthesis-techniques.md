@@ -8,33 +8,33 @@ A literature review that summarizes papers one by one is an annotated bibliograp
 
 ## Thematic Analysis
 
-The most common synthesis technique in finance literature reviews. Studies are grouped by theme rather than by author or chronology.
+The most common synthesis technique in academic literature reviews. Studies are grouped by theme rather than by author or chronology.
 
 ### How to Conduct Thematic Analysis
 
 **Step 1: Code your sources**. As you read each paper, tag it with themes.
 
-| Source | Themes | Key Finding |
-|--------|--------|-------------|
-| Fama (1970) | Market efficiency, information | Efficient markets categorized into weak, semi-strong, strong forms |
-| Jegadeesh & Titman (1993) | Market efficiency, momentum | Past winners outperform past losers for 3-12 months |
-| Daniel et al. (1998) | Behavioral, momentum | Overconfidence and biased self-attribution explain momentum |
-| Fama & French (1996) | Market efficiency, risk factors | Three-factor model explains most anomalies |
+| Source           | Themes                              | Key Finding                                                                               |
+| ---------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
+| Bandura (1977)   | Learning, self-efficacy             | Self-belief in one's capacity to perform mediates behavior change                         |
+| Schunk (1989)    | Self-efficacy, academic achievement | Self-efficacy predicts persistence and performance in students                            |
+| Pajares (1996)   | Self-efficacy, writing              | Writing self-efficacy is a stronger predictor of writing performance than general ability |
+| Zimmerman (2000) | Self-regulation, motivation         | Self-regulated learning integrates self-efficacy with goal-setting and strategy use       |
 
 **Step 2: Group by theme**. Cluster related findings together.
 
-Theme 1: Evidence for market efficiency
-Theme 2: Evidence against market efficiency (anomalies)
-Theme 3: Behavioral explanations for anomalies
-Theme 4: Risk-based explanations for anomalies
+Theme 1: Theoretical foundations of self-efficacy
+Theme 2: Self-efficacy and academic performance
+Theme 3: Self-efficacy and writing
+Theme 4: Self-efficacy within broader self-regulation models
 
 **Step 3: Write thematic paragraphs**. Each paragraph addresses one theme and synthesizes multiple sources.
 
 ### Worked Example: Thematic Paragraph
 
-> "The momentum anomaly -- the tendency for past winners to continue outperforming and past losers to continue underperforming over 3-12 month horizons -- presents one of the strongest challenges to market efficiency. First documented by Jegadeesh and Titman (1993) in US equities, the effect has since been confirmed across international markets (Rouwenhorst, 1998), asset classes (Asness, Moskowitz, and Pedersen, 2013), and time periods spanning over a century (Geczy and Samonov, 2016). The robustness and persistence of the effect make it difficult to dismiss as a statistical artifact. Two competing explanations dominate the debate: behavioral models attribute momentum to investor underreaction to new information (Hong and Stein, 1999) or overconfidence-driven continuation of initial price trends (Daniel, Hirshleifer, and Subrahmanyam, 1998), while risk-based models argue that momentum returns compensate for time-varying macroeconomic risk (Johnson, 2002). Neither explanation fully accounts for all features of the data, and the debate remains active."
+> "Self-efficacy -- a learner's belief in their capacity to perform a specific task -- has emerged as one of the most consistent predictors of academic outcomes. First theorized by Bandura (1977) as a domain-specific cognitive mechanism, the construct has since been applied to mathematics achievement (Schunk, 1989), writing performance (Pajares, 1996), and broader self-regulated learning (Zimmerman, 2000). Across disciplines and age groups, higher self-efficacy is associated with greater effort, persistence in the face of difficulty, and ultimately stronger performance. Two main theoretical accounts compete: social-cognitive models treat self-efficacy as a proximal predictor of behavior, shaped by mastery experiences and social modeling (Bandura, 1977), while integrative self-regulation models treat it as one component of a wider motivational system that also includes goal orientation and metacognitive strategy (Zimmerman, 2000). The boundary conditions of these accounts -- particularly how self-efficacy interacts with task difficulty and feedback -- remain an active area of debate."
 
-**Notice**: This paragraph synthesizes six studies into a coherent narrative about a single theme, identifies competing explanations, and notes the unresolved nature of the debate.
+**Notice**: This paragraph synthesizes four studies into a coherent narrative about a single theme, identifies competing accounts, and notes the unresolved nature of the debate.
 
 ## Meta-Analysis
 
@@ -42,13 +42,13 @@ A quantitative synthesis that statistically combines results from multiple studi
 
 ### When to Use Meta-Analysis
 
-- When multiple studies have estimated the same relationship (e.g., the effect of leverage on firm value)
+- When multiple studies have estimated the same relationship (e.g., the effect of class size on student achievement)
 - When you want to determine whether an effect is robust across studies
 - When you want to explain why effect sizes differ across studies (moderator analysis)
 
 ### Basic Meta-Analysis Steps
 
-**Step 1**: Collect effect sizes (regression coefficients, correlation coefficients, or event study CARs) from each study.
+**Step 1**: Collect effect sizes (regression coefficients, correlation coefficients, or standardized mean differences) from each study.
 
 **Step 2**: Weight each study by precision (typically the inverse of its variance).
 
@@ -64,22 +64,22 @@ I^2 > 75% indicates substantial heterogeneity -- the studies are not measuring t
 
 **Step 4**: If heterogeneity exists, conduct moderator analysis to explain why effect sizes vary (e.g., differences in sample period, country, or methodology).
 
-### Worked Example: Meta-Analysis of Dividend Announcement Effects
+### Worked Example: Meta-Analysis of Feedback Effects on Learning
 
-| Study | CAR (%) | Sample Size | SE (%) | Weight (w) |
-|-------|---------|-------------|--------|------------|
-| Smith (2015) | 2.1 | 500 | 0.5 | 4.00 |
-| Jones (2017) | 0.8 | 1,200 | 0.3 | 11.11 |
-| Chen (2020) | 3.2 | 200 | 0.9 | 1.23 |
-| Brown (2022) | 1.5 | 800 | 0.4 | 6.25 |
+| Study        | d (effect size) | Sample Size | SE   | Weight (w) |
+| ------------ | --------------- | ----------- | ---- | ---------- |
+| Smith (2015) | 0.52            | 500         | 0.09 | 123.5      |
+| Jones (2017) | 0.31            | 1,200       | 0.06 | 277.8      |
+| Chen (2020)  | 0.74            | 200         | 0.14 | 51.0       |
+| Brown (2022) | 0.45            | 800         | 0.07 | 204.1      |
 
-Weighted average = (4.00 x 2.1 + 11.11 x 0.8 + 1.23 x 3.2 + 6.25 x 1.5) / (4.00 + 11.11 + 1.23 + 6.25)
+Weighted average = (123.5 x 0.52 + 277.8 x 0.31 + 51.0 x 0.74 + 204.1 x 0.45) / (123.5 + 277.8 + 51.0 + 204.1)
 
-= (8.40 + 8.89 + 3.94 + 9.38) / 22.59
+= (64.2 + 86.1 + 37.7 + 91.8) / 656.4
 
-= 30.61 / 22.59 = **1.36%**
+= 279.8 / 656.4 = **d ≈ 0.43**
 
-**Interpretation**: Across four studies, the average abnormal return around dividend increase announcements is approximately 1.36%, weighted by study precision.
+**Interpretation**: Across four studies, feedback has a moderate positive effect on learning outcomes (d = 0.43), weighted by study precision.
 
 ## Systematic Reviews
 
@@ -87,11 +87,11 @@ A rigorous, transparent, and replicable approach to identifying and synthesizing
 
 ### Steps in a Systematic Review
 
-1. **Define the research question**: Use the PICO framework (Population, Intervention, Comparison, Outcome) adapted for finance:
-   - Population: US public firms
-   - Intervention: Dividend increase
-   - Comparison: Firms with no dividend change
-   - Outcome: Abnormal stock returns
+1. **Define the research question**: Use the PICO framework (Population, Intervention, Comparison, Outcome):
+   - Population: Secondary school students in OECD countries
+   - Intervention: Formative feedback (instructor-provided, during learning)
+   - Comparison: No feedback or summative-only feedback
+   - Outcome: Academic achievement (standardized test scores or course grades)
 
 2. **Develop a search protocol**: Define databases (Web of Science, Scopus, SSRN), search terms, and inclusion/exclusion criteria before searching.
 
@@ -137,26 +137,27 @@ A synthesis framework helps you structure your review around the relationships b
 
 Map studies onto the concepts they address.
 
-| | Capital Structure | Dividend Policy | Corporate Governance | Firm Value |
-|---|---|---|---|---|
-| Jensen (1986) | | X | X | X |
-| Myers (1984) | X | | | X |
-| La Porta et al. (2000) | | X | X | |
-| Shleifer & Vishny (1997) | | | X | X |
+|                           | Motivation | Self-Efficacy | Feedback | Achievement |
+| ------------------------- | ---------- | ------------- | -------- | ----------- |
+| Bandura (1977)            |            | X             |          | X           |
+| Hattie & Timperley (2007) |            |               | X        | X           |
+| Ryan & Deci (2000)        | X          |               |          | X           |
+| Zimmerman (2000)          | X          | X             | X        |             |
 
 This matrix reveals:
-- Which intersections are well-studied (governance and firm value)
-- Which intersections are under-studied (capital structure and governance)
-- Which concepts are central (firm value appears in many studies)
+
+- Which intersections are well-studied (motivation and achievement)
+- Which intersections are under-studied (self-efficacy and feedback together)
+- Which concepts are central (achievement appears in many studies)
 
 ### Funnel Map
 
 Organize from broad to narrow:
 
-1. **Macro level**: Market-wide evidence (market efficiency, asset pricing anomalies)
-2. **Industry level**: Industry-specific patterns (banking regulation, tech valuations)
-3. **Firm level**: Firm characteristics (size, leverage, governance)
-4. **Event level**: Specific corporate actions (dividends, M&A, IPOs)
+1. **Field level**: Broad theoretical landscape (major paradigms, foundational debates)
+2. **Domain level**: Domain-specific patterns (particular populations, settings, or contexts)
+3. **Study-type level**: Methodological approaches (experimental, observational, qualitative)
+4. **Variable level**: Specific constructs or relationships your study examines
 5. **Your study**: Where your research fits
 
 ## Common Mistakes
@@ -175,7 +176,7 @@ Organize from broad to narrow:
 
 ## Key References
 
-- Tranfield, D., Denyer, D. & Smart, P. (2003). "Towards a Methodology for Developing Evidence-Informed Management Knowledge by Means of Systematic Review." *British Journal of Management*, 14(3), 207-222.
-- Borenstein, M., Hedges, L.V., Higgins, J.P.T. & Rothstein, H.R. (2021). *Introduction to Meta-Analysis*, 2nd ed., Wiley.
-- Webster, J. & Watson, R.T. (2002). "Analyzing the Past to Prepare for the Future: Writing a Literature Review." *MIS Quarterly*, 26(2), xiii-xxiii.
-- Moher, D. et al. (2009). "Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement." *PLoS Medicine*, 6(7), e1000097.
+- Tranfield, D., Denyer, D. & Smart, P. (2003). "Towards a Methodology for Developing Evidence-Informed Management Knowledge by Means of Systematic Review." _British Journal of Management_, 14(3), 207-222.
+- Borenstein, M., Hedges, L.V., Higgins, J.P.T. & Rothstein, H.R. (2021). _Introduction to Meta-Analysis_, 2nd ed., Wiley.
+- Webster, J. & Watson, R.T. (2002). "Analyzing the Past to Prepare for the Future: Writing a Literature Review." _MIS Quarterly_, 26(2), xiii-xxiii.
+- Moher, D. et al. (2009). "Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement." _PLoS Medicine_, 6(7), e1000097.
