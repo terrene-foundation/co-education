@@ -59,17 +59,28 @@ Write the deliverable and call it done without checking that references, depende
 
 **Why**: A deliverable can be internally correct but break the ecosystem — dangling cross-references, missing dependencies, or formats that downstream consumers cannot parse. Splitting the steps ensures both content quality and integration quality are explicitly verified.
 
+**Integration verification covers rule-imposed requirements, not only component presence.** When the deliverable bundles artifacts that impose requirements on each other or on the deliverable itself (a rule mandating fixtures, a spec mandating a section, an agent mandating a tool), Step B MUST verify those requirements are SATISFIED — not merely that the named components exist.
+
+```
+# DO: bundle ships rule R (R MUST §4: "detectors ship with fixtures") + the detectors
+#     → Step B confirms the fixtures are present, because R requires them
+# DO NOT: confirm "detectors present + registered" and call the bundle complete
+#         (R's fixture requirement went unverified — the bundle violates its own shipped rule)
+```
+
+**Why**: a deliverable can pass component-presence checks (files exist, references resolve) yet violate a MUST that one of its own bundled artifacts imposes — the bundle is then self-inconsistent the moment it lands. Origin: a substrate bundle that shipped detectors without the fixtures its own output-discipline rule (MUST §4) requires (workspace journal 0013).
+
 ### 4. Gate-Level Reviews at Phase Boundaries
 
 Reviews MUST run at specific phase boundaries, not per-edit. Phase boundary reviews use background agents for near-zero parent context cost.
 
-| Gate               | After Phase | Enforcement                                                 | Reviewers (atelier roster — downstream repos substitute their own equivalents)                 |
-| ------------------ | ----------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Execution done     | `/execute`  | **MUST**                                                    | claude-code-architect + intermediate-reviewer (background)                                     |
-| Before delivery    | `/deliver`  | **MUST**                                                    | claude-code-architect + gold-standards-validator (blocking)                                    |
-| Analysis complete  | `/analyze`  | RECOMMENDED                                                 | intermediate-reviewer                                                                          |
-| Review passed      | `/vet`      | RECOMMENDED                                                 | claude-code-architect (primary) + co-expert + gold-standards-validator + intermediate-reviewer |
-| Knowledge captured | `/codify`   | **MUST** (`claude-code-architect` per cc-enforcement.md §1) | claude-code-architect + gold-standards-validator + co-expert + intermediate-reviewer           |
+| Gate               | After Phase | Enforcement                                                 | Reviewers (co-education roster — atelier uses intermediate-reviewer + co-expert; downstream repos substitute their own equivalents)  |
+| ------------------ | ----------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Execution done     | `/execute`  | **MUST**                                                    | claude-code-architect + pedagogical-reviewer (background)                                                                            |
+| Before delivery    | `/deliver`  | **MUST**                                                    | claude-code-architect + gold-standards-validator (blocking)                                                                          |
+| Analysis complete  | `/analyze`  | RECOMMENDED                                                 | pedagogical-reviewer                                                                                                                 |
+| Review passed      | `/vet`      | RECOMMENDED                                                 | claude-code-architect (primary) + pedagogical-reviewer + gold-standards-validator                                                    |
+| Knowledge captured | `/codify`   | **MUST** (`claude-code-architect` per cc-enforcement.md §1) | claude-code-architect + gold-standards-validator + pedagogical-reviewer                                                              |
 
 The Reviewers column names atelier's concrete agent roster; a downstream repo that loads this synced rule maps each to its own equivalent (some co-\* repos ship a reduced roster). The `/codify` gate is **MUST**, not recommended: `rules/cc-enforcement.md` MUST §1 makes `claude-code-architect` mandatory at every `/codify`.
 
@@ -78,7 +89,7 @@ The Reviewers column names atelier's concrete agent roster; a downstream repo th
 
 At end of /execute, spawn reviews as background agents:
 Agent({subagent_type: "claude-code-architect", run_in_background: true, prompt: "Review all changes..."})
-Agent({subagent_type: "intermediate-reviewer", run_in_background: true, prompt: "Quality audit..."})
+Agent({subagent_type: "pedagogical-reviewer", run_in_background: true, prompt: "Quality audit..."})
 
 # Parent continues; reviews arrive as notifications.
 

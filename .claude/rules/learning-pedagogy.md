@@ -32,7 +32,7 @@ Module: Cell Biology
   - Lesson 2: What is a cell membrane?        # Basics after advanced — disorienting
 ```
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 2. Include Worked Examples Before Exercises
@@ -75,7 +75,7 @@ Calculate the average speed of a runner who covers 10 km in 50 minutes.
 
 (No worked example — learner must figure out the formula application alone.)
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 3. Explain "Why" Not Just "How"
@@ -106,7 +106,7 @@ of places you moved.
 
 (Tells the learner what to do, but not why they would want to.)
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 4. Connect New Concepts to Prerequisites
@@ -131,7 +131,7 @@ was written? Reading a primary source combines both skills: you evaluate what th
 author recorded AND why the context shapes what they noticed, emphasized, or omitted.
 ```
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 5. Use Real-World Analogies
@@ -157,7 +157,7 @@ you pick, what you give up — the enjoyment of the other event — is the real 
 your choice, even though no money changes hands.
 ```
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ### 6. Use Bloom's Taxonomy for Learning Objectives
@@ -206,7 +206,7 @@ By the end of this module, you will be able to:
 
 (Vague, unmeasurable, does not progress through cognitive levels.)
 
-**Enforced by**: intermediate-reviewer
+**Enforced by**: pedagogical-reviewer
 **Violation**: HIGH priority fix
 
 ## MUST NOT Rules
@@ -302,4 +302,4 @@ Pedagogy exceptions require:
 
 1. Documentation of the target audience's assumed knowledge level
 2. Justification for deviating from progressive structure (e.g., reference material intended for lookup, not sequential learning)
-3. Approval from intermediate-reviewer
+3. Approval from pedagogical-reviewer

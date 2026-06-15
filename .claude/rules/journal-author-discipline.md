@@ -5,7 +5,7 @@ paths:
 
 # Journal Author Discipline Rules
 
-Origin: inbound sync from atelier (item-7 hook-cluster propagation, GH #15) — the verifiable-author-claim principle, with the per-session provenance ledger machinery dropped entirely (this repo has no such substrate); enforcement is review-layer here, not ledger-backed; phase names per CO v1.2.
+Origin: inbound sync from loom 2026-06-05 — lifts the verifiable-author-claim principle from loom rules/journal-author-discipline.md, adapted for atelier (loom's per-session provenance ledger machinery dropped entirely — atelier has no such substrate; phase names remapped to CO v1.2). Enforcement is review-layer here, not ledger-backed.
 
 ## Scope
 

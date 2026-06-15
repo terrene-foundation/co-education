@@ -171,10 +171,10 @@ Upgrade specific gates from "recommended" to MUST, and make reviews cheap by run
 
 | Gate               | After phase | Reviewers                                        | Mode                 |
 | ------------------ | ----------- | ------------------------------------------------ | -------------------- |
-| Execution done     | `/execute`  | claude-code-architect + intermediate-reviewer    | **MUST, background** |
+| Execution done     | `/execute`  | claude-code-architect + pedagogical-reviewer     | **MUST, background** |
 | Before delivery    | `/deliver`  | claude-code-architect + gold-standards-validator | **MUST, blocking**   |
-| Analysis complete  | `/analyze`  | intermediate-reviewer                            | RECOMMENDED          |
-| Review passed      | `/vet`      | co-expert                                        | RECOMMENDED          |
+| Analysis complete  | `/analyze`  | pedagogical-reviewer                             | RECOMMENDED          |
+| Review passed      | `/vet`      | pedagogical-reviewer                             | RECOMMENDED          |
 | Knowledge captured | `/codify`   | gold-standards-validator                         | RECOMMENDED          |
 
 **Background reviews cost nearly zero parent context.** The review agent reads the diff, produces findings, and the parent sees a 10-line verdict. The review itself (potentially 50K tokens of analysis) never touches the parent's context.

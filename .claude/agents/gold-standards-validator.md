@@ -100,6 +100,6 @@ For each violation:
 
 ## Related Agents
 
-- **intermediate-reviewer**: For broader quality review.
+- **pedagogical-reviewer** (`agents/instructor/pedagogical-reviewer.md`): For broader quality review.
 
 If a downstream repo provides `care-expert` or `eatp-expert` agents, hand off there to verify CARE/EATP terminology accuracy. When no such agent is available, verify against the in-repo terminology checklist above (§3 CARE/EATP/CO Terminology), which is authoritative for this repo.
