@@ -1,6 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "description": "CO for Education - Claude Code hooks configuration",
+  "description": "CO for Education - Claude Code hooks + trust-posture substrate configuration",
+  "permissions": {
+    "deny": [
+      "Edit(.claude/learning/posture.json)",
+      "Write(.claude/learning/posture.json)",
+      "MultiEdit(.claude/learning/posture.json)",
+      "Edit(.claude/learning/violations.jsonl)",
+      "Write(.claude/learning/violations.jsonl)",
+      "MultiEdit(.claude/learning/violations.jsonl)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {
@@ -10,6 +20,11 @@
             "type": "command",
             "command": "echo '--- CO Education Session ---'; if [ -f .session-notes ]; then echo 'Previous session notes found:'; cat .session-notes; else echo 'No previous session notes.'; fi; echo '---'",
             "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.js\"",
+            "timeout": 10
           }
         ]
       }
@@ -22,6 +37,41 @@
             "type": "command",
             "command": "echo 'Session ending. Run /wrapup to save session notes for next time.'",
             "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/validate-bash-command.js\""
+          },
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/destructive-op-guard.js\""
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/journal-write-guard.js\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/detect-violations.js\""
           }
         ]
       }
