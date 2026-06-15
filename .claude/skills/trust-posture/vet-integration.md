@@ -46,7 +46,7 @@ A companion discipline: when a heuristic or text-parsing check produces high-sev
 
 ## Self-referential carve-out
 
-When a `/vet` round audits a `/codify` proposal that touches the trust system's own surface — the trust-posture rule, `lib/posture.js`, `detect-violations.js`, or this skill family — every round MUST dispatch the full reviewer team in parallel (`claude-code-architect` + `intermediate-reviewer`, plus `gold-standards-validator` where naming/licensing is in scope) REGARDLESS of posture, rather than the posture-reduced per-round depth above. Convergence (two consecutive clean rounds) is already invariant; this carve-out additionally raises the per-round depth to the full team on the self-referential surface, because a defect in the trust machinery corrupts every later posture decision.
+When a `/vet` round audits a `/codify` proposal that touches the trust system's own surface — the trust-posture rule, `lib/posture.js`, `detect-violations.js`, or this skill family — every round MUST dispatch the full local self-referential reviewer team in parallel (the confirmed floor `claude-code-architect` + `gold-standards-validator`, plus any local equivalents of `intermediate-reviewer`/`co-expert` this repo ships — see `rules/self-referential-codify.md` § Roster substitution) REGARDLESS of posture, rather than the posture-reduced per-round depth above. Convergence (two consecutive clean rounds) is already invariant; this carve-out additionally raises the per-round depth to the full team on the self-referential surface, because a defect in the trust machinery corrupts every later posture decision.
 
 ## Posture-aware /vet invocation (design target — not wired)
 

@@ -74,17 +74,18 @@ a category the allowlist enumerates MUST be added to the allowlist in the SAME `
 an undeclared new self-referential file is BLOCKED.
 
 THIS repo's load-bearing paths under each category (populated locally at landing; co-education has no
-`sync` command, and the step-15 `probes.md` gate contract is full-enforcement-only and not landed here):
+`sync` command; this repo runs full enforcement, so the step-15 `probes.md` + posture-engine gate
+contracts ARE landed and allowlisted):
 
 - **Commands:** `.claude/commands/{codify,cc-audit,sweep}.md`.
 - **Rules:** `.claude/rules/{cc-artifacts,cc-enforcement,rule-authoring,no-stubs,self-referential-codify,trust-posture,hook-output-discipline,probe-driven-verification,journal-author-discipline}.md`.
 - **Skills:** `.claude/skills/{cc-artifact-patterns,command-authoring,hook-authoring,skill-authoring,trust-posture}/**`.
 - **Hooks** — `.claude/hooks/**`, the enforcement substrate; a regression silently weakens or hard-blocks
   enforcement.
-- **Gate contracts** — `.claude/audit-fixtures/{violation-patterns,validate-bash-command}/**` (the landed
-  detector runners + fixtures + `.expected` files); relaxing an `.expected` or a runner assertion silently
-  weakens the gate. (`probes.md` and the step-15 posture-engine suite are full-enforcement-only — not landed
-  here; add them to this line when this repo upgrades to full enforcement.)
+- **Gate contracts** — `.claude/audit-fixtures/violation-patterns/probes.md` (the probe adjudication
+  contracts) and `.claude/audit-fixtures/{violation-patterns,validate-bash-command,posture-engine}/**` (the
+  detector + bash + engine runners + fixtures + `.expected` files); relaxing an `.expected`, a runner
+  assertion, or a probe contract silently weakens the step-15 gate.
 
 ```markdown
 # DO — new codify-governing rule added to the allowlist in the codify that lands it
@@ -163,12 +164,10 @@ Narrowing trades that cheap safety for a silent gap.
 - **Posture state:** read from `.claude/learning/posture.json` (default `L3`). The gate is
   posture-INVARIANT: it fires the full local `/vet` team at every level, including `L5`.
 - **Regression record:** a self-referential `/codify` that lands without the full `/vet` is recorded to
-  `.claude/learning/violations.jsonl`. `session-start.js` surfaces it in the banner. **In a repo that has
-  wired `/cc-audit` step-15 adjudication (full enforcement), a probe-CONFIRMED verdict additionally counts
+  `.claude/learning/violations.jsonl`. `session-start.js` surfaces it in the banner. This repo runs full
+  enforcement (`/cc-audit` step-15 adjudication is wired): a probe-CONFIRMED verdict additionally counts
   toward the cumulative downgrade thresholds, and a regression inside a rule's grace window fires
-  `regression_within_grace` → instant one-level drop. A hooks-only/advisory repo runs recording +
-  surfacing + deny-protection only — no auto-downgrade — until step 15 is wired (a human-gated upgrade to
-  full enforcement; this repo is hooks-only/advisory).** The agent cannot hand-edit either state file (Edit/Write/MultiEdit blocked by `permissions.deny`;
+  `regression_within_grace` → instant one-level drop. The agent cannot hand-edit either state file (Edit/Write/MultiEdit blocked by `permissions.deny`;
   Bash-path writes denied by `validate-bash-command.js`).
 - **Detection:** MANUAL — the `/codify` orchestrator reads the Rule 2 allowlist, checks the proposal's file
   list, and dispatches the full local `/vet` team on any match.

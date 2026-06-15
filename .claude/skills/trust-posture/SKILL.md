@@ -9,16 +9,13 @@ allowed-tools:
 
 # Trust Posture — Implementation Skill
 
-> **Enforcement mode (read first).** This repo runs the trust-posture engine in **hooks-only/advisory
-> mode**: violation recording, the `session-start.js` posture/grace banner, and the state-file write
-> blocks are live, but the **auto-downgrade** half (cumulative + emergency) requires the `/cc-audit`
-> step-15 adjudication machinery, which is NOT wired here. Throughout this skill and its sub-files,
-> every claim that a probe-CONFIRMED verdict, a grace regression, or an emergency class **moves the
-> posture level** applies to a **full-enforcement repo** (one that has wired step 15). In this
-> hooks-only repo those events are recorded and surfaced only — a posture change is a manual gate
-> disposition until step 15 is landed (a human-gated upgrade to full enforcement).
+> **Enforcement mode (read first).** This repo runs **full enforcement**: violation recording, the
+> `session-start.js` posture/grace banner, the state-file write blocks, AND the `/cc-audit` step-15
+> adjudication loop that converts probe-CONFIRMED verdicts (and grace/emergency classes) into posture
+> downgrades are all wired. Every claim throughout this skill and its sub-files that a probe-CONFIRMED
+> verdict, a grace regression, or an emergency class **moves the posture level** is live here.
 
-The graduated-trust posture system gives the agent an earned, machine-tracked autonomy level (L1-L5). The level drops automatically when violations are confirmed (where step-15 adjudication is wired) and only a human may raise it. The enforcement engine has two halves: the **record + surface + deny-protect** half is live here (lexical detector hits record at advisory `severity: "warn"` and never move posture by themselves; `session-start.js` injects the posture/grace banner and prunes the mirror), and the **auto-downgrade** half — probe-CONFIRMED verdicts recorded at `/cc-audit` step 15 counting toward the cumulative thresholds, grace regressions and emergency classes dropping instantly — runs only in a full-enforcement repo (see the mode note above). The state lives in `.claude/learning/posture.json` and `.claude/learning/violations.jsonl` — protected by `permissions.deny` in `settings.json` (Edit/Write/MultiEdit) and by `validate-bash-command.js`'s state-write deny (Bash), so the agent cannot hand-edit its own trust state. **The engine (`lib/posture.js`, invoked by hooks or via its gate CLI) is the sole posture-state WRITER.** (Reads are not exclusive — `/vet` and the agent read `posture.json` via `lib/posture.js` to know the ceiling.) This skill is the **how** — what `/codify`, `/vet`, and rule authors do to wire a rule into the graduated-trust loop.
+The graduated-trust posture system gives the agent an earned, machine-tracked autonomy level (L1-L5). The level drops automatically when violations are confirmed and only a human may raise it. The enforcement engine is LIVE: lexical detector hits record at advisory `severity: "warn"` and never move posture by themselves; probe-CONFIRMED verdicts (recorded at `/cc-audit` step 15 via the engine CLI) count toward the cumulative downgrade thresholds; grace regressions and emergency classes drop instantly; `session-start.js` injects the posture/grace banner and prunes the mirror. The state lives in `.claude/learning/posture.json` and `.claude/learning/violations.jsonl` — protected by `permissions.deny` in `settings.json` (Edit/Write/MultiEdit) and by `validate-bash-command.js`'s state-write deny (Bash), so the agent cannot hand-edit its own trust state. **The engine (`lib/posture.js`, invoked by hooks or via its gate CLI) is the sole posture-state WRITER.** (Reads are not exclusive — `/vet` and the agent read `posture.json` via `lib/posture.js` to know the ceiling.) This skill is the **how** — what `/codify`, `/vet`, and rule authors do to wire a rule into the graduated-trust loop.
 
 ## When To Use This Skill
 
@@ -87,4 +84,4 @@ The hook substrate fires at a small set of events. Severity is a function of WHE
 - **[codify-integration.md](codify-integration.md)** — what `/codify` reads, writes, and emits to wire a new rule into the trust loop.
 - **[vet-integration.md](vet-integration.md)** — how `/vet` audit DEPTH scales with the current posture (lighter touch per round at high trust; deeper per round at low trust), while convergence stays invariant.
 
-Origin: inbound sync from atelier (item-7 hook-cluster propagation, GH #15) — the trust-posture implementation skill, landed in hooks-only/advisory mode (the auto-downgrade half is deferred to a step-15 upgrade), wired to the hook substrate (`detect-violations.js`, `lib/posture.js`) and CO v1.2 phase commands (`/codify`, `/vet`).
+Origin: inbound sync from atelier (item-7 hook-cluster propagation, GH #15) — the trust-posture implementation skill, landed in full-enforcement mode (step-15 adjudication wired), wired to the hook substrate (`detect-violations.js`, `lib/posture.js`) and CO v1.2 phase commands (`/codify`, `/vet`).
