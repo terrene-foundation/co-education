@@ -29,7 +29,26 @@ Specify scope: audit everything, or target a specific artifact type or file.
 
 5. **Token budget analysis**: Calculate baseline per-turn token cost (CLAUDE.md + global rules + agent descriptions).
 
-6. **Report**: Produce findings sorted by severity (CRITICAL → HIGH → NOTE) with specific fix recommendations.
+6. **Trust-Posture Adjudication (step 15)**: Adjudicate recorded trust-posture violations against their probe contracts — see the § Trust-Posture Adjudication section below. Full-enforcement gate: the three trust-substrate fixture runners MUST all pass before convergence.
+
+7. **Report**: Produce findings sorted by severity (CRITICAL → HIGH → NOTE) with specific fix recommendations.
+
+## Trust-Posture Adjudication (step 15)
+
+Full enforcement is wired in this repo (the upgrade from hooks-only landed the step-15 machinery). For each `.claude/learning/violations.jsonl` entry WITHOUT an `adjudicated:` field (the mechanical filter — the enforcement engine writes that marker), run the matching probe contract in `.claude/audit-fixtures/violation-patterns/probes.md` (question + schema + deterministic scoring, per `rules/probe-driven-verification.md` MUST §2) via the `test-harness-probe` protocol (`skills/test-harness-probe/`). The probe verdict — never the lexical hit — is the authoritative finding (`rules/hook-output-discipline.md` MUST §2 / `rules/probe-driven-verification.md` MUST §4: hook advisory tripwire, probe authoritative). Record every verdict (confirmed or retired) in the audit report, a workspace journal entry keyed to the violation entry's timestamp, AND via the engine CLI:
+
+```
+node .claude/hooks/lib/posture.js adjudicate --ts <ts> --verdict confirmed|retired \
+     --probe <probe-id> --by cc-audit-step15        # (+ --emergency <class> for emergency-class confirms)
+```
+
+The agent NEVER edits the state files directly (`rules/trust-posture.md` MUST NOT §1 — the engine is the sole writer; it applies any cumulative-threshold or emergency downgrade). The three trust-substrate fixture runners MUST all pass before convergence:
+
+```
+node .claude/audit-fixtures/violation-patterns/run-fixtures.js
+node .claude/audit-fixtures/validate-bash-command/run-fixtures.js
+node .claude/audit-fixtures/posture-engine/run-fixtures.js
+```
 
 ## Composition Precedence
 
